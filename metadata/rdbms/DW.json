@@ -1,0 +1,31 @@
+{
+  "rdbms": {
+    "MYSQL": {
+      "databaseName": "${mysql_db}",
+      "pluginId": "MYSQL",
+      "accessType": 0,
+      "hostname": "${mysql_host}",
+      "password": "${mysql_pass}",
+      "pluginName": "MySQL",
+      "port": "${mysql_port}",
+      "driverClassName": "Mysql",
+      "attributes": {
+        "SUPPORTS_TIMESTAMP_DATA_TYPE": "N",
+        "STREAM_RESULTS": "N",
+        "EXTRA_OPTION_MYSQL.useCursorFetch": "true",
+        "EXTRA_OPTION_MYSQL.defaultFetchSize": "500",
+        "FORCE_IDENTIFIERS_TO_LOWERCASE": "N",
+        "PRESERVE_RESERVED_WORD_CASE": "Y",
+        "FORCE_IDENTIFIERS_TO_UPPERCASE": "N",
+        "QUOTE_ALL_FIELDS": "N",
+        "EXTRA_OPTION_MYSQL.zeroDateTimeBehaviorValue": "CONVERT_TO_NULL",
+        "SUPPORTS_BOOLEAN_DATA_TYPE": "Y",
+        "SQL_CONNECT": "",
+        "PREFERRED_SCHEMA_NAME": ""
+      },
+      "manualUrl": "",
+      "username": "${mysql_user}"
+    }
+  },
+  "name": "DW"
+}

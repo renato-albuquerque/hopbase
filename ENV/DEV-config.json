@@ -1,0 +1,23 @@
+{
+  "variables" : [ {
+    "name" : "mysql_host",
+    "value" : "localhost",
+    "description" : ""
+  }, {
+    "name" : "mysql_user",
+    "value" : "root",
+    "description" : ""
+  }, {
+    "name" : "mysql_pass",
+    "value" : "1234",
+    "description" : ""
+  }, {
+    "name" : "mysql_db",
+    "value" : "dev",
+    "description" : ""
+  }, {
+    "name" : "mysql_port",
+    "value" : "3306",
+    "description" : ""
+  } ]
+}
