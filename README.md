@@ -47,3 +47,6 @@ PIPELINES
 ![apache_hop_pipelines_staging](images/apache_hop_staging.JPG) <br> 
 WORKFLOW
 ![apache_hop_workflow_staging](images/apache_hop_workflow_staging.JPG) <br>
+
+- Documentação das tabelas da camada STAGING, gerado através do SQL Power Architect:
+![sql_power_architect_documentacao_staging](images/sql_power_architect_documentacao_staging.JPG)
