@@ -41,7 +41,9 @@ Ilustração BD north abaixo (12 tabelas): <br>
 
 ## 04. Staging Area (Criação e Carga de dados)
 - Através do SQL Power Architect, foram criadas das tabelas da camada STAGING, no banco de dados "dev". <br>
-- Apache Hop: Desenvolvimento dos PIPELINES para carga de dados de cada tabela na camada STAGING.
-- Apache Hop: Desenvolvimento de WORKFLOW para carga completa e simultânea dos dados na camada STAGING.
+- Apache Hop: Desenvolvimento dos PIPELINES para carga de dados de cada tabela na camada STAGING. <br>
+- Apache Hop: Desenvolvimento de WORKFLOW para carga completa e simultânea dos dados na camada STAGING. <br>
+PIPELINES
 ![apache_hop_pipelines_staging](images/apache_hop_staging.JPG) <br> 
+WORKFLOW
 ![apache_hop_workflow_staging](images/apache_hop_workflow_staging.JPG) <br>
