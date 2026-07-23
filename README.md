@@ -32,3 +32,8 @@ Instalar o software SQL Power Architect.
 
 ### 📌 Resumo Tecnologias
 ![tecnologias_do_projeto](images/project_softwares.JPG)
+
+## 03. 
+Criar Banco de Dados (north) no HeidiSQL ("Rodar" arquivo DDL.sql). <br>
+Ilustração BD north abaixo (12 tabelas): <br>
+![bd_north](images/bd_north.JPG)
