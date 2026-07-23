@@ -33,7 +33,15 @@ Instalar o software SQL Power Architect.
 ### 📌 Resumo Tecnologias
 ![tecnologias_do_projeto](images/project_softwares.JPG)
 
-## 03. 
+## 03. Banco de Dados do Projeto: "north"
 Criar Banco de Dados (north) no HeidiSQL ("Rodar" arquivo DDL.sql). <br>
+Também foi criado os BDs: dev, qa, prod.
 Ilustração BD north abaixo (12 tabelas): <br>
 ![bd_north](images/bd_north.JPG)
+
+## 04. Staging Area (Criação e Carga de dados)
+- Através do SQL Power Architect, foram criadas das tabelas da camada STAGING, no banco de dados "dev". <br>
+- Apache Hop: Desenvolvimento dos PIPELINES para carga de dados de cada tabela na camada STAGING.
+- Apache Hop: Desenvolvimento de WORKFLOW para carga completa e simultânea dos dados na camada STAGING.
+![apache_hop_pipelines_staging](images/apache_hop_staging.JPG) <br> 
+![apache_hop_workflow_staging](images/apache_hop_workflow_staging.JPG) <br>
