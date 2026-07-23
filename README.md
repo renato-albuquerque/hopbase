@@ -15,14 +15,20 @@ HeidiSQL: IDE para desenvolvimento. <br>
 ### Java
 Criar variável de ambiente (JAVA_HOME).
 
-### Apache Hop
+### Apache Hop (Hop Orchestration Platform)
+É uma plataforma de código aberto voltada para a engenharia, integração e orquestração de dados e metadados. <br>
 Instalar o software [Apache Hop](https://hop.apache.org/download/). <br>
 Realizar conexão do Apache Hop com o Banco de Dados (Drive de conexão do MySQL).
 
 ### Metabase
+Ferramenta de Business Intelligence (BI) e análise de dados de código aberto (open source). Permite conectar com bancos de dados e criar gráficos, métricas e painéis visuais (dashboards). <br>
 Instalar o software [Metabase](https://www.metabase.com/docs/latest/installation-and-operation/running-the-metabase-jar-file
 ). <br>
 Seguir orientações da documentação do Metabase.
 
-### Modelagem de Dados
-Instalar o software SQL Power Architect. 
+### SQL Power Architect
+Ferramenta gráfica e de código aberto voltada para a **modelagem de bancos de dados e design de Data Warehouses**. <br>
+Instalar o software SQL Power Architect.
+
+### Resumo Tecnologias
+![tecnologias_do_projeto](images/project_softwares.JPG)
