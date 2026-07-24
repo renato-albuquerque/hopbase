@@ -120,10 +120,13 @@
 <td class="tdTableHeading tdLogicalColName">Logical Column Name</td><td class="tdTableHeading tdPhysicalColName">Physical Column Name</td><td class="tdTableHeading tdDataType">Type</td><td class="tdTableHeading tdPkFlag">PK</td><td class="tdTableHeading tdNullFlag">Nullable</td>
 </tr>
 <tr valign="top">
-<td class="tdTableDefinition">customer_id</td><td class="tdTableDefinition">customer_id</td><td class="tdTableDefinition">VARCHAR(5)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+<td class="tdTableDefinition">sk_customer (PK)</td><td class="tdTableDefinition">sk_customer</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
 </tr>
 <tr valign="top">
-<td class="tdTableDefinition">company_name</td><td class="tdTableDefinition">company_name</td><td class="tdTableDefinition">VARCHAR(36)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+<td class="tdTableDefinition">customer_id</td><td class="tdTableDefinition">customer_id</td><td class="tdTableDefinition">VARCHAR(5)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">company_name</td><td class="tdTableDefinition">company_name</td><td class="tdTableDefinition">VARCHAR(36)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
 </tr>
 <tr valign="top">
 <td class="tdTableDefinition">contact_name</td><td class="tdTableDefinition">contact_name</td><td class="tdTableDefinition">VARCHAR(23)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
@@ -141,10 +144,10 @@
 <td class="tdTableDefinition">region</td><td class="tdTableDefinition">region</td><td class="tdTableDefinition">VARCHAR(13)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
 </tr>
 <tr valign="top">
-<td class="tdTableDefinition">postal_code</td><td class="tdTableDefinition">postal_code</td><td class="tdTableDefinition">VARCHAR(9)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+<td class="tdTableDefinition">postal_code</td><td class="tdTableDefinition">postal_code</td><td class="tdTableDefinition">VARCHAR(30)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
 </tr>
 <tr valign="top">
-<td class="tdTableDefinition">country</td><td class="tdTableDefinition">country</td><td class="tdTableDefinition">VARCHAR(11)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+<td class="tdTableDefinition">country</td><td class="tdTableDefinition">country</td><td class="tdTableDefinition">VARCHAR(20)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
 </tr>
 <tr valign="top">
 <td class="tdTableDefinition">phone</td><td class="tdTableDefinition">phone</td><td class="tdTableDefinition">VARCHAR(17)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
@@ -153,7 +156,13 @@
 <td class="tdTableDefinition">fax</td><td class="tdTableDefinition">fax</td><td class="tdTableDefinition">VARCHAR(17)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
 </tr>
 </table>
-<div class="references"></div>
+<div class="references">
+<p class="subTitle">Referenced By</p>
+<ul>
+<li>
+<a href="#ft_orders">ft_orders</a> referencing (sk_customer)</li>
+</ul>
+</div>
 </div>
 <div class="tableNameHeading">
 <h1>dim_employee<a name="dim_employee"></a>
@@ -166,6 +175,9 @@
 <table class="tableDefinition" width="100%">
 <tr>
 <td class="tdTableHeading tdLogicalColName">Logical Column Name</td><td class="tdTableHeading tdPhysicalColName">Physical Column Name</td><td class="tdTableHeading tdDataType">Type</td><td class="tdTableHeading tdPkFlag">PK</td><td class="tdTableHeading tdNullFlag">Nullable</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">sk_employee (PK)</td><td class="tdTableDefinition">sk_employee</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
 </tr>
 <tr valign="top">
 <td class="tdTableDefinition">employee_id</td><td class="tdTableDefinition">employee_id</td><td class="tdTableDefinition">BIGINT</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
@@ -222,7 +234,13 @@
 <td class="tdTableDefinition">photo_path</td><td class="tdTableDefinition">photo_path</td><td class="tdTableDefinition">VARCHAR(38)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
 </tr>
 </table>
-<div class="references"></div>
+<div class="references">
+<p class="subTitle">Referenced By</p>
+<ul>
+<li>
+<a href="#ft_orders">ft_orders</a> referencing (sk_employee)</li>
+</ul>
+</div>
 </div>
 <div class="tableNameHeading">
 <h1>dim_products<a name="dim_products"></a>
@@ -235,6 +253,9 @@
 <table class="tableDefinition" width="100%">
 <tr>
 <td class="tdTableHeading tdLogicalColName">Logical Column Name</td><td class="tdTableHeading tdPhysicalColName">Physical Column Name</td><td class="tdTableHeading tdDataType">Type</td><td class="tdTableHeading tdPkFlag">PK</td><td class="tdTableHeading tdNullFlag">Nullable</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">sk_product (PK)</td><td class="tdTableDefinition">sk_product</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
 </tr>
 <tr valign="top">
 <td class="tdTableDefinition">product_id</td><td class="tdTableDefinition">product_id</td><td class="tdTableDefinition">BIGINT</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
@@ -267,7 +288,13 @@
 <td class="tdTableDefinition">discontinued</td><td class="tdTableDefinition">discontinued</td><td class="tdTableDefinition">BIGINT</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
 </tr>
 </table>
-<div class="references"></div>
+<div class="references">
+<p class="subTitle">Referenced By</p>
+<ul>
+<li>
+<a href="#ft_orders">ft_orders</a> referencing (sk_product)</li>
+</ul>
+</div>
 </div>
 <div class="tableNameHeading">
 <h1>ft_orders<a name="ft_orders"></a>
@@ -290,15 +317,9 @@
 </td>
 </tr>
 <tr valign="top">
-<td class="tdTableDefinition">order_id</td><td class="tdTableDefinition">order_id</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
-</tr>
-<tr>
-<td colspan="4">
-<div class="comment">C&oacute;digo do pedido.</div>
-</td>
-</tr>
-<tr valign="top">
-<td class="tdTableDefinition">sk_customer_id</td><td class="tdTableDefinition">sk_customer_id</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+<td class="tdTableDefinition">sk_customer (PK)
+                &nbsp;(<a href="#dim_customers">FK</a>)
+              </td><td class="tdTableDefinition">sk_customer</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
 </tr>
 <tr>
 <td colspan="4">
@@ -306,7 +327,9 @@
 </td>
 </tr>
 <tr valign="top">
-<td class="tdTableDefinition">sk_employee_id</td><td class="tdTableDefinition">sk_employee_id</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+<td class="tdTableDefinition">sk_employee (PK)
+                &nbsp;(<a href="#dim_employee">FK</a>)
+              </td><td class="tdTableDefinition">sk_employee</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
 </tr>
 <tr>
 <td colspan="4">
@@ -314,11 +337,21 @@
 </td>
 </tr>
 <tr valign="top">
-<td class="tdTableDefinition">sk_product_id</td><td class="tdTableDefinition">sk_product_id</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+<td class="tdTableDefinition">sk_product (PK)
+                &nbsp;(<a href="#dim_products">FK</a>)
+              </td><td class="tdTableDefinition">sk_product</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
 </tr>
 <tr>
 <td colspan="4">
 <div class="comment">Surrogate key da tabela de produtos.</div>
+</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">order_id</td><td class="tdTableDefinition">order_id</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr>
+<td colspan="4">
+<div class="comment">C&oacute;digo do pedido.</div>
 </td>
 </tr>
 <tr valign="top">
@@ -386,7 +419,17 @@
 </td>
 </tr>
 </table>
-<div class="references"></div>
+<div class="references">
+<p class="subTitle">References</p>
+<ul>
+<li>
+<a href="#dim_customers">dim_customers</a> through (sk_customer)</li>
+<li>
+<a href="#dim_products">dim_products</a> through (sk_product)</li>
+<li>
+<a href="#dim_employee">dim_employee</a> through (sk_employee)</li>
+</ul>
+</div>
 </div>
 </body>
 </html>

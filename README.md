@@ -50,3 +50,5 @@ WORKFLOW
 
 - Documentação das tabelas da camada STAGING, gerado através do SQL Power Architect:
 ![sql_power_architect_documentacao_staging](images/sql_power_architect_documentacao_staging.JPG)
+
+## 05. Data Warehouse (DW)
