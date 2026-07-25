@@ -40,7 +40,9 @@ Ilustração BD north abaixo (12 tabelas): <br>
 ![bd_north](images/bd_north.JPG)
 
 ## 04. Staging Area (Criação e Carga de dados)
-- Através do SQL Power Architect, foram criadas das tabelas da camada STAGING, no banco de dados "dev". <br>
+- Através do SQL Power Architect, foram criadas as tabelas da camada STAGING, no banco de dados "dev". <br>
+- Documentação das tabelas da camada STAGING, gerado através do SQL Power Architect:
+![sql_power_architect_documentacao_staging](images/sql_power_architect_documentacao_staging.JPG)
 - Apache Hop: Desenvolvimento dos PIPELINES para carga de dados de cada tabela na camada STAGING. <br>
 - Apache Hop: Desenvolvimento de WORKFLOW para carga completa e simultânea dos dados na camada STAGING. <br>
 PIPELINES
@@ -48,11 +50,9 @@ PIPELINES
 WORKFLOW
 ![apache_hop_workflow_staging](images/apache_hop_workflow_staging.JPG) <br>
 
-- Documentação das tabelas da camada STAGING, gerado através do SQL Power Architect:
-![sql_power_architect_documentacao_staging](images/sql_power_architect_documentacao_staging.JPG)
-
 ## 05. Data Warehouse (DW)
 - MySQL / HeidiSQL: Desenvolvimento da tabela FATO ft_orders (INNER JOIN entre as tabelas dev.st_orders & dev.st_order_details) <br>
+
 ```
 SELECT
 	o.order_id,
@@ -72,3 +72,9 @@ FROM dev.st_orders o
 INNER JOIN dev.st_order_details od
 ON o.order_id = od.order_id;
 ```
+
+- Através do SQL Power Architect, foram criadas as tabelas DIMENSÕES e FATO da camada DW, no banco de dados "dev". <br>
+![sql_power_architect_dw](images/sql_power_architect_dw.JPG)
+
+- Documentação das tabelas da camada DW, gerado através do SQL Power Architect:
+![sql_power_architect_documentacao_dw](images/sql_power_architect_documentacao_dw.JPG)
