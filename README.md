@@ -52,3 +52,23 @@ WORKFLOW
 ![sql_power_architect_documentacao_staging](images/sql_power_architect_documentacao_staging.JPG)
 
 ## 05. Data Warehouse (DW)
+- MySQL / HeidiSQL: Desenvolvimento da tabela FATO ft_orders (INNER JOIN entre as tabelas dev.st_orders & dev.st_order_details) <br>
+```
+SELECT
+	o.order_id,
+	o.customer_id AS sk_customer,
+	o.employee_id AS sk_employee,
+	od.product_id AS sk_product,
+	o.order_date,
+	o.required_date,
+	o.shipped_date,
+	od.unit_price,
+	od.quantity,
+	od.discount,
+	ROUND(od.unit_price * od.quantity, 2) AS valor_bruto,
+	ROUND((od.unit_price * od.quantity) * od.discount, 2) AS valor_desconto,
+	ROUND((od.unit_price * od.quantity) - ((od.unit_price * od.quantity) * od.discount), 2) AS valor_liquido
+FROM dev.st_orders o
+INNER JOIN dev.st_order_details od
+ON o.order_id = od.order_id;
+```
