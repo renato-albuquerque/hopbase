@@ -241,6 +241,11 @@ Por tipo de dados</note>
       <to>Value mapper</to>
       <enabled>Y</enabled>
     </hop>
+    <hop>
+      <from>Value mapper</from>
+      <to>Table output</to>
+      <enabled>Y</enabled>
+    </hop>
   </order>
   <transform>
     <name>Concat Fields</name>
@@ -637,6 +642,83 @@ Por tipo de dados</note>
     </GUI>
   </transform>
   <transform>
+    <name>Table output</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <commit>1000</commit>
+    <connection>DW</connection>
+    <fields>
+      <field>
+        <column_name>customer_id</column_name>
+        <stream_name>customer_id</stream_name>
+      </field>
+      <field>
+        <column_name>company_name</column_name>
+        <stream_name>company_name</stream_name>
+      </field>
+      <field>
+        <column_name>contact_name</column_name>
+        <stream_name>contact_name</stream_name>
+      </field>
+      <field>
+        <column_name>contact_title</column_name>
+        <stream_name>contact_title</stream_name>
+      </field>
+      <field>
+        <column_name>address</column_name>
+        <stream_name>address</stream_name>
+      </field>
+      <field>
+        <column_name>city</column_name>
+        <stream_name>city</stream_name>
+      </field>
+      <field>
+        <column_name>region</column_name>
+        <stream_name>region</stream_name>
+      </field>
+      <field>
+        <column_name>postal_code</column_name>
+        <stream_name>postal_code</stream_name>
+      </field>
+      <field>
+        <column_name>country</column_name>
+        <stream_name>country</stream_name>
+      </field>
+      <field>
+        <column_name>phone</column_name>
+        <stream_name>phone</stream_name>
+      </field>
+      <field>
+        <column_name>fax</column_name>
+        <stream_name>fax</stream_name>
+      </field>
+    </fields>
+    <ignore_errors>N</ignore_errors>
+    <only_when_have_rows>N</only_when_have_rows>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <return_keys>N</return_keys>
+    <specify_fields>Y</specify_fields>
+    <table>dim_customer_full</table>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_in_table>Y</tablename_in_table>
+    <truncate>Y</truncate>
+    <use_batch>Y</use_batch>
+    <attributes/>
+    <GUI>
+      <xloc>1392</xloc>
+      <yloc>144</yloc>
+    </GUI>
+  </transform>
+  <transform>
     <name>Value mapper</name>
     <type>ValueMapper</type>
     <description/>
@@ -700,6 +782,18 @@ FROM dev.st_customers
     </GUI>
   </transform>
   <transform_error_handling>
+    <error>
+      <source_transform>Table output</source_transform>
+      <target_transform>Dummy (do nothing)</target_transform>
+      <is_enabled>Y</is_enabled>
+      <nr_valuename/>
+      <descriptions_valuename/>
+      <fields_valuename/>
+      <codes_valuename/>
+      <max_errors/>
+      <max_pct_errors/>
+      <min_pct_rows/>
+    </error>
   </transform_error_handling>
   <attributes/>
 </pipeline>
