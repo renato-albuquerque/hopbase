@@ -78,3 +78,7 @@ ON o.order_id = od.order_id;
 
 - Documentação das tabelas da camada DW, gerado através do SQL Power Architect:
 ![sql_power_architect_documentacao_dw](images/sql_power_architect_documentacao_dw.JPG)
+
+- dim_customer
+carga full
+carga scd2 (Slowly Changing Dimension): método de modelagem de dados usado para guardar o histórico de alterações em tabelas dimensionais.
