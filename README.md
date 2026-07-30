@@ -79,6 +79,24 @@ ON o.order_id = od.order_id;
 - Documentação das tabelas da camada DW, gerado através do SQL Power Architect:
 ![sql_power_architect_documentacao_dw](images/sql_power_architect_documentacao_dw.JPG)
 
-- dim_customer
-carga full
-carga scd2 (Slowly Changing Dimension): método de modelagem de dados usado para guardar o histórico de alterações em tabelas dimensionais.
+- Dimensão dim_customer
+Para a dim_customer, será apresentado 02 abordagens para carga dos dados: <br>
+Carga Full x Carga SCD2 (Slowly Changing Dimension Tipo 2) <br>
+
+**Carga Full (Carga Completa):** Apaga e substitui todos os dados antigos a cada atualização. <br>
+
+**Pipeline para carga full** <br>
+![apache_hop_dim_customers_carga_full](images/apache_hop_dim_customers_carga_full.JPG)
+
+**Carga SCD2:** Método de modelagem de dados usado para guardar o histórico de alterações em tabelas dimensionais. <br>
+
+1ª Etapa: Simulando atualização no bd produção (north), tabela customers. <br>
+![heidi_sql_update_table_customers](images/heidi_sql_update_table_customers.JPG) <br>
+
+2ª Etapa: Executar o workflow no apache hop st_area (Workflow com a carga de todas as stages). <br>
+![apache_hop_workflow_staging](images/apache_hop_workflow_staging.JPG) <br>
+
+3ª Etapa: **Pipeline para carga scd2** <br>
+![apache_hop_dim_customers_carga_scd2](images/apache_hop_dim_customers_carga_scd2.JPG) <br>
+
+
