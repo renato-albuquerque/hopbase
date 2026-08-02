@@ -192,7 +192,7 @@ Apenas dados com data (Retirar tempo).</note>
     </hop>
     <hop>
       <from>Select values</from>
-      <to>Table output</to>
+      <to>dim_employee</to>
       <enabled>Y</enabled>
     </hop>
   </order>
@@ -563,7 +563,7 @@ Apenas dados com data (Retirar tempo).</note>
     </GUI>
   </transform>
   <transform>
-    <name>Table output</name>
+    <name>dim_employee</name>
     <type>TableOutput</type>
     <description/>
     <distribute>Y</distribute>
@@ -645,11 +645,14 @@ Apenas dados com data (Retirar tempo).</note>
     <only_when_have_rows>N</only_when_have_rows>
     <partitioning_daily>N</partitioning_daily>
     <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
     <partitioning_monthly>Y</partitioning_monthly>
+    <return_field/>
     <return_keys>N</return_keys>
     <schema>dev</schema>
     <specify_fields>Y</specify_fields>
     <table>dim_employee</table>
+    <tablename_field/>
     <tablename_in_field>N</tablename_in_field>
     <tablename_in_table>Y</tablename_in_table>
     <truncate>Y</truncate>

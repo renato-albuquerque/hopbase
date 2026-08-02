@@ -106,7 +106,11 @@ Carga Full x Carga SCD2 (Slowly Changing Dimension Tipo 2) <br>
 
 - Dimensão dim_employee
 **Pipeline para carga full (Apache Hop)** <br>
-![apache_hop_dim_employee](images/apache_hop_dim_employee_carga_full.JPG) <br>
+![apache_hop_dim_employee_carga_full](images/apache_hop_dim_employee_carga_full.JPG) <br>
+
+- Dimensão dim_products
+**Pipeline para carga full (Apache Hop)** <br>
+![apache_hop_dim_products_carga_full](images/apache_hop_dim_products_carga_full.JPG) <br>
 
 
 
