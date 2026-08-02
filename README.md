@@ -90,7 +90,7 @@ Carga Full x Carga SCD2 (Slowly Changing Dimension Tipo 2) <br>
 
 **Carga Full (Carga Completa):** Apaga e substitui todos os dados antigos a cada atualização. <br>
 
-**Pipeline para carga full** <br>
+**Pipeline para carga full (Apache Hop)** <br>
 ![apache_hop_dim_customers_carga_full](images/apache_hop_dim_customers_carga_full.JPG)
 
 **Carga SCD2:** Método de modelagem de dados usado para guardar o histórico de alterações em tabelas dimensionais. <br>
@@ -101,7 +101,12 @@ Carga Full x Carga SCD2 (Slowly Changing Dimension Tipo 2) <br>
 2ª Etapa: Executar o workflow no apache hop st_area (Workflow com a carga de todas as stages). <br>
 ![apache_hop_workflow_staging](images/apache_hop_workflow_staging.JPG) <br>
 
-3ª Etapa: **Pipeline para carga scd2** <br>
+3ª Etapa: **Pipeline para carga scd2 (Apache Hop)** <br>
 ![apache_hop_dim_customers_carga_scd2](images/apache_hop_dim_customers_carga_scd2.JPG) <br>
+
+- Dimensão dim_employee
+**Pipeline para carga full (Apache Hop)** <br>
+![apache_hop_dim_employee](images/apache_hop_dim_employee_carga_full.JPG) <br>
+
 
 

@@ -36,37 +36,37 @@
     <table id="TAB6" populated="true" UUID="10df6be2-8386-4942-b8a2-6a7bd8e0bb2a" name="st_customers" objectType="TABLE" physicalName="st_customers" >
      <remarks></remarks>
      <folder id="FOLTAB61" populated="true" name="Columns" physicalName="Columns" type="1">
-      <column id="COL7" populated="true" UUID="6e50f672-3c07-4c8d-aee4-0acede35d8b4" autoIncrement="false" name="customer_id" nullable="1" physicalName="customer_id" precision="5" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
+      <column id="COL7" populated="true" UUID="6e50f672-3c07-4c8d-aee4-0acede35d8b4" autoIncrement="false" defaultValue="" name="customer_id" nullable="1" physicalName="customer_id" precision="5" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
        <remarks></remarks>
       </column>
-      <column id="COL8" populated="true" UUID="86734fbd-f83e-4b2f-a1bb-eb9212edb53f" autoIncrement="false" name="company_name" nullable="1" physicalName="company_name" precision="36" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
+      <column id="COL8" populated="true" UUID="86734fbd-f83e-4b2f-a1bb-eb9212edb53f" autoIncrement="false" defaultValue="" name="company_name" nullable="1" physicalName="company_name" precision="36" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
        <remarks></remarks>
       </column>
-      <column id="COL9" populated="true" UUID="9ab237de-9c49-447d-83d4-0a34c8e970b1" autoIncrement="false" name="contact_name" nullable="1" physicalName="contact_name" precision="23" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
+      <column id="COL9" populated="true" UUID="9ab237de-9c49-447d-83d4-0a34c8e970b1" autoIncrement="false" defaultValue="" name="contact_name" nullable="1" physicalName="contact_name" precision="23" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
        <remarks></remarks>
       </column>
-      <column id="COL10" populated="true" UUID="3ca37246-91ad-4218-a7af-21c023a71ab0" autoIncrement="false" name="contact_title" nullable="1" physicalName="contact_title" precision="30" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
+      <column id="COL10" populated="true" UUID="3ca37246-91ad-4218-a7af-21c023a71ab0" autoIncrement="false" defaultValue="" name="contact_title" nullable="1" physicalName="contact_title" precision="30" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
        <remarks></remarks>
       </column>
-      <column id="COL11" populated="true" UUID="675f952d-371a-4304-a9c5-3762f2534b74" autoIncrement="false" name="address" nullable="1" physicalName="address" precision="47" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
+      <column id="COL11" populated="true" UUID="675f952d-371a-4304-a9c5-3762f2534b74" autoIncrement="false" defaultValue="" name="address" nullable="1" physicalName="address" precision="47" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
        <remarks></remarks>
       </column>
-      <column id="COL12" populated="true" UUID="c9c54898-32ad-4976-9658-983fbf2e3dd3" autoIncrement="false" name="city" nullable="1" physicalName="city" precision="15" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
+      <column id="COL12" populated="true" UUID="c9c54898-32ad-4976-9658-983fbf2e3dd3" autoIncrement="false" defaultValue="" name="city" nullable="1" physicalName="city" precision="15" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
        <remarks></remarks>
       </column>
-      <column id="COL13" populated="true" UUID="bcaaff84-320c-4061-b96f-750a65e6907b" autoIncrement="false" name="region" nullable="1" physicalName="region" precision="13" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
+      <column id="COL13" populated="true" UUID="bcaaff84-320c-4061-b96f-750a65e6907b" autoIncrement="false" defaultValue="" name="region" nullable="1" physicalName="region" precision="13" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
        <remarks></remarks>
       </column>
-      <column id="COL14" populated="true" UUID="14affd95-2c0d-4d84-b463-5131512ccdd1" autoIncrement="false" name="postal_code" nullable="1" physicalName="postal_code" precision="9" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
+      <column id="COL14" populated="true" UUID="14affd95-2c0d-4d84-b463-5131512ccdd1" autoIncrement="false" defaultValue="" name="postal_code" nullable="1" physicalName="postal_code" precision="9" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
        <remarks></remarks>
       </column>
-      <column id="COL15" populated="true" UUID="8e1f4341-8830-4272-b102-8ed26bc4de9d" autoIncrement="false" name="country" nullable="1" physicalName="country" precision="11" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
+      <column id="COL15" populated="true" UUID="8e1f4341-8830-4272-b102-8ed26bc4de9d" autoIncrement="false" defaultValue="" name="country" nullable="1" physicalName="country" precision="11" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
        <remarks></remarks>
       </column>
-      <column id="COL16" populated="true" UUID="ee54d8d1-7bf9-434f-a6be-2bcbcc2e6c72" autoIncrement="false" name="phone" nullable="1" physicalName="phone" precision="17" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
+      <column id="COL16" populated="true" UUID="ee54d8d1-7bf9-434f-a6be-2bcbcc2e6c72" autoIncrement="false" defaultValue="" name="phone" nullable="1" physicalName="phone" precision="17" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
        <remarks></remarks>
       </column>
-      <column id="COL17" populated="true" UUID="6ad68736-5ba5-45b6-8e9d-ced187da2631" autoIncrement="false" name="fax" nullable="1" physicalName="fax" precision="17" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
+      <column id="COL17" populated="true" UUID="6ad68736-5ba5-45b6-8e9d-ced187da2631" autoIncrement="false" defaultValue="" name="fax" nullable="1" physicalName="fax" precision="17" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
        <remarks></remarks>
       </column>
       </folder>
@@ -82,58 +82,58 @@
     <table id="TAB19" populated="true" UUID="89b3f366-189f-4b79-afc0-d3b91c7520a0" name="st_employee" objectType="TABLE" physicalName="st_employee" >
      <remarks></remarks>
      <folder id="FOLTAB191" populated="true" name="Columns" physicalName="Columns" type="1">
-      <column id="COL20" populated="true" UUID="195167fb-39c0-4679-8c68-0bced3215793" autoIncrement="false" name="employee_id" nullable="1" physicalName="employee_id" precision="19" referenceCount="1" scale="0" sourceDataTypeName="BIGINT" type="-5" >
+      <column id="COL20" populated="true" UUID="195167fb-39c0-4679-8c68-0bced3215793" autoIncrement="false" defaultValue="" name="employee_id" nullable="1" physicalName="employee_id" precision="19" referenceCount="1" scale="0" sourceDataTypeName="BIGINT" type="-5" >
        <remarks></remarks>
       </column>
-      <column id="COL21" populated="true" UUID="9d4ba240-1d17-42a6-967b-b5814279b107" autoIncrement="false" name="last_name" nullable="1" physicalName="last_name" precision="9" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
+      <column id="COL21" populated="true" UUID="9d4ba240-1d17-42a6-967b-b5814279b107" autoIncrement="false" defaultValue="" name="last_name" nullable="1" physicalName="last_name" precision="9" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
        <remarks></remarks>
       </column>
-      <column id="COL22" populated="true" UUID="3af1cd0c-aa06-431c-b6ed-d9b498b59215" autoIncrement="false" name="first_name" nullable="1" physicalName="first_name" precision="8" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
+      <column id="COL22" populated="true" UUID="3af1cd0c-aa06-431c-b6ed-d9b498b59215" autoIncrement="false" defaultValue="" name="first_name" nullable="1" physicalName="first_name" precision="8" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
        <remarks></remarks>
       </column>
-      <column id="COL23" populated="true" UUID="4b79598a-be51-440e-9b52-8e0a9e13d587" autoIncrement="false" name="title" nullable="1" physicalName="title" precision="24" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
+      <column id="COL23" populated="true" UUID="4b79598a-be51-440e-9b52-8e0a9e13d587" autoIncrement="false" defaultValue="" name="title" nullable="1" physicalName="title" precision="24" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
        <remarks></remarks>
       </column>
-      <column id="COL24" populated="true" UUID="c2aaf58e-3ee0-4ec7-8927-a1a9becb271c" autoIncrement="false" name="title_of_courtesy" nullable="1" physicalName="title_of_courtesy" precision="4" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
+      <column id="COL24" populated="true" UUID="c2aaf58e-3ee0-4ec7-8927-a1a9becb271c" autoIncrement="false" defaultValue="" name="title_of_courtesy" nullable="1" physicalName="title_of_courtesy" precision="4" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
        <remarks></remarks>
       </column>
-      <column id="COL25" populated="true" UUID="5b1e86dc-f85d-4cdc-9234-e6c24af63150" autoIncrement="false" name="birth_date" nullable="1" physicalName="birth_date" precision="19" referenceCount="1" scale="0" sourceDataTypeName="DATETIME" type="93" >
+      <column id="COL25" populated="true" UUID="5b1e86dc-f85d-4cdc-9234-e6c24af63150" autoIncrement="false" defaultValue="" name="birth_date" nullable="1" physicalName="birth_date" precision="19" referenceCount="1" scale="0" sourceDataTypeName="DATETIME" type="93" >
        <remarks></remarks>
       </column>
-      <column id="COL26" populated="true" UUID="63e86f0c-00d0-4953-b07a-ebf625d1be62" autoIncrement="false" name="hire_date" nullable="1" physicalName="hire_date" precision="19" referenceCount="1" scale="0" sourceDataTypeName="DATETIME" type="93" >
+      <column id="COL26" populated="true" UUID="63e86f0c-00d0-4953-b07a-ebf625d1be62" autoIncrement="false" defaultValue="" name="hire_date" nullable="1" physicalName="hire_date" precision="19" referenceCount="1" scale="0" sourceDataTypeName="DATETIME" type="93" >
        <remarks></remarks>
       </column>
-      <column id="COL27" populated="true" UUID="d3b1c5e5-1011-45c8-bc6c-7584cf375a83" autoIncrement="false" name="address" nullable="1" physicalName="address" precision="30" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
+      <column id="COL27" populated="true" UUID="d3b1c5e5-1011-45c8-bc6c-7584cf375a83" autoIncrement="false" defaultValue="" name="address" nullable="1" physicalName="address" precision="30" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
        <remarks></remarks>
       </column>
-      <column id="COL28" populated="true" UUID="f377820f-ed70-484c-8588-6b33a90b5fc3" autoIncrement="false" name="city" nullable="1" physicalName="city" precision="8" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
+      <column id="COL28" populated="true" UUID="f377820f-ed70-484c-8588-6b33a90b5fc3" autoIncrement="false" defaultValue="" name="city" nullable="1" physicalName="city" precision="8" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
        <remarks></remarks>
       </column>
-      <column id="COL29" populated="true" UUID="c43a27b7-43c1-48db-8591-b00337febded" autoIncrement="false" name="region" nullable="1" physicalName="region" precision="2" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
+      <column id="COL29" populated="true" UUID="c43a27b7-43c1-48db-8591-b00337febded" autoIncrement="false" defaultValue="" name="region" nullable="1" physicalName="region" precision="2" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
        <remarks></remarks>
       </column>
-      <column id="COL30" populated="true" UUID="b1d81064-2c45-4e7d-bc91-bf528c990857" autoIncrement="false" name="postal_code" nullable="1" physicalName="postal_code" precision="7" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
+      <column id="COL30" populated="true" UUID="b1d81064-2c45-4e7d-bc91-bf528c990857" autoIncrement="false" defaultValue="" name="postal_code" nullable="1" physicalName="postal_code" precision="7" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
        <remarks></remarks>
       </column>
-      <column id="COL31" populated="true" UUID="886acb38-b7ee-4ec2-a230-109914c4747f" autoIncrement="false" name="country" nullable="1" physicalName="country" precision="3" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
+      <column id="COL31" populated="true" UUID="886acb38-b7ee-4ec2-a230-109914c4747f" autoIncrement="false" defaultValue="" name="country" nullable="1" physicalName="country" precision="3" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
        <remarks></remarks>
       </column>
-      <column id="COL32" populated="true" UUID="de5491a2-f4f4-4854-8e1c-ac0e3b84ce6c" autoIncrement="false" name="home_phone" nullable="1" physicalName="home_phone" precision="14" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
+      <column id="COL32" populated="true" UUID="de5491a2-f4f4-4854-8e1c-ac0e3b84ce6c" autoIncrement="false" defaultValue="" name="home_phone" nullable="1" physicalName="home_phone" precision="14" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
        <remarks></remarks>
       </column>
-      <column id="COL33" populated="true" UUID="98c4d90e-b30c-4fb8-bfbb-f86ba23b8500" autoIncrement="false" name="extension" nullable="1" physicalName="extension" precision="19" referenceCount="1" scale="0" sourceDataTypeName="BIGINT" type="-5" >
+      <column id="COL33" populated="true" UUID="98c4d90e-b30c-4fb8-bfbb-f86ba23b8500" autoIncrement="false" defaultValue="" name="extension" nullable="1" physicalName="extension" precision="19" referenceCount="1" scale="0" sourceDataTypeName="BIGINT" type="-5" >
        <remarks></remarks>
       </column>
-      <column id="COL34" populated="true" UUID="8a981e51-dfde-4404-a6ce-231704f43947" autoIncrement="false" name="photo" nullable="1" physicalName="photo" precision="3" referenceCount="1" scale="0" sourceDataTypeName="TINYINT" type="-6" >
+      <column id="COL34" populated="true" UUID="8a981e51-dfde-4404-a6ce-231704f43947" autoIncrement="false" defaultValue="" name="photo" nullable="1" physicalName="photo" precision="3" referenceCount="1" scale="0" sourceDataTypeName="TINYINT" type="-6" >
        <remarks></remarks>
       </column>
-      <column id="COL35" populated="true" UUID="e968c148-cc82-430b-89a6-da9baa76d2ea" autoIncrement="false" name="notes" nullable="1" physicalName="notes" precision="65535" referenceCount="1" scale="0" sourceDataTypeName="TEXT" type="-1" >
+      <column id="COL35" populated="true" UUID="e968c148-cc82-430b-89a6-da9baa76d2ea" autoIncrement="false" defaultValue="" name="notes" nullable="1" physicalName="notes" precision="65535" referenceCount="1" scale="0" sourceDataTypeName="TEXT" type="-1" >
        <remarks></remarks>
       </column>
-      <column id="COL36" populated="true" UUID="4d29b37a-2b1c-4697-abb4-dcbd60701b92" autoIncrement="false" name="reports_to" nullable="1" physicalName="reports_to" precision="19" referenceCount="1" scale="0" sourceDataTypeName="BIGINT" type="-5" >
+      <column id="COL36" populated="true" UUID="4d29b37a-2b1c-4697-abb4-dcbd60701b92" autoIncrement="false" defaultValue="" name="reports_to" nullable="1" physicalName="reports_to" precision="19" referenceCount="1" scale="0" sourceDataTypeName="BIGINT" type="-5" >
        <remarks></remarks>
       </column>
-      <column id="COL37" populated="true" UUID="aef09965-d1a1-49ba-8dd5-4b4af2875b8d" autoIncrement="false" name="photo_path" nullable="1" physicalName="photo_path" precision="38" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
+      <column id="COL37" populated="true" UUID="aef09965-d1a1-49ba-8dd5-4b4af2875b8d" autoIncrement="false" defaultValue="" name="photo_path" nullable="1" physicalName="photo_path" precision="38" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
        <remarks></remarks>
       </column>
       </folder>
@@ -156,19 +156,19 @@
     <table id="TAB41" populated="true" UUID="7c673cf2-74c6-42cf-ac8b-0aedf21fd7dc" name="st_order_details" objectType="TABLE" physicalName="st_order_details" >
      <remarks></remarks>
      <folder id="FOLTAB411" populated="true" name="Columns" physicalName="Columns" type="1">
-      <column id="COL42" populated="true" UUID="a0f38ad3-119d-469c-9193-432cf5295e5a" autoIncrement="false" name="order_id" nullable="1" physicalName="order_id" precision="19" referenceCount="1" scale="0" sourceDataTypeName="BIGINT" type="-5" >
+      <column id="COL42" populated="true" UUID="a0f38ad3-119d-469c-9193-432cf5295e5a" autoIncrement="false" defaultValue="" name="order_id" nullable="1" physicalName="order_id" precision="19" referenceCount="1" scale="0" sourceDataTypeName="BIGINT" type="-5" >
        <remarks></remarks>
       </column>
-      <column id="COL43" populated="true" UUID="841e8503-b6cf-4092-a288-1f47a8a1a08c" autoIncrement="false" name="product_id" nullable="1" physicalName="product_id" precision="19" referenceCount="1" scale="0" sourceDataTypeName="BIGINT" type="-5" >
+      <column id="COL43" populated="true" UUID="841e8503-b6cf-4092-a288-1f47a8a1a08c" autoIncrement="false" defaultValue="" name="product_id" nullable="1" physicalName="product_id" precision="19" referenceCount="1" scale="0" sourceDataTypeName="BIGINT" type="-5" >
        <remarks></remarks>
       </column>
-      <column id="COL44" populated="true" UUID="cb970967-9960-4a10-813f-d9825485de39" autoIncrement="false" name="unit_price" nullable="1" physicalName="unit_price" precision="22" referenceCount="1" scale="0" sourceDataTypeName="DOUBLE" type="8" >
+      <column id="COL44" populated="true" UUID="cb970967-9960-4a10-813f-d9825485de39" autoIncrement="false" defaultValue="" name="unit_price" nullable="1" physicalName="unit_price" precision="22" referenceCount="1" scale="0" sourceDataTypeName="DOUBLE" type="8" >
        <remarks></remarks>
       </column>
-      <column id="COL45" populated="true" UUID="117fcb42-5e00-4fde-b89e-d0e5b1876aa3" autoIncrement="false" name="quantity" nullable="1" physicalName="quantity" precision="19" referenceCount="1" scale="0" sourceDataTypeName="BIGINT" type="-5" >
+      <column id="COL45" populated="true" UUID="117fcb42-5e00-4fde-b89e-d0e5b1876aa3" autoIncrement="false" defaultValue="" name="quantity" nullable="1" physicalName="quantity" precision="19" referenceCount="1" scale="0" sourceDataTypeName="BIGINT" type="-5" >
        <remarks></remarks>
       </column>
-      <column id="COL46" populated="true" UUID="cb2f53a7-51d1-4513-9bbc-f698f8947e18" autoIncrement="false" name="discount" nullable="1" physicalName="discount" precision="22" referenceCount="1" scale="0" sourceDataTypeName="DOUBLE" type="8" >
+      <column id="COL46" populated="true" UUID="cb2f53a7-51d1-4513-9bbc-f698f8947e18" autoIncrement="false" defaultValue="" name="discount" nullable="1" physicalName="discount" precision="22" referenceCount="1" scale="0" sourceDataTypeName="DOUBLE" type="8" >
        <remarks></remarks>
       </column>
       </folder>
@@ -184,46 +184,46 @@
     <table id="TAB48" populated="true" UUID="57f0d931-b717-4308-8132-faaa86cf7c00" name="st_orders" objectType="TABLE" physicalName="st_orders" >
      <remarks></remarks>
      <folder id="FOLTAB481" populated="true" name="Columns" physicalName="Columns" type="1">
-      <column id="COL49" populated="true" UUID="115f79fb-1472-47d1-a008-f78d7ac8f5af" autoIncrement="false" name="order_id" nullable="1" physicalName="order_id" precision="19" referenceCount="1" scale="0" sourceDataTypeName="BIGINT" type="-5" >
+      <column id="COL49" populated="true" UUID="115f79fb-1472-47d1-a008-f78d7ac8f5af" autoIncrement="false" defaultValue="" name="order_id" nullable="1" physicalName="order_id" precision="19" referenceCount="1" scale="0" sourceDataTypeName="BIGINT" type="-5" >
        <remarks></remarks>
       </column>
-      <column id="COL50" populated="true" UUID="c1c43b23-c1e9-4d9e-a4d5-49de148743f8" autoIncrement="false" name="customer_id" nullable="1" physicalName="customer_id" precision="7" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
+      <column id="COL50" populated="true" UUID="c1c43b23-c1e9-4d9e-a4d5-49de148743f8" autoIncrement="false" defaultValue="" name="customer_id" nullable="1" physicalName="customer_id" precision="7" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
        <remarks></remarks>
       </column>
-      <column id="COL51" populated="true" UUID="2cca513b-7f29-4c73-898c-e42ddb17d7b8" autoIncrement="false" name="employee_id" nullable="1" physicalName="employee_id" precision="19" referenceCount="1" scale="0" sourceDataTypeName="BIGINT" type="-5" >
+      <column id="COL51" populated="true" UUID="2cca513b-7f29-4c73-898c-e42ddb17d7b8" autoIncrement="false" defaultValue="" name="employee_id" nullable="1" physicalName="employee_id" precision="19" referenceCount="1" scale="0" sourceDataTypeName="BIGINT" type="-5" >
        <remarks></remarks>
       </column>
-      <column id="COL52" populated="true" UUID="6a51abc6-0eb3-4082-956d-1e83a7356b3c" autoIncrement="false" name="order_date" nullable="1" physicalName="order_date" precision="12" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
+      <column id="COL52" populated="true" UUID="6a51abc6-0eb3-4082-956d-1e83a7356b3c" autoIncrement="false" defaultValue="" name="order_date" nullable="1" physicalName="order_date" precision="12" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
        <remarks></remarks>
       </column>
-      <column id="COL53" populated="true" UUID="1c01bc9d-416c-42cd-8e12-f5ba0d19989b" autoIncrement="false" name="required_date" nullable="1" physicalName="required_date" precision="12" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
+      <column id="COL53" populated="true" UUID="1c01bc9d-416c-42cd-8e12-f5ba0d19989b" autoIncrement="false" defaultValue="" name="required_date" nullable="1" physicalName="required_date" precision="12" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
        <remarks></remarks>
       </column>
-      <column id="COL54" populated="true" UUID="3c48b42b-0867-4472-be47-bdca0db50648" autoIncrement="false" name="shipped_date" nullable="1" physicalName="shipped_date" precision="12" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
+      <column id="COL54" populated="true" UUID="3c48b42b-0867-4472-be47-bdca0db50648" autoIncrement="false" defaultValue="" name="shipped_date" nullable="1" physicalName="shipped_date" precision="12" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
        <remarks></remarks>
       </column>
-      <column id="COL55" populated="true" UUID="63e9a700-3b92-46f7-a8f6-db47fbfb232d" autoIncrement="false" name="ship_via" nullable="1" physicalName="ship_via" precision="19" referenceCount="1" scale="0" sourceDataTypeName="BIGINT" type="-5" >
+      <column id="COL55" populated="true" UUID="63e9a700-3b92-46f7-a8f6-db47fbfb232d" autoIncrement="false" defaultValue="" name="ship_via" nullable="1" physicalName="ship_via" precision="19" referenceCount="1" scale="0" sourceDataTypeName="BIGINT" type="-5" >
        <remarks></remarks>
       </column>
-      <column id="COL56" populated="true" UUID="22af679a-ded2-4dcb-9d79-0b5a1854f042" autoIncrement="false" name="freight" nullable="1" physicalName="freight" precision="22" referenceCount="1" scale="0" sourceDataTypeName="DOUBLE" type="8" >
+      <column id="COL56" populated="true" UUID="22af679a-ded2-4dcb-9d79-0b5a1854f042" autoIncrement="false" defaultValue="" name="freight" nullable="1" physicalName="freight" precision="22" referenceCount="1" scale="0" sourceDataTypeName="DOUBLE" type="8" >
        <remarks></remarks>
       </column>
-      <column id="COL57" populated="true" UUID="d48a6b2a-890f-40a8-8b80-658fe655a433" autoIncrement="false" name="ship_name" nullable="1" physicalName="ship_name" precision="36" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
+      <column id="COL57" populated="true" UUID="d48a6b2a-890f-40a8-8b80-658fe655a433" autoIncrement="false" defaultValue="" name="ship_name" nullable="1" physicalName="ship_name" precision="36" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
        <remarks></remarks>
       </column>
-      <column id="COL58" populated="true" UUID="9c7953f3-1e47-41b6-b663-f6a96d85f30b" autoIncrement="false" name="ship_address" nullable="1" physicalName="ship_address" precision="48" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
+      <column id="COL58" populated="true" UUID="9c7953f3-1e47-41b6-b663-f6a96d85f30b" autoIncrement="false" defaultValue="" name="ship_address" nullable="1" physicalName="ship_address" precision="48" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
        <remarks></remarks>
       </column>
-      <column id="COL59" populated="true" UUID="b41ae831-93aa-426e-ab77-1cf70a729547" autoIncrement="false" name="ship_city" nullable="1" physicalName="ship_city" precision="17" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
+      <column id="COL59" populated="true" UUID="b41ae831-93aa-426e-ab77-1cf70a729547" autoIncrement="false" defaultValue="" name="ship_city" nullable="1" physicalName="ship_city" precision="17" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
        <remarks></remarks>
       </column>
-      <column id="COL60" populated="true" UUID="97f22f41-6ce3-4589-bdf8-c4dd142717be" autoIncrement="false" name="ship_region" nullable="1" physicalName="ship_region" precision="15" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
+      <column id="COL60" populated="true" UUID="97f22f41-6ce3-4589-bdf8-c4dd142717be" autoIncrement="false" defaultValue="" name="ship_region" nullable="1" physicalName="ship_region" precision="15" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
        <remarks></remarks>
       </column>
-      <column id="COL61" populated="true" UUID="84b658fb-30c3-44d7-9e7d-5fbca084a9fe" autoIncrement="false" name="ship_postal_code" nullable="1" physicalName="ship_postal_code" precision="11" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
+      <column id="COL61" populated="true" UUID="84b658fb-30c3-44d7-9e7d-5fbca084a9fe" autoIncrement="false" defaultValue="" name="ship_postal_code" nullable="1" physicalName="ship_postal_code" precision="11" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
        <remarks></remarks>
       </column>
-      <column id="COL62" populated="true" UUID="57ae6380-e767-4cac-964a-64642ac05956" autoIncrement="false" name="ship_country" nullable="1" physicalName="ship_country" precision="18" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
+      <column id="COL62" populated="true" UUID="57ae6380-e767-4cac-964a-64642ac05956" autoIncrement="false" defaultValue="" name="ship_country" nullable="1" physicalName="ship_country" precision="18" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
        <remarks></remarks>
       </column>
       </folder>
@@ -239,34 +239,34 @@
     <table id="TAB64" populated="true" UUID="294b8b94-f0ed-4e77-8eab-9c73702cb394" name="st_products" objectType="TABLE" physicalName="st_products" >
      <remarks></remarks>
      <folder id="FOLTAB641" populated="true" name="Columns" physicalName="Columns" type="1">
-      <column id="COL65" populated="true" UUID="51c7c95d-e3ab-49d2-a7a7-30aa886bc92a" autoIncrement="false" name="product_id" nullable="1" physicalName="product_id" precision="19" referenceCount="1" scale="0" sourceDataTypeName="BIGINT" type="-5" >
+      <column id="COL65" populated="true" UUID="51c7c95d-e3ab-49d2-a7a7-30aa886bc92a" autoIncrement="false" defaultValue="" name="product_id" nullable="1" physicalName="product_id" precision="19" referenceCount="1" scale="0" sourceDataTypeName="BIGINT" type="-5" >
        <remarks></remarks>
       </column>
-      <column id="COL66" populated="true" UUID="c4bea04b-baa4-4c70-8566-43de04b28f91" autoIncrement="false" name="product_name" nullable="1" physicalName="product_name" precision="33" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
+      <column id="COL66" populated="true" UUID="c4bea04b-baa4-4c70-8566-43de04b28f91" autoIncrement="false" defaultValue="" name="product_name" nullable="1" physicalName="product_name" precision="33" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
        <remarks></remarks>
       </column>
-      <column id="COL67" populated="true" UUID="e8542e17-9939-4c5a-9229-91d25b59e551" autoIncrement="false" name="supplier_id" nullable="1" physicalName="supplier_id" precision="19" referenceCount="1" scale="0" sourceDataTypeName="BIGINT" type="-5" >
+      <column id="COL67" populated="true" UUID="e8542e17-9939-4c5a-9229-91d25b59e551" autoIncrement="false" defaultValue="" name="supplier_id" nullable="1" physicalName="supplier_id" precision="19" referenceCount="1" scale="0" sourceDataTypeName="BIGINT" type="-5" >
        <remarks></remarks>
       </column>
-      <column id="COL68" populated="true" UUID="6853d596-5d89-4d2f-948e-995de11d847c" autoIncrement="false" name="category_id" nullable="1" physicalName="category_id" precision="19" referenceCount="1" scale="0" sourceDataTypeName="BIGINT" type="-5" >
+      <column id="COL68" populated="true" UUID="6853d596-5d89-4d2f-948e-995de11d847c" autoIncrement="false" defaultValue="" name="category_id" nullable="1" physicalName="category_id" precision="19" referenceCount="1" scale="0" sourceDataTypeName="BIGINT" type="-5" >
        <remarks></remarks>
       </column>
-      <column id="COL69" populated="true" UUID="c2e62bd5-97ce-4cc8-9807-73f22f3fdca2" autoIncrement="false" name="quantity_per_unit" nullable="1" physicalName="quantity_per_unit" precision="20" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
+      <column id="COL69" populated="true" UUID="c2e62bd5-97ce-4cc8-9807-73f22f3fdca2" autoIncrement="false" defaultValue="" name="quantity_per_unit" nullable="1" physicalName="quantity_per_unit" precision="20" referenceCount="1" scale="0" sourceDataTypeName="VARCHAR" type="12" >
        <remarks></remarks>
       </column>
-      <column id="COL70" populated="true" UUID="86e4fe65-a038-41cc-9e0d-83b62298d9ef" autoIncrement="false" name="unit_price" nullable="1" physicalName="unit_price" precision="22" referenceCount="1" scale="0" sourceDataTypeName="DOUBLE" type="8" >
+      <column id="COL70" populated="true" UUID="86e4fe65-a038-41cc-9e0d-83b62298d9ef" autoIncrement="false" defaultValue="" name="unit_price" nullable="1" physicalName="unit_price" precision="22" referenceCount="1" scale="0" sourceDataTypeName="DOUBLE" type="8" >
        <remarks></remarks>
       </column>
-      <column id="COL71" populated="true" UUID="d44e19e8-7052-4c0b-bd6f-29e05634d65a" autoIncrement="false" name="units_in_stock" nullable="1" physicalName="units_in_stock" precision="19" referenceCount="1" scale="0" sourceDataTypeName="BIGINT" type="-5" >
+      <column id="COL71" populated="true" UUID="d44e19e8-7052-4c0b-bd6f-29e05634d65a" autoIncrement="false" defaultValue="" name="units_in_stock" nullable="1" physicalName="units_in_stock" precision="19" referenceCount="1" scale="0" sourceDataTypeName="BIGINT" type="-5" >
        <remarks></remarks>
       </column>
-      <column id="COL72" populated="true" UUID="ed75cc10-1e45-4c76-b44a-1c04ffd9187c" autoIncrement="false" name="units_on_order" nullable="1" physicalName="units_on_order" precision="19" referenceCount="1" scale="0" sourceDataTypeName="BIGINT" type="-5" >
+      <column id="COL72" populated="true" UUID="ed75cc10-1e45-4c76-b44a-1c04ffd9187c" autoIncrement="false" defaultValue="" name="units_on_order" nullable="1" physicalName="units_on_order" precision="19" referenceCount="1" scale="0" sourceDataTypeName="BIGINT" type="-5" >
        <remarks></remarks>
       </column>
-      <column id="COL73" populated="true" UUID="2de01901-04ec-4a5e-aa3c-b7f329cc90a1" autoIncrement="false" name="reorder_level" nullable="1" physicalName="reorder_level" precision="19" referenceCount="1" scale="0" sourceDataTypeName="BIGINT" type="-5" >
+      <column id="COL73" populated="true" UUID="2de01901-04ec-4a5e-aa3c-b7f329cc90a1" autoIncrement="false" defaultValue="" name="reorder_level" nullable="1" physicalName="reorder_level" precision="19" referenceCount="1" scale="0" sourceDataTypeName="BIGINT" type="-5" >
        <remarks></remarks>
       </column>
-      <column id="COL74" populated="true" UUID="220d9170-5be3-40a6-86d8-6f1a282aafd5" autoIncrement="false" name="discontinued" nullable="1" physicalName="discontinued" precision="19" referenceCount="1" scale="0" sourceDataTypeName="BIGINT" type="-5" >
+      <column id="COL74" populated="true" UUID="220d9170-5be3-40a6-86d8-6f1a282aafd5" autoIncrement="false" defaultValue="" name="discontinued" nullable="1" physicalName="discontinued" precision="19" referenceCount="1" scale="0" sourceDataTypeName="BIGINT" type="-5" >
        <remarks></remarks>
       </column>
       </folder>
@@ -335,37 +335,40 @@
   <table id="TAB93" populated="true" UUID="e4840af1-ef2d-4f2a-a435-03d7fdde5109" name="dim_customers" objectType="TABLE" physicalName="dim_customers" >
    <remarks></remarks>
    <folder id="FOLTAB931" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL94" populated="true" UUID="dafd75f9-f28c-4f82-8058-41684df74658" autoIncrement="false" defaultValue="" name="customer_id" nullable="1" physicalName="customer_id" precision="5" referenceCount="1" scale="0" source-column-ref="COL7" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL94" populated="true" UUID="093217ad-e2ab-4f8f-86d5-43622267dce4" autoIncrement="true" autoIncrementSequenceName="dim_customers_sk_customer_seq" defaultValue="" name="sk_customer" nullable="0" physicalName="sk_customer" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
-    <column id="COL95" populated="true" UUID="48ca0cca-9d1d-41b0-952e-f85c6d539b69" autoIncrement="false" defaultValue="" name="company_name" nullable="1" physicalName="company_name" precision="36" referenceCount="1" scale="0" source-column-ref="COL8" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL95" populated="true" UUID="dafd75f9-f28c-4f82-8058-41684df74658" autoIncrement="false" defaultValue="" name="customer_id" nullable="0" physicalName="customer_id" precision="5" referenceCount="1" scale="0" source-column-ref="COL7" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL96" populated="true" UUID="2a7f20a7-41d0-44ef-83ba-567bb39635b9" autoIncrement="false" defaultValue="" name="contact_name" nullable="1" physicalName="contact_name" precision="23" referenceCount="1" scale="0" source-column-ref="COL9" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL96" populated="true" UUID="48ca0cca-9d1d-41b0-952e-f85c6d539b69" autoIncrement="false" defaultValue="" name="company_name" nullable="0" physicalName="company_name" precision="36" referenceCount="1" scale="0" source-column-ref="COL8" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL97" populated="true" UUID="aaaef97f-8d66-4856-954b-67292e1430ff" autoIncrement="false" defaultValue="" name="contact_title" nullable="1" physicalName="contact_title" precision="30" referenceCount="1" scale="0" source-column-ref="COL10" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL97" populated="true" UUID="2a7f20a7-41d0-44ef-83ba-567bb39635b9" autoIncrement="false" defaultValue="" name="contact_name" nullable="1" physicalName="contact_name" precision="23" referenceCount="1" scale="0" source-column-ref="COL9" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL98" populated="true" UUID="1b65ca9a-05af-41e2-853f-ec1e68952053" autoIncrement="false" defaultValue="" name="address" nullable="1" physicalName="address" precision="47" referenceCount="1" scale="0" source-column-ref="COL11" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL98" populated="true" UUID="aaaef97f-8d66-4856-954b-67292e1430ff" autoIncrement="false" defaultValue="" name="contact_title" nullable="1" physicalName="contact_title" precision="30" referenceCount="1" scale="0" source-column-ref="COL10" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL99" populated="true" UUID="d9406670-3517-40de-9afe-05894c5e1d5a" autoIncrement="false" defaultValue="" name="city" nullable="1" physicalName="city" precision="15" referenceCount="1" scale="0" source-column-ref="COL12" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL99" populated="true" UUID="1b65ca9a-05af-41e2-853f-ec1e68952053" autoIncrement="false" defaultValue="" name="address" nullable="1" physicalName="address" precision="47" referenceCount="1" scale="0" source-column-ref="COL11" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL100" populated="true" UUID="9b1b3f80-5035-4885-822e-d8112c9577a5" autoIncrement="false" defaultValue="" name="region" nullable="1" physicalName="region" precision="13" referenceCount="1" scale="0" source-column-ref="COL13" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL100" populated="true" UUID="d9406670-3517-40de-9afe-05894c5e1d5a" autoIncrement="false" defaultValue="" name="city" nullable="1" physicalName="city" precision="15" referenceCount="1" scale="0" source-column-ref="COL12" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL101" populated="true" UUID="31661a9e-5a3d-4f7f-839e-0ef24439748a" autoIncrement="false" defaultValue="" name="postal_code" nullable="1" physicalName="postal_code" precision="9" referenceCount="1" scale="0" source-column-ref="COL14" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL101" populated="true" UUID="9b1b3f80-5035-4885-822e-d8112c9577a5" autoIncrement="false" defaultValue="" name="region" nullable="1" physicalName="region" precision="13" referenceCount="1" scale="0" source-column-ref="COL13" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL102" populated="true" UUID="3b4676f8-63bd-43c6-9956-bfe7b9b47f24" autoIncrement="false" defaultValue="" name="country" nullable="1" physicalName="country" precision="11" referenceCount="1" scale="0" source-column-ref="COL15" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL102" populated="true" UUID="31661a9e-5a3d-4f7f-839e-0ef24439748a" autoIncrement="false" defaultValue="" name="postal_code" nullable="1" physicalName="postal_code" precision="30" referenceCount="1" scale="0" source-column-ref="COL14" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL103" populated="true" UUID="42c404c0-e768-48fa-97b3-fff82a2912fa" autoIncrement="false" defaultValue="" name="phone" nullable="1" physicalName="phone" precision="17" referenceCount="1" scale="0" source-column-ref="COL16" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL103" populated="true" UUID="3b4676f8-63bd-43c6-9956-bfe7b9b47f24" autoIncrement="false" defaultValue="" name="country" nullable="1" physicalName="country" precision="20" referenceCount="1" scale="0" source-column-ref="COL15" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL104" populated="true" UUID="ec1b6b24-bc63-42de-8e68-89d4e0e13a92" autoIncrement="false" defaultValue="" name="fax" nullable="1" physicalName="fax" precision="17" referenceCount="1" scale="0" source-column-ref="COL17" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL104" populated="true" UUID="42c404c0-e768-48fa-97b3-fff82a2912fa" autoIncrement="false" defaultValue="" name="phone" nullable="1" physicalName="phone" precision="17" referenceCount="1" scale="0" source-column-ref="COL16" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL105" populated="true" UUID="ec1b6b24-bc63-42de-8e68-89d4e0e13a92" autoIncrement="false" defaultValue="" name="fax" nullable="1" physicalName="fax" precision="17" referenceCount="1" scale="0" source-column-ref="COL17" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
     </folder>
@@ -374,184 +377,208 @@
     <folder id="FOLTAB932" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
     <folder id="FOLTAB934" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX105" populated="true" UUID="de095981-2387-4667-8acc-47ca7925baf7" clustered="false" name="dim_customers_pk" physicalName="st_customers_pk" primaryKeyIndex="true" unique="false" >
+    <index id="IDX106" populated="true" UUID="de095981-2387-4667-8acc-47ca7925baf7" clustered="false" name="dim_customers_pk" physicalName="st_customers_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC107" populated="true" UUID="c278789b-f8d8-46b5-8bfa-9a26db340040" ascendingOrDescending="UNSPECIFIED" column-ref="COL94" name="sk_customer" physicalName="sk_customer" />
     </index>
    </folder>
   </table>
-  <table id="TAB106" populated="true" UUID="c3945174-77fb-45e1-b829-b2ed75c31001" name="dim_products" objectType="TABLE" physicalName="dim_products" >
+  <table id="TAB108" populated="true" UUID="c3945174-77fb-45e1-b829-b2ed75c31001" name="dim_products" objectType="TABLE" physicalName="dim_products" >
    <remarks></remarks>
-   <folder id="FOLTAB1061" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL107" populated="true" UUID="d0ff6087-402c-460b-b8b4-7ffd3cecd157" autoIncrement="false" defaultValue="" name="product_id" nullable="1" physicalName="product_id" precision="0" referenceCount="1" scale="0" source-column-ref="COL65" sourceDataTypeName="BIGINT" type="-5" userDefinedTypeUUID="433cc8af-284d-4abb-8ef7-08ebcb34dbf1" >
+   <folder id="FOLTAB1081" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL109" populated="true" UUID="a9d67319-385c-47e1-b603-0613628ac2aa" autoIncrement="true" autoIncrementSequenceName="dim_products_sk_product_seq" defaultValue="" name="sk_product" nullable="0" physicalName="sk_product" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
-    <column id="COL108" populated="true" UUID="bcfbf346-0fc7-4703-b105-dca1e95d61e1" autoIncrement="false" defaultValue="" name="product_name" nullable="1" physicalName="product_name" precision="33" referenceCount="1" scale="0" source-column-ref="COL66" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL110" populated="true" UUID="d0ff6087-402c-460b-b8b4-7ffd3cecd157" autoIncrement="false" defaultValue="" name="product_id" nullable="1" physicalName="product_id" precision="0" referenceCount="1" scale="0" source-column-ref="COL65" sourceDataTypeName="BIGINT" type="-5" userDefinedTypeUUID="433cc8af-284d-4abb-8ef7-08ebcb34dbf1" >
      <remarks></remarks>
     </column>
-    <column id="COL109" populated="true" UUID="2bded499-a013-4ee9-b69b-861b8c29146a" autoIncrement="false" defaultValue="" name="supplier_id" nullable="1" physicalName="supplier_id" precision="0" referenceCount="1" scale="0" source-column-ref="COL67" sourceDataTypeName="BIGINT" type="-5" userDefinedTypeUUID="433cc8af-284d-4abb-8ef7-08ebcb34dbf1" >
+    <column id="COL111" populated="true" UUID="bcfbf346-0fc7-4703-b105-dca1e95d61e1" autoIncrement="false" defaultValue="" name="product_name" nullable="1" physicalName="product_name" precision="33" referenceCount="1" scale="0" source-column-ref="COL66" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL110" populated="true" UUID="f67c82aa-c844-4800-bf3c-f36a1e19709b" autoIncrement="false" defaultValue="" name="category_id" nullable="1" physicalName="category_id" precision="0" referenceCount="1" scale="0" source-column-ref="COL68" sourceDataTypeName="BIGINT" type="-5" userDefinedTypeUUID="433cc8af-284d-4abb-8ef7-08ebcb34dbf1" >
+    <column id="COL112" populated="true" UUID="2bded499-a013-4ee9-b69b-861b8c29146a" autoIncrement="false" defaultValue="" name="supplier_id" nullable="1" physicalName="supplier_id" precision="0" referenceCount="1" scale="0" source-column-ref="COL67" sourceDataTypeName="BIGINT" type="-5" userDefinedTypeUUID="433cc8af-284d-4abb-8ef7-08ebcb34dbf1" >
      <remarks></remarks>
     </column>
-    <column id="COL111" populated="true" UUID="caf330c0-4daf-4a67-8577-b2fd02abc183" autoIncrement="false" defaultValue="" name="quantity_per_unit" nullable="1" physicalName="quantity_per_unit" precision="20" referenceCount="1" scale="0" source-column-ref="COL69" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL113" populated="true" UUID="f67c82aa-c844-4800-bf3c-f36a1e19709b" autoIncrement="false" defaultValue="" name="category_id" nullable="1" physicalName="category_id" precision="0" referenceCount="1" scale="0" source-column-ref="COL68" sourceDataTypeName="BIGINT" type="-5" userDefinedTypeUUID="433cc8af-284d-4abb-8ef7-08ebcb34dbf1" >
      <remarks></remarks>
     </column>
-    <column id="COL112" populated="true" UUID="f43b7e6f-f22c-4c6b-8e44-49e0938b2b94" autoIncrement="false" defaultValue="" name="unit_price" nullable="1" physicalName="unit_price" precision="0" referenceCount="1" scale="0" source-column-ref="COL70" sourceDataTypeName="DOUBLE" type="8" userDefinedTypeUUID="4fc90970-b2e5-41dd-911c-cc605d87e7a8" >
+    <column id="COL114" populated="true" UUID="caf330c0-4daf-4a67-8577-b2fd02abc183" autoIncrement="false" defaultValue="" name="quantity_per_unit" nullable="1" physicalName="quantity_per_unit" precision="20" referenceCount="1" scale="0" source-column-ref="COL69" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL113" populated="true" UUID="df13eb6c-c285-4b75-82ad-8319d6bab784" autoIncrement="false" defaultValue="" name="units_in_stock" nullable="1" physicalName="units_in_stock" precision="0" referenceCount="1" scale="0" source-column-ref="COL71" sourceDataTypeName="BIGINT" type="-5" userDefinedTypeUUID="433cc8af-284d-4abb-8ef7-08ebcb34dbf1" >
+    <column id="COL115" populated="true" UUID="f43b7e6f-f22c-4c6b-8e44-49e0938b2b94" autoIncrement="false" defaultValue="" name="unit_price" nullable="1" physicalName="unit_price" precision="0" referenceCount="1" scale="0" source-column-ref="COL70" sourceDataTypeName="DOUBLE" type="8" userDefinedTypeUUID="4fc90970-b2e5-41dd-911c-cc605d87e7a8" >
      <remarks></remarks>
     </column>
-    <column id="COL114" populated="true" UUID="0657a614-8356-4fef-a554-75ace7d38ed9" autoIncrement="false" defaultValue="" name="units_on_order" nullable="1" physicalName="units_on_order" precision="0" referenceCount="1" scale="0" source-column-ref="COL72" sourceDataTypeName="BIGINT" type="-5" userDefinedTypeUUID="433cc8af-284d-4abb-8ef7-08ebcb34dbf1" >
+    <column id="COL116" populated="true" UUID="df13eb6c-c285-4b75-82ad-8319d6bab784" autoIncrement="false" defaultValue="" name="units_in_stock" nullable="1" physicalName="units_in_stock" precision="0" referenceCount="1" scale="0" source-column-ref="COL71" sourceDataTypeName="BIGINT" type="-5" userDefinedTypeUUID="433cc8af-284d-4abb-8ef7-08ebcb34dbf1" >
      <remarks></remarks>
     </column>
-    <column id="COL115" populated="true" UUID="e522f1c0-8ada-4038-9997-f2ba4bd63273" autoIncrement="false" defaultValue="" name="reorder_level" nullable="1" physicalName="reorder_level" precision="0" referenceCount="1" scale="0" source-column-ref="COL73" sourceDataTypeName="BIGINT" type="-5" userDefinedTypeUUID="433cc8af-284d-4abb-8ef7-08ebcb34dbf1" >
+    <column id="COL117" populated="true" UUID="0657a614-8356-4fef-a554-75ace7d38ed9" autoIncrement="false" defaultValue="" name="units_on_order" nullable="1" physicalName="units_on_order" precision="0" referenceCount="1" scale="0" source-column-ref="COL72" sourceDataTypeName="BIGINT" type="-5" userDefinedTypeUUID="433cc8af-284d-4abb-8ef7-08ebcb34dbf1" >
      <remarks></remarks>
     </column>
-    <column id="COL116" populated="true" UUID="25b869ff-3960-4131-85d0-944c3aca88d0" autoIncrement="false" defaultValue="" name="discontinued" nullable="1" physicalName="discontinued" precision="0" referenceCount="1" scale="0" source-column-ref="COL74" sourceDataTypeName="BIGINT" type="-5" userDefinedTypeUUID="433cc8af-284d-4abb-8ef7-08ebcb34dbf1" >
+    <column id="COL118" populated="true" UUID="e522f1c0-8ada-4038-9997-f2ba4bd63273" autoIncrement="false" defaultValue="" name="reorder_level" nullable="1" physicalName="reorder_level" precision="0" referenceCount="1" scale="0" source-column-ref="COL73" sourceDataTypeName="BIGINT" type="-5" userDefinedTypeUUID="433cc8af-284d-4abb-8ef7-08ebcb34dbf1" >
+     <remarks></remarks>
+    </column>
+    <column id="COL119" populated="true" UUID="25b869ff-3960-4131-85d0-944c3aca88d0" autoIncrement="false" defaultValue="" name="discontinued" nullable="1" physicalName="discontinued" precision="0" referenceCount="1" scale="0" source-column-ref="COL74" sourceDataTypeName="BIGINT" type="-5" userDefinedTypeUUID="433cc8af-284d-4abb-8ef7-08ebcb34dbf1" >
      <remarks></remarks>
     </column>
     </folder>
-    <folder id="FOLTAB1063" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    <folder id="FOLTAB1083" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
     </folder>
-    <folder id="FOLTAB1062" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    <folder id="FOLTAB1082" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
-    <folder id="FOLTAB1064" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX117" populated="true" UUID="6d160217-c4cc-4f19-8c5a-9fc3643dcece" clustered="false" name="dim_products_pk" physicalName="st_products_pk" primaryKeyIndex="true" unique="false" >
+    <folder id="FOLTAB1084" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX120" populated="true" UUID="6d160217-c4cc-4f19-8c5a-9fc3643dcece" clustered="false" name="dim_products_pk" physicalName="st_products_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC121" populated="true" UUID="1a924131-e71f-4a4f-b3ce-0846292dc71c" ascendingOrDescending="UNSPECIFIED" column-ref="COL109" name="sk_product" physicalName="sk_product" />
     </index>
    </folder>
   </table>
-  <table id="TAB118" populated="true" UUID="4b59718f-563b-4393-aa98-4dcb93de8f61" name="dim_employee" objectType="TABLE" physicalName="dim_employee" >
+  <table id="TAB122" populated="true" UUID="4b59718f-563b-4393-aa98-4dcb93de8f61" name="dim_employee" objectType="TABLE" physicalName="dim_employee" >
    <remarks></remarks>
-   <folder id="FOLTAB1181" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL119" populated="true" UUID="a8283212-499d-4839-9401-a99bcce1a35a" autoIncrement="false" defaultValue="" name="employee_id" nullable="1" physicalName="employee_id" precision="0" referenceCount="1" scale="0" source-column-ref="COL20" sourceDataTypeName="BIGINT" type="-5" userDefinedTypeUUID="433cc8af-284d-4abb-8ef7-08ebcb34dbf1" >
+   <folder id="FOLTAB1221" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL123" populated="true" UUID="b6cba498-9989-46c1-95a2-5e2b8f329c9f" autoIncrement="true" autoIncrementSequenceName="dim_employee_sk_employee_seq" defaultValue="" name="sk_employee" nullable="0" physicalName="sk_employee" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
-    <column id="COL120" populated="true" UUID="16abf0c2-9c92-446d-a96b-be68005093ec" autoIncrement="false" defaultValue="" name="last_name" nullable="1" physicalName="last_name" precision="9" referenceCount="1" scale="0" source-column-ref="COL21" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL124" populated="true" UUID="a8283212-499d-4839-9401-a99bcce1a35a" autoIncrement="false" defaultValue="" name="employee_id" nullable="1" physicalName="employee_id" precision="0" referenceCount="1" scale="0" source-column-ref="COL20" sourceDataTypeName="BIGINT" type="-5" userDefinedTypeUUID="433cc8af-284d-4abb-8ef7-08ebcb34dbf1" >
      <remarks></remarks>
     </column>
-    <column id="COL121" populated="true" UUID="b79257e1-39c1-4fe3-9320-455dd3ee4a8c" autoIncrement="false" defaultValue="" name="first_name" nullable="1" physicalName="first_name" precision="8" referenceCount="1" scale="0" source-column-ref="COL22" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL125" populated="true" UUID="16abf0c2-9c92-446d-a96b-be68005093ec" autoIncrement="false" defaultValue="" name="last_name" nullable="1" physicalName="last_name" precision="9" referenceCount="1" scale="0" source-column-ref="COL21" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL122" populated="true" UUID="a535e79b-c24b-4796-8620-d7af1ba0eed6" autoIncrement="false" defaultValue="" name="title" nullable="1" physicalName="title" precision="24" referenceCount="1" scale="0" source-column-ref="COL23" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL126" populated="true" UUID="b79257e1-39c1-4fe3-9320-455dd3ee4a8c" autoIncrement="false" defaultValue="" name="first_name" nullable="1" physicalName="first_name" precision="8" referenceCount="1" scale="0" source-column-ref="COL22" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL123" populated="true" UUID="4e9d438f-5aab-4036-bd46-6343a7ca6db9" autoIncrement="false" defaultValue="" name="title_of_courtesy" nullable="1" physicalName="title_of_courtesy" precision="4" referenceCount="1" scale="0" source-column-ref="COL24" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL127" populated="true" UUID="a535e79b-c24b-4796-8620-d7af1ba0eed6" autoIncrement="false" defaultValue="" name="title" nullable="1" physicalName="title" precision="24" referenceCount="1" scale="0" source-column-ref="COL23" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL124" populated="true" UUID="6ebd4a40-4619-4db7-9611-24bb3998defd" autoIncrement="false" defaultValue="" name="birth_date" nullable="1" physicalName="birth_date" precision="0" referenceCount="1" scale="0" source-column-ref="COL25" sourceDataTypeName="DATETIME" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+    <column id="COL128" populated="true" UUID="4e9d438f-5aab-4036-bd46-6343a7ca6db9" autoIncrement="false" defaultValue="" name="title_of_courtesy" nullable="1" physicalName="title_of_courtesy" precision="4" referenceCount="1" scale="0" source-column-ref="COL24" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL125" populated="true" UUID="f93b5528-cdeb-4e38-9814-d5c5ba5aebcd" autoIncrement="false" defaultValue="" name="hire_date" nullable="1" physicalName="hire_date" precision="0" referenceCount="1" scale="0" source-column-ref="COL26" sourceDataTypeName="DATETIME" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+    <column id="COL129" populated="true" UUID="6ebd4a40-4619-4db7-9611-24bb3998defd" autoIncrement="false" defaultValue="" name="birth_date" nullable="1" physicalName="birth_date" precision="0" referenceCount="1" scale="0" source-column-ref="COL25" sourceDataTypeName="DATETIME" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
      <remarks></remarks>
     </column>
-    <column id="COL126" populated="true" UUID="dc59427f-17f5-4371-819c-bb4bae6e6869" autoIncrement="false" defaultValue="" name="address" nullable="1" physicalName="address" precision="30" referenceCount="1" scale="0" source-column-ref="COL27" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL130" populated="true" UUID="f93b5528-cdeb-4e38-9814-d5c5ba5aebcd" autoIncrement="false" defaultValue="" name="hire_date" nullable="1" physicalName="hire_date" precision="0" referenceCount="1" scale="0" source-column-ref="COL26" sourceDataTypeName="DATETIME" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
      <remarks></remarks>
     </column>
-    <column id="COL127" populated="true" UUID="0e263744-56b0-4281-87cf-3baa4cc2c5c8" autoIncrement="false" defaultValue="" name="city" nullable="1" physicalName="city" precision="8" referenceCount="1" scale="0" source-column-ref="COL28" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL131" populated="true" UUID="dc59427f-17f5-4371-819c-bb4bae6e6869" autoIncrement="false" defaultValue="" name="address" nullable="1" physicalName="address" precision="30" referenceCount="1" scale="0" source-column-ref="COL27" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL128" populated="true" UUID="4887ea4a-b799-4a87-86c7-d9b27ee47aa5" autoIncrement="false" defaultValue="" name="region" nullable="1" physicalName="region" precision="2" referenceCount="1" scale="0" source-column-ref="COL29" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL132" populated="true" UUID="0e263744-56b0-4281-87cf-3baa4cc2c5c8" autoIncrement="false" defaultValue="" name="city" nullable="1" physicalName="city" precision="8" referenceCount="1" scale="0" source-column-ref="COL28" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL129" populated="true" UUID="eded9621-e499-4475-aa52-a8a316a610ab" autoIncrement="false" defaultValue="" name="postal_code" nullable="1" physicalName="postal_code" precision="7" referenceCount="1" scale="0" source-column-ref="COL30" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL133" populated="true" UUID="4887ea4a-b799-4a87-86c7-d9b27ee47aa5" autoIncrement="false" defaultValue="" name="region" nullable="1" physicalName="region" precision="2" referenceCount="1" scale="0" source-column-ref="COL29" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL130" populated="true" UUID="c4d8b9d1-2511-42a9-a2bc-8d9a1d834b76" autoIncrement="false" defaultValue="" name="country" nullable="1" physicalName="country" precision="3" referenceCount="1" scale="0" source-column-ref="COL31" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL134" populated="true" UUID="eded9621-e499-4475-aa52-a8a316a610ab" autoIncrement="false" defaultValue="" name="postal_code" nullable="1" physicalName="postal_code" precision="7" referenceCount="1" scale="0" source-column-ref="COL30" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL131" populated="true" UUID="4a4e8ee2-88fc-4a81-8d8f-fb75c2d25c14" autoIncrement="false" defaultValue="" name="home_phone" nullable="1" physicalName="home_phone" precision="14" referenceCount="1" scale="0" source-column-ref="COL32" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL135" populated="true" UUID="c4d8b9d1-2511-42a9-a2bc-8d9a1d834b76" autoIncrement="false" defaultValue="" name="country" nullable="1" physicalName="country" precision="3" referenceCount="1" scale="0" source-column-ref="COL31" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL132" populated="true" UUID="cb3aa06f-09a7-4087-b8a2-0753c2474380" autoIncrement="false" defaultValue="" name="extension" nullable="1" physicalName="extension" precision="0" referenceCount="1" scale="0" source-column-ref="COL33" sourceDataTypeName="BIGINT" type="-5" userDefinedTypeUUID="433cc8af-284d-4abb-8ef7-08ebcb34dbf1" >
+    <column id="COL136" populated="true" UUID="4a4e8ee2-88fc-4a81-8d8f-fb75c2d25c14" autoIncrement="false" defaultValue="" name="home_phone" nullable="1" physicalName="home_phone" precision="14" referenceCount="1" scale="0" source-column-ref="COL32" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL133" populated="true" UUID="6dbf66dd-884e-4d4a-8e68-7b9f8b2c19d1" autoIncrement="false" defaultValue="" name="photo" nullable="1" physicalName="photo" precision="0" referenceCount="1" scale="0" source-column-ref="COL34" sourceDataTypeName="TINYINT" type="-6" userDefinedTypeUUID="608a1d2c-c960-44ac-b1f3-503aba0a5b7b" >
+    <column id="COL137" populated="true" UUID="cb3aa06f-09a7-4087-b8a2-0753c2474380" autoIncrement="false" defaultValue="" name="extension" nullable="1" physicalName="extension" precision="0" referenceCount="1" scale="0" source-column-ref="COL33" sourceDataTypeName="BIGINT" type="-5" userDefinedTypeUUID="433cc8af-284d-4abb-8ef7-08ebcb34dbf1" >
      <remarks></remarks>
     </column>
-    <column id="COL134" populated="true" UUID="61db8a52-adec-4f5b-ad3f-5e73087dfd7e" autoIncrement="false" defaultValue="" name="notes" nullable="1" physicalName="notes" precision="0" referenceCount="1" scale="0" source-column-ref="COL35" sourceDataTypeName="TEXT" type="-1" userDefinedTypeUUID="9a814859-ab26-4acd-9415-ea82291bcac1" >
+    <column id="COL138" populated="true" UUID="6dbf66dd-884e-4d4a-8e68-7b9f8b2c19d1" autoIncrement="false" defaultValue="" name="photo" nullable="1" physicalName="photo" precision="0" referenceCount="1" scale="0" source-column-ref="COL34" sourceDataTypeName="TINYINT" type="-6" userDefinedTypeUUID="608a1d2c-c960-44ac-b1f3-503aba0a5b7b" >
      <remarks></remarks>
     </column>
-    <column id="COL135" populated="true" UUID="e56dcfc1-a30d-4d03-838f-fe679c3b535b" autoIncrement="false" defaultValue="" name="reports_to" nullable="1" physicalName="reports_to" precision="0" referenceCount="1" scale="0" source-column-ref="COL36" sourceDataTypeName="BIGINT" type="-5" userDefinedTypeUUID="433cc8af-284d-4abb-8ef7-08ebcb34dbf1" >
+    <column id="COL139" populated="true" UUID="61db8a52-adec-4f5b-ad3f-5e73087dfd7e" autoIncrement="false" defaultValue="" name="notes" nullable="1" physicalName="notes" precision="0" referenceCount="1" scale="0" source-column-ref="COL35" sourceDataTypeName="TEXT" type="-1" userDefinedTypeUUID="9a814859-ab26-4acd-9415-ea82291bcac1" >
      <remarks></remarks>
     </column>
-    <column id="COL136" populated="true" UUID="c0e78ebe-917d-45ca-86c4-11ddaca70e58" autoIncrement="false" defaultValue="" name="photo_path" nullable="1" physicalName="photo_path" precision="38" referenceCount="1" scale="0" source-column-ref="COL37" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL140" populated="true" UUID="e56dcfc1-a30d-4d03-838f-fe679c3b535b" autoIncrement="false" defaultValue="" name="reports_to" nullable="1" physicalName="reports_to" precision="0" referenceCount="1" scale="0" source-column-ref="COL36" sourceDataTypeName="BIGINT" type="-5" userDefinedTypeUUID="433cc8af-284d-4abb-8ef7-08ebcb34dbf1" >
+     <remarks></remarks>
+    </column>
+    <column id="COL141" populated="true" UUID="c0e78ebe-917d-45ca-86c4-11ddaca70e58" autoIncrement="false" defaultValue="" name="photo_path" nullable="1" physicalName="photo_path" precision="38" referenceCount="1" scale="0" source-column-ref="COL37" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
     </folder>
-    <folder id="FOLTAB1183" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    <folder id="FOLTAB1223" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
     </folder>
-    <folder id="FOLTAB1182" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    <folder id="FOLTAB1222" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
-    <folder id="FOLTAB1184" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX137" populated="true" UUID="6417947e-a762-4042-9b04-18d9869f5155" clustered="false" name="dim_employee_pk" physicalName="st_employee_pk" primaryKeyIndex="true" unique="false" >
+    <folder id="FOLTAB1224" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX142" populated="true" UUID="6417947e-a762-4042-9b04-18d9869f5155" clustered="false" name="dim_employee_pk" physicalName="st_employee_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC143" populated="true" UUID="f2f5f051-5387-42b9-beeb-3f5cb2ac4647" ascendingOrDescending="UNSPECIFIED" column-ref="COL123" name="sk_employee" physicalName="sk_employee" />
     </index>
    </folder>
   </table>
-  <table id="TAB138" populated="true" UUID="d8991363-a8c2-4a20-b2bc-89a11adcdb70" name="ft_orders" objectType="TABLE" physicalName="ft_orders" >
+  <table id="TAB144" populated="true" UUID="d8991363-a8c2-4a20-b2bc-89a11adcdb70" name="ft_orders" objectType="TABLE" physicalName="ft_orders" >
    <remarks></remarks>
-   <folder id="FOLTAB1381" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL139" populated="true" UUID="3aa9428f-01eb-44fa-a0ff-54c44050e78a" autoIncrement="true" autoIncrementSequenceName="ft_orders_pk_orders_seq" defaultValue="" name="pk_orders" nullable="0" physicalName="pk_orders" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+   <folder id="FOLTAB1441" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL145" populated="true" UUID="3aa9428f-01eb-44fa-a0ff-54c44050e78a" autoIncrement="true" autoIncrementSequenceName="ft_orders_pk_orders_seq" defaultValue="" name="pk_orders" nullable="0" physicalName="pk_orders" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks>Chave primária da tabela.</remarks>
     </column>
-    <column id="COL140" populated="true" UUID="ea367bed-8ccd-41c4-9109-a7f4ff2b2e99" autoIncrement="false" autoIncrementSequenceName="ft_orders_order_id_seq" defaultValue="" name="order_id" nullable="0" physicalName="order_id" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
-     <remarks>Código do pedido.</remarks>
-    </column>
-    <column id="COL141" populated="true" UUID="04981699-66ba-463d-a8ce-71b6b7551140" autoIncrement="false" autoIncrementSequenceName="ft_orders_sk_customer_id_seq" defaultValue="" name="sk_customer_id" nullable="0" physicalName="sk_customer_id" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL146" populated="true" UUID="04981699-66ba-463d-a8ce-71b6b7551140" autoIncrement="false" autoIncrementSequenceName="ft_orders_sk_customer_seq" defaultValue="" name="sk_customer" nullable="0" physicalName="sk_customer" precision="0" primaryKeySeq="1" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks>Surrogate key da tabela de clientes.</remarks>
     </column>
-    <column id="COL142" populated="true" UUID="a955dc09-c74f-4639-88ac-b3e3969d7f23" autoIncrement="false" autoIncrementSequenceName="ft_orders_sk_employee_id_seq" defaultValue="" name="sk_employee_id" nullable="0" physicalName="sk_employee_id" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL147" populated="true" UUID="a955dc09-c74f-4639-88ac-b3e3969d7f23" autoIncrement="false" autoIncrementSequenceName="ft_orders_sk_employee_seq" defaultValue="" name="sk_employee" nullable="0" physicalName="sk_employee" precision="0" primaryKeySeq="2" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks>Surrogate key da tabela de funcionarios.</remarks>
     </column>
-    <column id="COL143" populated="true" UUID="4d4af6da-f17b-4a7c-ba75-38fbb14bb407" autoIncrement="false" autoIncrementSequenceName="ft_orders_sk_product_id_seq" defaultValue="" name="sk_product_id" nullable="0" physicalName="sk_product_id" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL148" populated="true" UUID="4d4af6da-f17b-4a7c-ba75-38fbb14bb407" autoIncrement="false" autoIncrementSequenceName="ft_orders_sk_product_seq" defaultValue="" name="sk_product" nullable="0" physicalName="sk_product" precision="0" primaryKeySeq="3" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks>Surrogate key da tabela de produtos.</remarks>
     </column>
-    <column id="COL144" populated="true" UUID="b588f8e5-378d-4d19-8802-4d684232b16a" autoIncrement="false" autoIncrementSequenceName="ft_orders_order_date_seq" defaultValue="" name="order_date" nullable="0" physicalName="order_date" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+    <column id="COL149" populated="true" UUID="ea367bed-8ccd-41c4-9109-a7f4ff2b2e99" autoIncrement="false" autoIncrementSequenceName="ft_orders_order_id_seq" defaultValue="" name="order_id" nullable="0" physicalName="order_id" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>Código do pedido.</remarks>
+    </column>
+    <column id="COL150" populated="true" UUID="b588f8e5-378d-4d19-8802-4d684232b16a" autoIncrement="false" autoIncrementSequenceName="ft_orders_order_date_seq" defaultValue="" name="order_date" nullable="0" physicalName="order_date" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
      <remarks>Data do pedido.</remarks>
     </column>
-    <column id="COL145" populated="true" UUID="d6f21c17-645c-4250-897b-238a92744938" autoIncrement="false" autoIncrementSequenceName="ft_orders_required_date_seq" defaultValue="" name="required_date" nullable="0" physicalName="required_date" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+    <column id="COL151" populated="true" UUID="d6f21c17-645c-4250-897b-238a92744938" autoIncrement="false" autoIncrementSequenceName="ft_orders_required_date_seq" defaultValue="" name="required_date" nullable="0" physicalName="required_date" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
      <remarks>Data requerida.</remarks>
     </column>
-    <column id="COL146" populated="true" UUID="4d53ef1e-e8c4-40b2-b46e-ab7733ba331a" autoIncrement="false" autoIncrementSequenceName="ft_orders_shipped_date_seq" defaultValue="" name="shipped_date" nullable="0" physicalName="shipped_date" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+    <column id="COL152" populated="true" UUID="4d53ef1e-e8c4-40b2-b46e-ab7733ba331a" autoIncrement="false" autoIncrementSequenceName="ft_orders_shipped_date_seq" defaultValue="" name="shipped_date" nullable="0" physicalName="shipped_date" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
      <remarks>Data de envio.</remarks>
     </column>
-    <column id="COL147" populated="true" UUID="6c4f36cb-e953-405c-abf0-6f88670f44d8" autoIncrement="false" autoIncrementSequenceName="ft_orders_unit_price_seq" defaultValue="" name="unit_price" nullable="0" physicalName="unit_price" precision="10" referenceCount="1" scale="2" sourceDataTypeName="UserDefinedSQLType" type="3" userDefinedTypeUUID="cc1304ea-628a-4fc5-a84a-06ba14759152" >
+    <column id="COL153" populated="true" UUID="6c4f36cb-e953-405c-abf0-6f88670f44d8" autoIncrement="false" autoIncrementSequenceName="ft_orders_unit_price_seq" defaultValue="" name="unit_price" nullable="0" physicalName="unit_price" precision="10" referenceCount="1" scale="2" sourceDataTypeName="UserDefinedSQLType" type="3" userDefinedTypeUUID="cc1304ea-628a-4fc5-a84a-06ba14759152" >
      <remarks>Preco unitario do produto.</remarks>
     </column>
-    <column id="COL148" populated="true" UUID="cb7ff455-922c-4a38-8a84-78758c2670a7" autoIncrement="false" autoIncrementSequenceName="ft_orders_quantity_seq" defaultValue="" name="quantity" nullable="0" physicalName="quantity" precision="10" referenceCount="1" scale="2" sourceDataTypeName="UserDefinedSQLType" type="3" userDefinedTypeUUID="cc1304ea-628a-4fc5-a84a-06ba14759152" >
+    <column id="COL154" populated="true" UUID="cb7ff455-922c-4a38-8a84-78758c2670a7" autoIncrement="false" autoIncrementSequenceName="ft_orders_quantity_seq" defaultValue="" name="quantity" nullable="0" physicalName="quantity" precision="10" referenceCount="1" scale="2" sourceDataTypeName="UserDefinedSQLType" type="3" userDefinedTypeUUID="cc1304ea-628a-4fc5-a84a-06ba14759152" >
      <remarks>Quantidade de produtos do pedido.</remarks>
     </column>
-    <column id="COL149" populated="true" UUID="30fea833-cb0b-4bee-8cbc-8e67d2a77307" autoIncrement="false" autoIncrementSequenceName="ft_orders_total_gross_seq" defaultValue="" name="total_gross" nullable="0" physicalName="total_gross" precision="10" referenceCount="1" scale="2" sourceDataTypeName="UserDefinedSQLType" type="3" userDefinedTypeUUID="cc1304ea-628a-4fc5-a84a-06ba14759152" >
+    <column id="COL155" populated="true" UUID="30fea833-cb0b-4bee-8cbc-8e67d2a77307" autoIncrement="false" autoIncrementSequenceName="ft_orders_total_gross_seq" defaultValue="" name="total_gross" nullable="0" physicalName="total_gross" precision="10" referenceCount="1" scale="2" sourceDataTypeName="UserDefinedSQLType" type="3" userDefinedTypeUUID="cc1304ea-628a-4fc5-a84a-06ba14759152" >
      <remarks>Valor bruto do pedido.</remarks>
     </column>
-    <column id="COL150" populated="true" UUID="0155c934-c986-4d5d-ae70-6936b9a42fa2" autoIncrement="false" autoIncrementSequenceName="ft_orders_total_discount_seq" defaultValue="" name="total_discount" nullable="0" physicalName="total_discount" precision="10" referenceCount="1" scale="2" sourceDataTypeName="UserDefinedSQLType" type="3" userDefinedTypeUUID="cc1304ea-628a-4fc5-a84a-06ba14759152" >
+    <column id="COL156" populated="true" UUID="0155c934-c986-4d5d-ae70-6936b9a42fa2" autoIncrement="false" autoIncrementSequenceName="ft_orders_total_discount_seq" defaultValue="" name="total_discount" nullable="0" physicalName="total_discount" precision="10" referenceCount="1" scale="2" sourceDataTypeName="UserDefinedSQLType" type="3" userDefinedTypeUUID="cc1304ea-628a-4fc5-a84a-06ba14759152" >
      <remarks>Total de desconto do pedido.</remarks>
     </column>
-    <column id="COL151" populated="true" UUID="b1924763-009f-4fb9-a33e-da0bf1e98a55" autoIncrement="false" autoIncrementSequenceName="ft_orders_total_discount_seq" defaultValue="" name="total_net" nullable="0" physicalName="total_discount" precision="10" referenceCount="1" scale="2" sourceDataTypeName="UserDefinedSQLType" type="3" userDefinedTypeUUID="cc1304ea-628a-4fc5-a84a-06ba14759152" >
+    <column id="COL157" populated="true" UUID="b1924763-009f-4fb9-a33e-da0bf1e98a55" autoIncrement="false" autoIncrementSequenceName="ft_orders_total_discount_seq" defaultValue="" name="total_net" nullable="0" physicalName="total_discount" precision="10" referenceCount="1" scale="2" sourceDataTypeName="UserDefinedSQLType" type="3" userDefinedTypeUUID="cc1304ea-628a-4fc5-a84a-06ba14759152" >
      <remarks>Valor liquido do pedido (Valor bruto - Valor de desconto).</remarks>
     </column>
     </folder>
-    <folder id="FOLTAB1383" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    <folder id="FOLTAB1443" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
     </folder>
-    <folder id="FOLTAB1382" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    <folder id="FOLTAB1442" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
-    <folder id="FOLTAB1384" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX152" populated="true" UUID="1150e9c9-eedd-4080-af0b-180b988f19f4" clustered="false" name="pk_orders" physicalName="pk_orders" primaryKeyIndex="true" unique="false" >
-     <index-column id="IDC153" populated="true" UUID="f4114ef8-f888-42f4-ac17-1b203ca1c5ee" ascendingOrDescending="UNSPECIFIED" column-ref="COL139" name="pk_orders" physicalName="pk_orders" />
+    <folder id="FOLTAB1444" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX158" populated="true" UUID="1150e9c9-eedd-4080-af0b-180b988f19f4" clustered="false" name="pk_orders" physicalName="pk_orders" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC159" populated="true" UUID="f4114ef8-f888-42f4-ac17-1b203ca1c5ee" ascendingOrDescending="UNSPECIFIED" column-ref="COL145" name="pk_orders" physicalName="pk_orders" />
+     <index-column id="IDC160" populated="true" UUID="16ee39ec-1f39-4638-9dc4-b249fd46c60a" ascendingOrDescending="UNSPECIFIED" column-ref="COL146" name="sk_customer" physicalName="sk_customer" />
+     <index-column id="IDC161" populated="true" UUID="1735449c-b31b-4bfa-b485-1be92217a053" ascendingOrDescending="UNSPECIFIED" column-ref="COL147" name="sk_employee" physicalName="sk_employee" />
+     <index-column id="IDC162" populated="true" UUID="4e44bdfd-8255-45dc-8efc-da1752507b00" ascendingOrDescending="UNSPECIFIED" column-ref="COL148" name="sk_product" physicalName="sk_product" />
     </index>
    </folder>
   </table>
   <relationships>
+   <relationship id="REL163" populated="true" UUID="224eee03-d3ad-49b3-8f0a-e206b742cd4c" deferrability="7" deleteRule="3" fk-table-ref="TAB144" fkCardinality="7" identifying="true" name="dim_customers_ft_orders_fk" physicalName="dim_customers_ft_orders_fk" pk-table-ref="TAB93" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP164" populated="true" UUID="74f0e5c7-6d02-4b50-8794-e9b6aac9daff" fk-column-ref="COL146" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL94" />
+   </relationship>
+   <relationship id="REL165" populated="true" UUID="54bdac08-18d5-4efc-9d4b-2ad918eedb3d" deferrability="7" deleteRule="3" fk-table-ref="TAB144" fkCardinality="7" identifying="true" name="dim_products_ft_orders_fk" physicalName="dim_products_ft_orders_fk" pk-table-ref="TAB108" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP166" populated="true" UUID="0368a1ca-473d-4507-8241-5e8a3c55e691" fk-column-ref="COL148" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL109" />
+   </relationship>
+   <relationship id="REL167" populated="true" UUID="d0adda81-ab36-45a0-aa9d-358d7a5d36fc" deferrability="7" deleteRule="3" fk-table-ref="TAB144" fkCardinality="7" identifying="true" name="dim_employee_ft_orders_fk" physicalName="dim_employee_ft_orders_fk" pk-table-ref="TAB122" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP168" populated="true" UUID="47042d9e-d9c0-4a53-a54a-5af52602cbef" fk-column-ref="COL147" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL123" />
+   </relationship>
   </relationships>
  </target-database>
  <ddl-generator type="ca.sqlpower.architect.ddl.GenericDDLGenerator" allow-connection="true"> </ddl-generator>
  <liquibase-settings useSeparateChangeSets="false" generateId="false" idStart="1"/>
  <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
  <play-pen zoom="1.0" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
-  <table-pane table-ref="TAB93" x="92" y="28" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB106" x="722" y="35" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB118" x="92" y="287" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB138" x="374" y="169" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB93" x="93" y="28" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB108" x="722" y="35" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB122" x="92" y="287" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB144" x="403" y="173" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-link relationship-ref="REL163" pkConnection="0.7614213197969543" fkConnection="0.25118483412322273" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL167" pkConnection="0.3254237288135593" fkConnection="0.7488151658767772" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL165" pkConnection="0.7595628415300546" fkConnection="0.25118483412322273" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="18"/>
  </play-pen>
  <critic-manager>
   <critic-grouping platformType="Generic" enabled="true">
