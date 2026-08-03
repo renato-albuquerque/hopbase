@@ -2,9 +2,9 @@
 Solução de Business Intelligence (BI) 100% open source, utilizando soluções gratuitas e robustas. Processo de ETL com [Apache Hop](https://hop.apache.org/) e Dataviz com [Metabase](https://www.metabase.com/). <br>
 
 Time envolvido: <br>
+[Renato Albuquerque](https://www.linkedin.com/in/renato-malbuquerque/) <br>
 [Rafael Arruda](https://www.linkedin.com/in/rafael-arruda-39145738/) <br>
 [Arruda Data Consulting](https://arrudaconsulting.com.br/) <br>
-[Renato Albuquerque](https://www.linkedin.com/in/renato-malbuquerque/) <br>
 
 ## 01. Arquitetura do Projeto
 ![arquitetura_hopbase](images/hopbase.JPG)
