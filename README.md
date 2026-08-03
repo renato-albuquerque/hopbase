@@ -112,5 +112,10 @@ Carga Full x Carga SCD2 (Slowly Changing Dimension Tipo 2) <br>
 **Pipeline para carga full (Apache Hop)** <br>
 ![apache_hop_dim_products_carga_full](images/apache_hop_dim_products_carga_full.JPG) <br>
 
+- Dimensão dim_calendario
+Tabela desenvolvida no Apache Hop. <br>
+**Pipeline para carga full (Apache Hop)** <br>
+![apache_hop_dim_calendario_carga_full](images/apache_hop_dim_calendario_carga_full.JPG) <br>
+
 
 

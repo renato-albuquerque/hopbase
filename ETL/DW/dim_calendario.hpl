@@ -38,6 +38,185 @@
       <note>Dimensão de Calendário, dim_calendario</note>
       <width>227</width>
     </notepad>
+    <notepad>
+      <backgroundcolorblue>251</backgroundcolorblue>
+      <backgroundcolorgreen>232</backgroundcolorgreen>
+      <backgroundcolorred>201</backgroundcolorred>
+      <bordercolorblue>90</bordercolorblue>
+      <bordercolorgreen>58</bordercolorgreen>
+      <bordercolorred>14</bordercolorred>
+      <fontbold>N</fontbold>
+      <fontcolorblue>90</fontcolorblue>
+      <fontcolorgreen>58</fontcolorgreen>
+      <fontcolorred>14</fontcolorred>
+      <fontitalic>N</fontitalic>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <height>90</height>
+      <xloc>288</xloc>
+      <yloc>256</yloc>
+      <note>A partir da coluna "date" criada,
+criar colunas:
+ano, mes, dia,
+dia_semana, semana_ano,
+trimestre</note>
+      <width>178</width>
+    </notepad>
+    <notepad>
+      <backgroundcolorblue>251</backgroundcolorblue>
+      <backgroundcolorgreen>232</backgroundcolorgreen>
+      <backgroundcolorred>201</backgroundcolorred>
+      <bordercolorblue>90</bordercolorblue>
+      <bordercolorgreen>58</bordercolorgreen>
+      <bordercolorred>14</bordercolorred>
+      <fontbold>N</fontbold>
+      <fontcolorblue>90</fontcolorblue>
+      <fontcolorgreen>58</fontcolorgreen>
+      <fontcolorred>14</fontcolorred>
+      <fontitalic>N</fontitalic>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <height>58</height>
+      <xloc>432</xloc>
+      <yloc>96</yloc>
+      <note>Transformação
+mes numérico para texto,
+ex.: 1 para JANEIRO</note>
+      <width>145</width>
+    </notepad>
+    <notepad>
+      <backgroundcolorblue>251</backgroundcolorblue>
+      <backgroundcolorgreen>232</backgroundcolorgreen>
+      <backgroundcolorred>201</backgroundcolorred>
+      <bordercolorblue>90</bordercolorblue>
+      <bordercolorgreen>58</bordercolorgreen>
+      <bordercolorred>14</bordercolorred>
+      <fontbold>N</fontbold>
+      <fontcolorblue>90</fontcolorblue>
+      <fontcolorgreen>58</fontcolorgreen>
+      <fontcolorred>14</fontcolorred>
+      <fontitalic>N</fontitalic>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <height>58</height>
+      <xloc>544</xloc>
+      <yloc>256</yloc>
+      <note>Transformação
+mes numérico para texto abreviado,
+ex.: 1 para JAN</note>
+      <width>200</width>
+    </notepad>
+    <notepad>
+      <backgroundcolorblue>251</backgroundcolorblue>
+      <backgroundcolorgreen>232</backgroundcolorgreen>
+      <backgroundcolorred>201</backgroundcolorred>
+      <bordercolorblue>90</bordercolorblue>
+      <bordercolorgreen>58</bordercolorgreen>
+      <bordercolorred>14</bordercolorred>
+      <fontbold>N</fontbold>
+      <fontcolorblue>90</fontcolorblue>
+      <fontcolorgreen>58</fontcolorgreen>
+      <fontcolorred>14</fontcolorred>
+      <fontitalic>N</fontitalic>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <height>58</height>
+      <xloc>704</xloc>
+      <yloc>96</yloc>
+      <note>Transformação
+semana numérico para texto,
+ex.: 1 para DOMINGO</note>
+      <width>164</width>
+    </notepad>
+    <notepad>
+      <backgroundcolorblue>251</backgroundcolorblue>
+      <backgroundcolorgreen>232</backgroundcolorgreen>
+      <backgroundcolorred>201</backgroundcolorred>
+      <bordercolorblue>90</bordercolorblue>
+      <bordercolorgreen>58</bordercolorgreen>
+      <bordercolorred>14</bordercolorred>
+      <fontbold>N</fontbold>
+      <fontcolorblue>90</fontcolorblue>
+      <fontcolorgreen>58</fontcolorgreen>
+      <fontcolorred>14</fontcolorred>
+      <fontitalic>N</fontitalic>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <height>58</height>
+      <xloc>800</xloc>
+      <yloc>256</yloc>
+      <note>Transformação
+trimestre numérico para texto,
+ex.: 1 para 1ª TRIMESTRE</note>
+      <width>170</width>
+    </notepad>
+    <notepad>
+      <backgroundcolorblue>251</backgroundcolorblue>
+      <backgroundcolorgreen>232</backgroundcolorgreen>
+      <backgroundcolorred>201</backgroundcolorred>
+      <bordercolorblue>90</bordercolorblue>
+      <bordercolorgreen>58</bordercolorgreen>
+      <bordercolorred>14</bordercolorred>
+      <fontbold>N</fontbold>
+      <fontcolorblue>90</fontcolorblue>
+      <fontcolorgreen>58</fontcolorgreen>
+      <fontcolorred>14</fontcolorred>
+      <fontitalic>N</fontitalic>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <height>74</height>
+      <xloc>960</xloc>
+      <yloc>80</yloc>
+      <note>Transformação
+para juntar mes e ano,
+versão 1,
+ex.: 1/1996</note>
+      <width>127</width>
+    </notepad>
+    <notepad>
+      <backgroundcolorblue>251</backgroundcolorblue>
+      <backgroundcolorgreen>232</backgroundcolorgreen>
+      <backgroundcolorred>201</backgroundcolorred>
+      <bordercolorblue>90</bordercolorblue>
+      <bordercolorgreen>58</bordercolorgreen>
+      <bordercolorred>14</bordercolorred>
+      <fontbold>N</fontbold>
+      <fontcolorblue>90</fontcolorblue>
+      <fontcolorgreen>58</fontcolorgreen>
+      <fontcolorred>14</fontcolorred>
+      <fontitalic>N</fontitalic>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <height>74</height>
+      <xloc>1072</xloc>
+      <yloc>256</yloc>
+      <note>Transformação
+para juntar mes e ano,
+versão 2,
+ex.: JAN/1996</note>
+      <width>127</width>
+    </notepad>
+    <notepad>
+      <backgroundcolorblue>251</backgroundcolorblue>
+      <backgroundcolorgreen>232</backgroundcolorgreen>
+      <backgroundcolorred>201</backgroundcolorred>
+      <bordercolorblue>90</bordercolorblue>
+      <bordercolorgreen>58</bordercolorgreen>
+      <bordercolorred>14</bordercolorred>
+      <fontbold>N</fontbold>
+      <fontcolorblue>90</fontcolorblue>
+      <fontcolorgreen>58</fontcolorgreen>
+      <fontcolorred>14</fontcolorred>
+      <fontitalic>N</fontitalic>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <height>42</height>
+      <xloc>1200</xloc>
+      <yloc>112</yloc>
+      <note>Escolher e ordenar 
+colunas</note>
+      <width>111</width>
+    </notepad>
   </notepads>
   <order>
     <hop>
@@ -112,7 +291,7 @@
     <attributes/>
     <GUI>
       <xloc>224</xloc>
-      <yloc>96</yloc>
+      <yloc>176</yloc>
     </GUI>
   </transform>
   <transform>
@@ -129,9 +308,13 @@
     <calculation>
       <calc_type>ADD_DAYS</calc_type>
       <conversion_mask>dd/MM/yyyy</conversion_mask>
+      <currency_symbol/>
+      <decimal_symbol/>
       <field_a>data</field_a>
       <field_b>dia</field_b>
+      <field_c/>
       <field_name>date</field_name>
+      <grouping_symbol/>
       <remove>N</remove>
       <value_length>-1</value_length>
       <value_precision>-1</value_precision>
@@ -139,8 +322,14 @@
     </calculation>
     <calculation>
       <calc_type>YEAR_OF_DATE</calc_type>
+      <conversion_mask/>
+      <currency_symbol/>
+      <decimal_symbol/>
       <field_a>date</field_a>
+      <field_b/>
+      <field_c/>
       <field_name>ano</field_name>
+      <grouping_symbol/>
       <remove>N</remove>
       <value_length>-1</value_length>
       <value_precision>-1</value_precision>
@@ -148,8 +337,14 @@
     </calculation>
     <calculation>
       <calc_type>MONTH_OF_DATE</calc_type>
+      <conversion_mask/>
+      <currency_symbol/>
+      <decimal_symbol/>
       <field_a>date</field_a>
+      <field_b/>
+      <field_c/>
       <field_name>mes</field_name>
+      <grouping_symbol/>
       <remove>N</remove>
       <value_length>-1</value_length>
       <value_precision>-1</value_precision>
@@ -157,8 +352,14 @@
     </calculation>
     <calculation>
       <calc_type>DAY_OF_MONTH</calc_type>
+      <conversion_mask/>
+      <currency_symbol/>
+      <decimal_symbol/>
       <field_a>date</field_a>
+      <field_b/>
+      <field_c/>
       <field_name>dia</field_name>
+      <grouping_symbol/>
       <remove>N</remove>
       <value_length>-1</value_length>
       <value_precision>-1</value_precision>
@@ -166,8 +367,14 @@
     </calculation>
     <calculation>
       <calc_type>DAY_OF_WEEK</calc_type>
+      <conversion_mask/>
+      <currency_symbol/>
+      <decimal_symbol/>
       <field_a>date</field_a>
+      <field_b/>
+      <field_c/>
       <field_name>dia_semana</field_name>
+      <grouping_symbol/>
       <remove>N</remove>
       <value_length>-1</value_length>
       <value_precision>-1</value_precision>
@@ -175,8 +382,14 @@
     </calculation>
     <calculation>
       <calc_type>WEEK_OF_YEAR</calc_type>
+      <conversion_mask/>
+      <currency_symbol/>
+      <decimal_symbol/>
       <field_a>date</field_a>
+      <field_b/>
+      <field_c/>
       <field_name>semana_ano</field_name>
+      <grouping_symbol/>
       <remove>N</remove>
       <value_length>-1</value_length>
       <value_precision>-1</value_precision>
@@ -184,8 +397,14 @@
     </calculation>
     <calculation>
       <calc_type>QUARTER_OF_DATE</calc_type>
+      <conversion_mask/>
+      <currency_symbol/>
+      <decimal_symbol/>
       <field_a>date</field_a>
+      <field_b/>
+      <field_c/>
       <field_name>trimestre</field_name>
+      <grouping_symbol/>
       <remove>N</remove>
       <value_length>-1</value_length>
       <value_precision>-1</value_precision>
@@ -195,7 +414,7 @@
     <attributes/>
     <GUI>
       <xloc>336</xloc>
-      <yloc>96</yloc>
+      <yloc>176</yloc>
     </GUI>
   </transform>
   <transform>
@@ -232,7 +451,7 @@
     <attributes/>
     <GUI>
       <xloc>960</xloc>
-      <yloc>96</yloc>
+      <yloc>176</yloc>
     </GUI>
   </transform>
   <transform>
@@ -269,7 +488,7 @@
     <attributes/>
     <GUI>
       <xloc>1088</xloc>
-      <yloc>96</yloc>
+      <yloc>176</yloc>
     </GUI>
   </transform>
   <transform>
@@ -302,7 +521,7 @@
     <attributes/>
     <GUI>
       <xloc>96</xloc>
-      <yloc>96</yloc>
+      <yloc>176</yloc>
     </GUI>
   </transform>
   <transform>
@@ -323,15 +542,12 @@
       </field>
       <field>
         <name>ano</name>
-        <rename/>
       </field>
       <field>
         <name>trimestre</name>
-        <rename/>
       </field>
       <field>
         <name>mes</name>
-        <rename/>
       </field>
       <field>
         <name>dia_1</name>
@@ -339,42 +555,34 @@
       </field>
       <field>
         <name>dia_semana</name>
-        <rename/>
       </field>
       <field>
         <name>semana_ano</name>
-        <rename/>
       </field>
       <field>
         <name>mes_ano_1</name>
-        <rename/>
       </field>
       <field>
         <name>mes_ano_2</name>
-        <rename/>
       </field>
       <field>
         <name>nome_mes</name>
-        <rename/>
       </field>
       <field>
         <name>nome_mes_abrev</name>
-        <rename/>
       </field>
       <field>
         <name>nome_dia_semana</name>
-        <rename/>
       </field>
       <field>
         <name>nome_trimestre</name>
-        <rename/>
       </field>
       <select_unspecified>N</select_unspecified>
     </fields>
     <attributes/>
     <GUI>
       <xloc>1216</xloc>
-      <yloc>96</yloc>
+      <yloc>176</yloc>
     </GUI>
   </transform>
   <transform>
@@ -444,7 +652,7 @@
     <attributes/>
     <GUI>
       <xloc>448</xloc>
-      <yloc>96</yloc>
+      <yloc>176</yloc>
     </GUI>
   </transform>
   <transform>
@@ -494,7 +702,7 @@
     <attributes/>
     <GUI>
       <xloc>704</xloc>
-      <yloc>96</yloc>
+      <yloc>176</yloc>
     </GUI>
   </transform>
   <transform>
@@ -532,7 +740,7 @@
     <attributes/>
     <GUI>
       <xloc>832</xloc>
-      <yloc>96</yloc>
+      <yloc>176</yloc>
     </GUI>
   </transform>
   <transform>
@@ -602,7 +810,7 @@
     <attributes/>
     <GUI>
       <xloc>576</xloc>
-      <yloc>96</yloc>
+      <yloc>176</yloc>
     </GUI>
   </transform>
   <transform>
@@ -687,7 +895,7 @@
     <attributes/>
     <GUI>
       <xloc>1328</xloc>
-      <yloc>96</yloc>
+      <yloc>176</yloc>
     </GUI>
   </transform>
   <transform_error_handling>
