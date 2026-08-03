@@ -104,15 +104,15 @@ Carga Full x Carga SCD2 (Slowly Changing Dimension Tipo 2) <br>
 3ª Etapa: **Pipeline para carga scd2 (Apache Hop)** <br>
 ![apache_hop_dim_customers_carga_scd2](images/apache_hop_dim_customers_carga_scd2.JPG) <br>
 
-- Dimensão dim_employee
+- Dimensão dim_employee <br>
 **Pipeline para carga full (Apache Hop)** <br>
 ![apache_hop_dim_employee_carga_full](images/apache_hop_dim_employee_carga_full.JPG) <br>
 
-- Dimensão dim_products
+- Dimensão dim_products <br>
 **Pipeline para carga full (Apache Hop)** <br>
 ![apache_hop_dim_products_carga_full](images/apache_hop_dim_products_carga_full.JPG) <br>
 
-- Dimensão dim_calendario
+- Dimensão dim_calendario <br>
 Tabela desenvolvida no Apache Hop. <br>
 **Pipeline para carga full (Apache Hop)** <br>
 ![apache_hop_dim_calendario_carga_full](images/apache_hop_dim_calendario_carga_full.JPG) <br>
