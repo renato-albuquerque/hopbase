@@ -4,18 +4,9 @@
  <print-settings numCopies="1" zoom="1.0" pageNumbersPrinted="true" orientation="1" paperWidth="612.0" paperHeight="792.0" leftBorder="50.0" rightBorder="50.0" topBorder="50.0" bottomBorder="50.0" />
  <project-data-sources>
   <data-source id="DS0">
-   <property key="Logical" value="Mysql" />
-   <property key="Connection Type" value="MySQL" />
-   <property key="JDBC URL" value="jdbc:mysql://localhost:3306/north" />
-   <property key="UID" value="root" />
-   <property key="PWD" value="1234" />
-   <property key="ca.sqlpower.architect.etl.kettle.database" value="" />
-   <property key="ca.sqlpower.architect.etl.kettle.port" value="" />
-   <property key="ca.sqlpower.architect.etl.kettle.hostname" value="" />
-   <property key="ca.sqlpower.architect.etl.kettle.repos.login" value="" />
-   <property key="ca.sqlpower.architect.etl.kettle.repos.password" value="" />
+   <property key="Logical" value="Modelo de Dados" />
   </data-source>
-  <data-source id="DS0">
+  <data-source id="DS2">
    <property key="Connection Type" value="MySQL" />
    <property key="Logical" value="Mysql" />
    <property key="JDBC URL" value="jdbc:mysql://localhost:3306/north" />
@@ -29,7 +20,7 @@
   </data-source>
  </project-data-sources>
  <source-databases>
-  <database id="DB0" populated="true" UUID="9e842130-a3bf-4dfc-9906-a8355e9875b6" dbcs-ref="DS0" name="Mysql" physicalName="Mysql" >
+  <database id="DB0" populated="true" UUID="9e842130-a3bf-4dfc-9906-a8355e9875b6" dbcs-ref="DS2" name="Mysql" physicalName="Mysql" >
    <catalog id="CAT1" populated="false" UUID="75f0a3ee-59bb-40e6-8263-9b3fb2efd237" name="information_schema" nativeTerm="database" physicalName="information_schema" >
    </catalog>
    <catalog id="CAT2" populated="false" UUID="479bbb83-d047-4c86-8dba-248d6e70e958" name="customers" nativeTerm="database" physicalName="customers" >
