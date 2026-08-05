@@ -118,6 +118,7 @@ Tabela desenvolvida no Apache Hop. <br>
 ![apache_hop_dim_calendario_carga_full](images/apache_hop_dim_calendario_carga_full.JPG) <br>
 
 
-Obs.: Criar a tabela STAGING da FATO, st_fato_orders.
+Obs.: Na camada STAGING, criação da tabela FATO: st_fato_orders. <br>
+Para suportar a tabela na camada DW, ft_orders. <br>
 ![sql_power_architect_staging_fato_orders](images/sql_power_architect_staging_fato_orders.JPG)
 
