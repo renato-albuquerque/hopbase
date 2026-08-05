@@ -39,24 +39,24 @@ Instalar o software SQL Power Architect.
 ![tecnologias_do_projeto](images/project_softwares.JPG)
 
 ## 03. Banco de Dados do Projeto: "north"
-Criar Banco de Dados (north) no HeidiSQL ("Rodar" arquivo DDL.sql). <br>
-Também foi criado os BDs: dev, qa, prod.
-Ilustração BD north abaixo (12 tabelas): <br>
+📝 Criar Banco de Dados (north) no HeidiSQL ("Rodar" arquivo DDL.sql). <br>
+📝 Também foi criado os BDs: dev, qa, prod. <br>
+📝 Ilustração BD north abaixo (12 tabelas): <br>
 ![bd_north](images/bd_north.JPG)
 
 ## 04. Staging Area (Criação e Carga de dados)
-- Através do SQL Power Architect, foram criadas as tabelas da camada STAGING, no banco de dados "dev". <br>
-- Documentação das tabelas da camada STAGING, gerado através do SQL Power Architect:
+📝 Através do SQL Power Architect, foram criadas as tabelas da camada STAGING, no banco de dados "dev". <br>
+📝 Documentação das tabelas da camada STAGING, gerado através do SQL Power Architect:
 ![sql_power_architect_documentacao_staging](images/sql_power_architect_documentacao_staging.JPG)
-- Apache Hop: Desenvolvimento dos PIPELINES para carga de dados de cada tabela na camada STAGING. <br>
-- Apache Hop: Desenvolvimento de WORKFLOW para carga completa e simultânea dos dados na camada STAGING. <br>
+📝 Apache Hop: Desenvolvimento dos PIPELINES para carga de dados de cada tabela na camada STAGING. <br>
+📝 Apache Hop: Desenvolvimento de WORKFLOW para carga completa e simultânea dos dados na camada STAGING. <br>
 PIPELINES
 ![apache_hop_pipelines_staging](images/apache_hop_staging.JPG) <br> 
 WORKFLOW
 ![apache_hop_workflow_staging](images/apache_hop_workflow_staging.JPG) <br>
 
 ## 05. Data Warehouse (DW)
-- MySQL / HeidiSQL: Desenvolvimento da tabela FATO ft_orders (INNER JOIN entre as tabelas dev.st_orders & dev.st_order_details) <br>
+📝 MySQL / HeidiSQL: Desenvolvimento da tabela FATO ft_orders (INNER JOIN entre as tabelas dev.st_orders & dev.st_order_details) <br>
 
 ```
 SELECT
@@ -78,22 +78,22 @@ INNER JOIN dev.st_order_details od
 ON o.order_id = od.order_id;
 ```
 
-- Através do SQL Power Architect, foram criadas as tabelas DIMENSÕES e FATO da camada DW, no banco de dados "dev". <br>
+📝 Através do SQL Power Architect, foram criadas as tabelas DIMENSÕES e FATO da camada DW, no banco de dados "dev". <br>
 ![sql_power_architect_dw](images/sql_power_architect_dw.JPG)
 
-- Documentação das tabelas da camada DW, gerado através do SQL Power Architect:
+📝 Documentação das tabelas da camada DW, gerado através do SQL Power Architect:
 ![sql_power_architect_documentacao_dw](images/sql_power_architect_documentacao_dw.JPG)
 
-- Dimensão dim_customer
+🌟 Dimensão dim_customer <br>
 Para a dim_customer, será apresentado 02 abordagens para carga dos dados: <br>
 Carga Full x Carga SCD2 (Slowly Changing Dimension Tipo 2) <br>
 
-**Carga Full (Carga Completa):** Apaga e substitui todos os dados antigos a cada atualização. <br>
+✅ **Carga Full (Carga Completa):** Apaga e substitui todos os dados antigos a cada atualização. <br>
 
 **Pipeline para carga full (Apache Hop)** <br>
 ![apache_hop_dim_customers_carga_full](images/apache_hop_dim_customers_carga_full.JPG)
 
-**Carga SCD2:** Método de modelagem de dados usado para guardar o histórico de alterações em tabelas dimensionais. <br>
+✅ **Carga SCD2:** Método de modelagem de dados usado para guardar o histórico de alterações em tabelas dimensionais. <br>
 
 1ª Etapa: Simulando atualização no bd produção (north), tabela customers. <br>
 ![heidi_sql_update_table_customers](images/heidi_sql_update_table_customers.JPG) <br>
@@ -104,15 +104,15 @@ Carga Full x Carga SCD2 (Slowly Changing Dimension Tipo 2) <br>
 3ª Etapa: **Pipeline para carga scd2 (Apache Hop)** <br>
 ![apache_hop_dim_customers_carga_scd2](images/apache_hop_dim_customers_carga_scd2.JPG) <br>
 
-- Dimensão dim_employee <br>
+🌟 Dimensão dim_employee <br>
 **Pipeline para carga full (Apache Hop)** <br>
 ![apache_hop_dim_employee_carga_full](images/apache_hop_dim_employee_carga_full.JPG) <br>
 
-- Dimensão dim_products <br>
+🌟 Dimensão dim_products <br>
 **Pipeline para carga full (Apache Hop)** <br>
 ![apache_hop_dim_products_carga_full](images/apache_hop_dim_products_carga_full.JPG) <br>
 
-- Dimensão dim_calendario <br>
+🌟 Dimensão dim_calendario <br>
 Tabela desenvolvida no Apache Hop. <br>
 **Pipeline para carga full (Apache Hop)** <br>
 ![apache_hop_dim_calendario_carga_full](images/apache_hop_dim_calendario_carga_full.JPG) <br>
