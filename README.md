@@ -7,7 +7,7 @@ Time envolvido: <br>
 [Arruda Data Consulting](https://arrudaconsulting.com.br/) <br>
 
 ## 01. Arquitetura do Projeto
-![arquitetura_hopbase](images/hopbase.JPG)
+![arquitetura_hopbase](images/hopbase_mysql.JPG)
 
 ## 02. Preparação do Ambiente
 Passo-a-passo detalhado: [Projeto Hopbase](https://hotmart.com/pt-BR/club/formacao-pentarruda/products/5599808/content/r488xZ2n4R?track=Pb4K0mLbeX).
