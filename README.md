@@ -118,10 +118,13 @@ Tabela desenvolvida no Apache Hop. <br>
 ![apache_hop_dim_calendario_carga_full](images/apache_hop_dim_calendario_carga_full.JPG) <br>
 
 
-Obs.: Implementar a Staging da Tabela FATO. <br>
-Na camada STAGING, criação da tabela FATO: st_fato_orders. <br>
+📝 Obs. Staging Area: Implementar a Staging da Tabela FATO. <br>
+Através do SQL Power Architect, foi criada a tabela FATO na camada STAGING, st_fato_orders, no banco de dados "dev". <br>
 Para suportar a tabela na camada DW, ft_orders. <br>
 ![sql_power_architect_staging_fato_orders](images/sql_power_architect_staging_fato_orders.JPG)
+
+📝 Apache Hop: Desenvolvimento do PIPELINE para carga de dados da tabela st_fato_orders na camada STAGING. <br>
+![apache_hop_st_fato_orders](images/apache_hop_st_fato_orders.JPG)
 
 
 
