@@ -117,7 +117,6 @@ Tabela desenvolvida no Apache Hop. <br>
 **Pipeline para carga full (Apache Hop)** <br>
 ![apache_hop_dim_calendario_carga_full](images/apache_hop_dim_calendario_carga_full.JPG) <br>
 
-
 📝 Obs. Staging Area: Implementar a Staging da Tabela FATO. <br>
 Através do SQL Power Architect, foi criada a tabela FATO na camada STAGING, st_fato_orders, no banco de dados "dev". <br>
 Para suportar a tabela na camada DW, ft_orders. <br>
@@ -126,5 +125,12 @@ Para suportar a tabela na camada DW, ft_orders. <br>
 📝 Apache Hop: Desenvolvimento do PIPELINE para carga de dados da tabela st_fato_orders na camada STAGING. <br>
 ![apache_hop_st_fato_orders](images/apache_hop_st_fato_orders.JPG)
 
+🌟 Tabela fato_orders <br>
+Tabela desenvolvida no Apache Hop. <br>
+(Lookups tabela st_fato_orders com: dim_customer_scd2, dim_employee, dim_products, dim_calendario. Para trazer as colunas sk's). <br>
+**Pipeline para carga full (Apache Hop)** <br>
+![apache_hop_fato_orders](images/apache_hop_fato_orders.JPG) <br>
+st_fato_orders >>> dimensoes >>> trazer os sk's
 
-
+Modelagem DW atualizada: <br>
+![sql_power_architect_dw_updated](images/sql_power_architect_dw_updated.JPG) <br>

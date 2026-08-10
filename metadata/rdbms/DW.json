@@ -10,7 +10,7 @@
       "port": "${mysql_port}",
       "driverClassName": "Mysql",
       "attributes": {
-        "SUPPORTS_TIMESTAMP_DATA_TYPE": "N",
+        "SUPPORTS_TIMESTAMP_DATA_TYPE": "Y",
         "STREAM_RESULTS": "N",
         "EXTRA_OPTION_MYSQL.useCursorFetch": "true",
         "EXTRA_OPTION_MYSQL.defaultFetchSize": "500",
