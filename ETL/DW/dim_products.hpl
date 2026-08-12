@@ -83,7 +83,7 @@ por tipo de dado.</note>
   </notepads>
   <order>
     <hop>
-      <from>products</from>
+      <from>st_products</from>
       <to>String operations</to>
       <enabled>Y</enabled>
     </hop>
@@ -183,38 +183,6 @@ por tipo de dado.</note>
     </GUI>
   </transform>
   <transform>
-    <name>products</name>
-    <type>TableInput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <connection>north</connection>
-    <execute_each_row>N</execute_each_row>
-    <limit>0</limit>
-    <sql>SELECT
-  product_id
-, product_name
-, quantity_per_unit
-, unit_price
-, units_in_stock
-, units_on_order
-, reorder_level
-, discontinued
-FROM north.products
-</sql>
-    <variables_active>N</variables_active>
-    <attributes/>
-    <GUI>
-      <xloc>80</xloc>
-      <yloc>96</yloc>
-    </GUI>
-  </transform>
-  <transform>
     <name>dim_products</name>
     <type>TableOutput</type>
     <description/>
@@ -265,14 +233,11 @@ FROM north.products
     <only_when_have_rows>N</only_when_have_rows>
     <partitioning_daily>N</partitioning_daily>
     <partitioning_enabled>N</partitioning_enabled>
-    <partitioning_field/>
     <partitioning_monthly>Y</partitioning_monthly>
-    <return_field/>
     <return_keys>N</return_keys>
     <schema>dev</schema>
     <specify_fields>Y</specify_fields>
     <table>dim_products</table>
-    <tablename_field/>
     <tablename_in_field>N</tablename_in_field>
     <tablename_in_table>Y</tablename_in_table>
     <truncate>Y</truncate>
@@ -280,6 +245,40 @@ FROM north.products
     <attributes/>
     <GUI>
       <xloc>592</xloc>
+      <yloc>96</yloc>
+    </GUI>
+  </transform>
+  <transform>
+    <name>st_products</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>DW</connection>
+    <execute_each_row>N</execute_each_row>
+    <limit>0</limit>
+    <sql>SELECT
+  product_id
+, product_name
+, supplier_id
+, category_id
+, quantity_per_unit
+, unit_price
+, units_in_stock
+, units_on_order
+, reorder_level
+, discontinued
+FROM dev.st_products
+</sql>
+    <variables_active>N</variables_active>
+    <attributes/>
+    <GUI>
+      <xloc>80</xloc>
       <yloc>96</yloc>
     </GUI>
   </transform>

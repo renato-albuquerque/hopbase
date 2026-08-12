@@ -171,7 +171,7 @@ Apenas dados com data (Retirar tempo).</note>
   </notepads>
   <order>
     <hop>
-      <from>employee</from>
+      <from>st_employee</from>
       <to>Concat Fields</to>
       <enabled>Y</enabled>
     </hop>
@@ -645,14 +645,11 @@ Apenas dados com data (Retirar tempo).</note>
     <only_when_have_rows>N</only_when_have_rows>
     <partitioning_daily>N</partitioning_daily>
     <partitioning_enabled>N</partitioning_enabled>
-    <partitioning_field/>
     <partitioning_monthly>Y</partitioning_monthly>
-    <return_field/>
     <return_keys>N</return_keys>
     <schema>dev</schema>
     <specify_fields>Y</specify_fields>
     <table>dim_employee</table>
-    <tablename_field/>
     <tablename_in_field>N</tablename_in_field>
     <tablename_in_table>Y</tablename_in_table>
     <truncate>Y</truncate>
@@ -664,7 +661,7 @@ Apenas dados com data (Retirar tempo).</note>
     </GUI>
   </transform>
   <transform>
-    <name>employee</name>
+    <name>st_employee</name>
     <type>TableInput</type>
     <description/>
     <distribute>Y</distribute>
@@ -674,7 +671,7 @@ Apenas dados com data (Retirar tempo).</note>
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>north</connection>
+    <connection>DW</connection>
     <execute_each_row>N</execute_each_row>
     <limit>0</limit>
     <sql>SELECT
@@ -683,8 +680,8 @@ Apenas dados com data (Retirar tempo).</note>
 , first_name
 , title
 , title_of_courtesy
-, DATE(birth_date) AS birth_date 
-, DATE(hire_date) AS hire_date
+, birth_date
+, hire_date
 , address
 , city
 , region
@@ -693,9 +690,10 @@ Apenas dados com data (Retirar tempo).</note>
 , home_phone
 , extension
 , photo
+, notes
 , reports_to
 , photo_path
-FROM north.employee
+FROM dev.st_employee
 </sql>
     <variables_active>N</variables_active>
     <attributes/>
