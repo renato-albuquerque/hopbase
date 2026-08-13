@@ -133,3 +133,17 @@ Tabela desenvolvida no Apache Hop. <br>
 
 Modelagem DW atualizada: <br>
 ![sql_power_architect_dw_updated](images/sql_power_architect_dw_updated.JPG) <br>
+
+### CARGA INCREMENTAL
+
+🌟 Dimensão dim_products <br>
+![apache_hop_dim_products_carga_incremental](images/apache_hop_dim_products_carga_inc.JPG)
+
+📝 Simulação alteração de dado. Alteração no BD de produção, tabela products, coluna units_in_stock (north.products). <br> 
+![heidisql_products_alteracao_dado](images/heidisql_products_alteracao_dado.JPG)
+
+📝 Apache Hop: Rodar o WORKFLOW staging area (st_area). <br>
+📝 Apache Hop: Rodar o PIPELINE dim_products (carga_incremental). <br>
+![](images/apache_hop_products_alteracao_dado.JPG)
+
+
