@@ -168,7 +168,7 @@
       </index>
      </folder>
     </table>
-    <table id="TAB45" populated="true" UUID="eb865004-866a-462f-bcbd-97fae0d57096" name="employee_territories." objectType="TABLE" physicalName="employee_territories." sql-exception="ca.sqlpower.sqlobject.SQLObjectException: ca.sqlpower.sqlobject.SQLObjectException: Failed to populate indices of table employee_territories." >
+    <table id="TAB45" populated="true" UUID="eb865004-866a-462f-bcbd-97fae0d57096" name="employee_territories." objectType="TABLE" physicalName="employee_territories." sql-exception="ca.sqlpower.sqlobject.SQLObjectException: ca.sqlpower.sqlobject.SQLObjectException: ca.sqlpower.sqlobject.SQLObjectException: Failed to populate indices of table employee_territories." >
      <remarks></remarks>
      <folder id="FOLTAB451" populated="true" name="Columns" physicalName="Columns" type="1">
       <column id="COL46" populated="true" UUID="e8acd5d9-ab03-450e-8b65-b40fdd98445f" autoIncrement="false" defaultValue="" name="employee_id" nullable="1" physicalName="employee_id" precision="19" referenceCount="1" scale="0" sourceDataTypeName="BIGINT" type="-5" >
@@ -562,7 +562,7 @@
     <column id="COL150" populated="true" UUID="174c3f9d-e0dc-497e-91bc-f0b79cf6f8c0" autoIncrement="false" defaultValue="" name="address" nullable="1" physicalName="address" precision="30" referenceCount="1" scale="0" source-column-ref="COL33" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL151" populated="true" UUID="5484e82d-e6e7-4f59-8be5-194d09740080" autoIncrement="false" defaultValue="" name="city" nullable="1" physicalName="city" precision="8" referenceCount="1" scale="0" source-column-ref="COL34" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL151" populated="true" UUID="5484e82d-e6e7-4f59-8be5-194d09740080" autoIncrement="false" defaultValue="" name="city" nullable="1" physicalName="city" precision="20" referenceCount="1" scale="0" source-column-ref="COL34" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
     <column id="COL152" populated="true" UUID="070dd8e7-c208-45ca-9038-7e0b972a83e5" autoIncrement="false" defaultValue="" name="region" nullable="1" physicalName="region" precision="2" referenceCount="1" scale="0" source-column-ref="COL35" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
@@ -602,7 +602,7 @@
     </index>
    </folder>
   </table>
-  <table id="TAB162" populated="true" UUID="06f7f533-f540-42a0-8c36-893ab35d1fa3" name="st_employee_territories" objectType="TABLE" physicalName="st_employee_territories" sql-exception="ca.sqlpower.sqlobject.SQLObjectException: ca.sqlpower.sqlobject.SQLObjectException: Failed to populate indices of table employee_territories." >
+  <table id="TAB162" populated="true" UUID="06f7f533-f540-42a0-8c36-893ab35d1fa3" name="st_employee_territories" objectType="TABLE" physicalName="st_employee_territories" sql-exception="ca.sqlpower.sqlobject.SQLObjectException: ca.sqlpower.sqlobject.SQLObjectException: ca.sqlpower.sqlobject.SQLObjectException: Failed to populate indices of table employee_territories." >
    <remarks></remarks>
    <folder id="FOLTAB1621" populated="true" name="Columns" physicalName="Columns" type="1">
     <column id="COL163" populated="true" UUID="0c065350-3863-4b4d-8f63-7deff6f76b2e" autoIncrement="false" defaultValue="" name="employee_id" nullable="1" physicalName="employee_id" precision="0" referenceCount="1" scale="0" source-column-ref="COL46" sourceDataTypeName="BIGINT" type="-5" userDefinedTypeUUID="433cc8af-284d-4abb-8ef7-08ebcb34dbf1" >

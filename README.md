@@ -144,6 +144,10 @@ Modelagem DW atualizada: <br>
 
 📝 Apache Hop: Rodar o WORKFLOW staging area (st_area). <br>
 📝 Apache Hop: Rodar o PIPELINE dim_products (carga_incremental). <br>
-![](images/apache_hop_products_alteracao_dado.JPG)
+![apache_hop_products_alteracao_dado](images/apache_hop_products_alteracao_dado.JPG)
 
+🌟 Dimensão dim_employee <br>
+Outro método para carga incremental, utilizando apenas o step Synchronize after merge. <br>
+![apache_hop_dim_employee_carga_inc](images/apache_hop_dim_employee_carga_inc.JPG)
 
+🌟 Dimensão dim_customers <br>

@@ -32,11 +32,12 @@
       <fontitalic>N</fontitalic>
       <fontname>Segoe UI</fontname>
       <fontsize>9</fontsize>
-      <height>26</height>
+      <height>42</height>
       <xloc>64</xloc>
       <yloc>32</yloc>
-      <note>CARGA INCREMENTAL: dim_products</note>
-      <width>210</width>
+      <note>CARGA INCREMENTAL
+Tratamento dos dados dim_products</note>
+      <width>204</width>
     </notepad>
     <notepad>
       <backgroundcolorblue>251</backgroundcolorblue>
@@ -242,6 +243,16 @@ changed</note>
       <to>dummy_changed</to>
       <enabled>Y</enabled>
     </hop>
+    <hop>
+      <from>dummy_new</from>
+      <to>Table output</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>dummy_changed</from>
+      <to>Update</to>
+      <enabled>Y</enabled>
+    </hop>
   </order>
   <transform>
     <name>If Null</name>
@@ -283,8 +294,8 @@ changed</note>
     </GUI>
   </transform>
   <transform>
-    <name>String operations</name>
-    <type>StringOperations</type>
+    <name>Merge rows (diff)</name>
+    <type>MergeRows</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
@@ -293,102 +304,27 @@ changed</note>
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <fields>
-      <field>
-        <in_stream_name>product_name</in_stream_name>
-        <out_stream_name/>
-        <trim_type>both</trim_type>
-        <lower_upper>upper</lower_upper>
-        <padding_type>none</padding_type>
-        <pad_char/>
-        <pad_len/>
-        <init_cap>no</init_cap>
-        <mask_xml>none</mask_xml>
-        <digits>none</digits>
-        <remove_special_characters>none</remove_special_characters>
-      </field>
-      <field>
-        <in_stream_name>quantity_per_unit</in_stream_name>
-        <out_stream_name/>
-        <trim_type>both</trim_type>
-        <lower_upper>upper</lower_upper>
-        <padding_type>none</padding_type>
-        <pad_char/>
-        <pad_len/>
-        <init_cap>no</init_cap>
-        <mask_xml>none</mask_xml>
-        <digits>none</digits>
-        <remove_special_characters>none</remove_special_characters>
-      </field>
-    </fields>
+    <keys>
+      <key>product_id</key>
+    </keys>
+    <values>
+      <value>product_name</value>
+      <value>quantity_per_unit</value>
+      <value>unit_price</value>
+      <value>units_in_stock</value>
+      <value>units_on_order</value>
+      <value>reorder_level</value>
+      <value>discontinued</value>
+    </values>
+    <flag_field>flagfield</flag_field>
+    <reference>Sort rows 2</reference>
+    <compare>Sort rows</compare>
+    <compare>
+    </compare>
     <attributes/>
     <GUI>
-      <xloc>240</xloc>
-      <yloc>96</yloc>
-    </GUI>
-  </transform>
-  <transform>
-    <name>st_products</name>
-    <type>TableInput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <connection>DW</connection>
-    <execute_each_row>N</execute_each_row>
-    <limit>0</limit>
-    <sql>SELECT
-  product_id
-, product_name
-, quantity_per_unit
-, unit_price
-, units_in_stock
-, units_on_order
-, reorder_level
-, discontinued
-FROM dev.st_products
-</sql>
-    <variables_active>N</variables_active>
-    <attributes/>
-    <GUI>
-      <xloc>96</xloc>
-      <yloc>96</yloc>
-    </GUI>
-  </transform>
-  <transform>
-    <name>Table input</name>
-    <type>TableInput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <connection>DW</connection>
-    <execute_each_row>N</execute_each_row>
-    <limit>0</limit>
-    <sql>SELECT
-  product_id
-, product_name
-, quantity_per_unit
-, unit_price
-, units_in_stock
-, units_on_order
-, reorder_level
-, discontinued
-FROM dev.dim_products
-</sql>
-    <variables_active>N</variables_active>
-    <attributes/>
-    <GUI>
-      <xloc>416</xloc>
-      <yloc>272</yloc>
+      <xloc>752</xloc>
+      <yloc>192</yloc>
     </GUI>
   </transform>
   <transform>
@@ -460,8 +396,8 @@ FROM dev.dim_products
     </GUI>
   </transform>
   <transform>
-    <name>Merge rows (diff)</name>
-    <type>MergeRows</type>
+    <name>String operations</name>
+    <type>StringOperations</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
@@ -470,27 +406,38 @@ FROM dev.dim_products
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <keys>
-      <key>product_id</key>
-    </keys>
-    <values>
-      <value>product_name</value>
-      <value>quantity_per_unit</value>
-      <value>unit_price</value>
-      <value>units_in_stock</value>
-      <value>units_on_order</value>
-      <value>reorder_level</value>
-      <value>discontinued</value>
-    </values>
-    <flag_field>flagfield</flag_field>
-    <reference>Sort rows 2</reference>
-    <compare>Sort rows</compare>
-    <compare>
-    </compare>
+    <fields>
+      <field>
+        <in_stream_name>product_name</in_stream_name>
+        <out_stream_name/>
+        <trim_type>both</trim_type>
+        <lower_upper>upper</lower_upper>
+        <padding_type>none</padding_type>
+        <pad_char/>
+        <pad_len/>
+        <init_cap>no</init_cap>
+        <mask_xml>none</mask_xml>
+        <digits>none</digits>
+        <remove_special_characters>none</remove_special_characters>
+      </field>
+      <field>
+        <in_stream_name>quantity_per_unit</in_stream_name>
+        <out_stream_name/>
+        <trim_type>both</trim_type>
+        <lower_upper>upper</lower_upper>
+        <padding_type>none</padding_type>
+        <pad_char/>
+        <pad_len/>
+        <init_cap>no</init_cap>
+        <mask_xml>none</mask_xml>
+        <digits>none</digits>
+        <remove_special_characters>none</remove_special_characters>
+      </field>
+    </fields>
     <attributes/>
     <GUI>
-      <xloc>752</xloc>
-      <yloc>192</yloc>
+      <xloc>240</xloc>
+      <yloc>96</yloc>
     </GUI>
   </transform>
   <transform>
@@ -504,9 +451,6 @@ FROM dev.dim_products
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <case_value_decimal/>
-    <case_value_format/>
-    <case_value_group/>
     <case_value_type>String</case_value_type>
     <cases>
       <case>
@@ -522,12 +466,168 @@ FROM dev.dim_products
         <value>changed</value>
       </case>
     </cases>
-    <default_target_transform/>
     <fieldname>flagfield</fieldname>
     <use_contains>N</use_contains>
     <attributes/>
     <GUI>
       <xloc>880</xloc>
+      <yloc>192</yloc>
+    </GUI>
+  </transform>
+  <transform>
+    <name>Table input</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>DW</connection>
+    <execute_each_row>N</execute_each_row>
+    <limit>0</limit>
+    <sql>SELECT
+  product_id
+, product_name
+, quantity_per_unit
+, unit_price
+, units_in_stock
+, units_on_order
+, reorder_level
+, discontinued
+FROM dev.dim_products
+</sql>
+    <variables_active>N</variables_active>
+    <attributes/>
+    <GUI>
+      <xloc>416</xloc>
+      <yloc>272</yloc>
+    </GUI>
+  </transform>
+  <transform>
+    <name>Table output</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <commit>1000</commit>
+    <connection>DW</connection>
+    <fields>
+      <field>
+        <column_name>product_id</column_name>
+        <stream_name>product_id</stream_name>
+      </field>
+      <field>
+        <column_name>product_name</column_name>
+        <stream_name>product_name</stream_name>
+      </field>
+      <field>
+        <column_name>quantity_per_unit</column_name>
+        <stream_name>quantity_per_unit</stream_name>
+      </field>
+      <field>
+        <column_name>unit_price</column_name>
+        <stream_name>unit_price</stream_name>
+      </field>
+      <field>
+        <column_name>units_in_stock</column_name>
+        <stream_name>units_in_stock</stream_name>
+      </field>
+      <field>
+        <column_name>units_on_order</column_name>
+        <stream_name>units_on_order</stream_name>
+      </field>
+      <field>
+        <column_name>reorder_level</column_name>
+        <stream_name>reorder_level</stream_name>
+      </field>
+      <field>
+        <column_name>discontinued</column_name>
+        <stream_name>discontinued</stream_name>
+      </field>
+    </fields>
+    <ignore_errors>N</ignore_errors>
+    <only_when_have_rows>N</only_when_have_rows>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <return_keys>N</return_keys>
+    <schema>dev</schema>
+    <specify_fields>Y</specify_fields>
+    <table>dim_products</table>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_in_table>Y</tablename_in_table>
+    <truncate>N</truncate>
+    <use_batch>Y</use_batch>
+    <attributes/>
+    <GUI>
+      <xloc>1152</xloc>
+      <yloc>96</yloc>
+    </GUI>
+  </transform>
+  <transform>
+    <name>Update</name>
+    <type>Update</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <commit>100</commit>
+    <connection>DW</connection>
+    <error_ignored>N</error_ignored>
+    <lookup>
+      <key>
+        <condition>=</condition>
+        <field>product_id</field>
+        <name>product_id</name>
+      </key>
+      <schema>dev</schema>
+      <table>dim_products</table>
+      <value>
+        <name>product_name</name>
+        <rename>product_name</rename>
+      </value>
+      <value>
+        <name>quantity_per_unit</name>
+        <rename>quantity_per_unit</rename>
+      </value>
+      <value>
+        <name>unit_price</name>
+        <rename>unit_price</rename>
+      </value>
+      <value>
+        <name>units_in_stock</name>
+        <rename>units_in_stock</rename>
+      </value>
+      <value>
+        <name>units_on_order</name>
+        <rename>units_on_order</rename>
+      </value>
+      <value>
+        <name>reorder_level</name>
+        <rename>reorder_level</rename>
+      </value>
+      <value>
+        <name>discontinued</name>
+        <rename>discontinued</rename>
+      </value>
+    </lookup>
+    <skip_lookup>N</skip_lookup>
+    <use_batch>N</use_batch>
+    <attributes/>
+    <GUI>
+      <xloc>1152</xloc>
       <yloc>192</yloc>
     </GUI>
   </transform>
@@ -579,6 +679,38 @@ FROM dev.dim_products
     <attributes/>
     <GUI>
       <xloc>1008</xloc>
+      <yloc>96</yloc>
+    </GUI>
+  </transform>
+  <transform>
+    <name>st_products</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>DW</connection>
+    <execute_each_row>N</execute_each_row>
+    <limit>0</limit>
+    <sql>SELECT
+  product_id
+, product_name
+, quantity_per_unit
+, unit_price
+, units_in_stock
+, units_on_order
+, reorder_level
+, discontinued
+FROM dev.st_products
+</sql>
+    <variables_active>N</variables_active>
+    <attributes/>
+    <GUI>
+      <xloc>96</xloc>
       <yloc>96</yloc>
     </GUI>
   </transform>

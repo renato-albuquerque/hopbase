@@ -32,10 +32,11 @@
       <fontitalic>N</fontitalic>
       <fontname>Segoe UI</fontname>
       <fontsize>9</fontsize>
-      <height>26</height>
+      <height>42</height>
       <xloc>64</xloc>
       <yloc>16</yloc>
-      <note>Tratamento dos dados dim_employee </note>
+      <note>CARGA INCREMENTAL
+Tratamento dos dados dim_employee </note>
       <width>212</width>
     </notepad>
     <notepad>
@@ -168,6 +169,47 @@ DATE(hire_date) AS hire_date</note>
 Apenas dados com data (Retirar tempo).</note>
       <width>233</width>
     </notepad>
+    <notepad>
+      <backgroundcolorblue>251</backgroundcolorblue>
+      <backgroundcolorgreen>232</backgroundcolorgreen>
+      <backgroundcolorred>201</backgroundcolorred>
+      <bordercolorblue>90</bordercolorblue>
+      <bordercolorgreen>58</bordercolorgreen>
+      <bordercolorred>14</bordercolorred>
+      <fontbold>N</fontbold>
+      <fontcolorblue>90</fontcolorblue>
+      <fontcolorgreen>58</fontcolorgreen>
+      <fontcolorred>14</fontcolorred>
+      <fontitalic>N</fontitalic>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <height>26</height>
+      <xloc>1008</xloc>
+      <yloc>448</yloc>
+      <note>dim_employee</note>
+      <width>89</width>
+    </notepad>
+    <notepad>
+      <backgroundcolorblue>251</backgroundcolorblue>
+      <backgroundcolorgreen>232</backgroundcolorgreen>
+      <backgroundcolorred>201</backgroundcolorred>
+      <bordercolorblue>90</bordercolorblue>
+      <bordercolorgreen>58</bordercolorgreen>
+      <bordercolorred>14</bordercolorred>
+      <fontbold>N</fontbold>
+      <fontcolorblue>90</fontcolorblue>
+      <fontcolorgreen>58</fontcolorgreen>
+      <fontcolorred>14</fontcolorred>
+      <fontitalic>N</fontitalic>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <height>42</height>
+      <xloc>784</xloc>
+      <yloc>432</yloc>
+      <note>COMPARACAO TABELAS
+st_employee com dim_employee</note>
+      <width>185</width>
+    </notepad>
   </notepads>
   <order>
     <hop>
@@ -192,7 +234,32 @@ Apenas dados com data (Retirar tempo).</note>
     </hop>
     <hop>
       <from>Select values</from>
-      <to>dim_employee</to>
+      <to>Sort rows</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Sort rows</from>
+      <to>Merge rows (diff)</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Sort rows 2</from>
+      <to>Merge rows (diff)</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Merge rows (diff)</from>
+      <to>Synchronize after merge</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Table input</from>
+      <to>Select values 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Select values 2</from>
+      <to>Sort rows 2</to>
       <enabled>Y</enabled>
     </hop>
   </order>
@@ -286,6 +353,48 @@ Apenas dados com data (Retirar tempo).</note>
     </GUI>
   </transform>
   <transform>
+    <name>Merge rows (diff)</name>
+    <type>MergeRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <keys>
+      <key>employee_id</key>
+    </keys>
+    <values>
+      <value>name</value>
+      <value>title</value>
+      <value>title_of_courtesy</value>
+      <value>birth_date</value>
+      <value>hire_date</value>
+      <value>address</value>
+      <value>city</value>
+      <value>region</value>
+      <value>postal_code</value>
+      <value>country</value>
+      <value>home_phone</value>
+      <value>extension</value>
+      <value>photo</value>
+      <value>reports_to</value>
+      <value>photo_path</value>
+    </values>
+    <flag_field>flagfield</flag_field>
+    <reference>Sort rows 2</reference>
+    <compare>Sort rows</compare>
+    <compare>
+    </compare>
+    <attributes/>
+    <GUI>
+      <xloc>1344</xloc>
+      <yloc>240</yloc>
+    </GUI>
+  </transform>
+  <transform>
     <name>Select values</name>
     <type>SelectValues</type>
     <description/>
@@ -299,51 +408,67 @@ Apenas dados com data (Retirar tempo).</note>
     <fields>
       <field>
         <name>employee_id</name>
+        <rename/>
       </field>
       <field>
         <name>name</name>
+        <rename/>
       </field>
       <field>
         <name>title</name>
+        <rename/>
       </field>
       <field>
         <name>title_of_courtesy</name>
+        <rename/>
       </field>
       <field>
         <name>birth_date</name>
+        <rename/>
       </field>
       <field>
         <name>hire_date</name>
+        <rename/>
       </field>
       <field>
         <name>address</name>
+        <rename/>
       </field>
       <field>
         <name>city</name>
+        <rename/>
       </field>
       <field>
         <name>region</name>
+        <rename/>
       </field>
       <field>
         <name>postal_code</name>
+        <rename/>
       </field>
       <field>
         <name>country</name>
+        <rename/>
       </field>
       <field>
         <name>home_phone</name>
+        <rename/>
       </field>
       <field>
         <name>extension</name>
+        <rename/>
       </field>
       <field>
         <name>photo</name>
+        <rename/>
       </field>
       <field>
         <name>reports_to</name>
+        <rename/>
       </field>
       <field>
         <name>photo_path</name>
+        <rename/>
       </field>
       <select_unspecified>N</select_unspecified>
       <meta>
@@ -385,6 +510,74 @@ Apenas dados com data (Retirar tempo).</note>
     <GUI>
       <xloc>1040</xloc>
       <yloc>80</yloc>
+    </GUI>
+  </transform>
+  <transform>
+    <name>Sort rows</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <directory>${java.io.tmpdir}</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory/>
+    <compress>N</compress>
+    <compress_variable/>
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>employee_id</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <attributes/>
+    <GUI>
+      <xloc>1248</xloc>
+      <yloc>80</yloc>
+    </GUI>
+  </transform>
+  <transform>
+    <name>Sort rows 2</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <directory>${java.io.tmpdir}</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory/>
+    <compress>N</compress>
+    <compress_variable/>
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>employee_id</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <attributes/>
+    <GUI>
+      <xloc>1264</xloc>
+      <yloc>368</yloc>
     </GUI>
   </transform>
   <transform>
@@ -563,8 +756,8 @@ Apenas dados com data (Retirar tempo).</note>
     </GUI>
   </transform>
   <transform>
-    <name>dim_employee</name>
-    <type>TableOutput</type>
+    <name>Synchronize after merge</name>
+    <type>SynchronizeAfterMerge</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
@@ -573,91 +766,150 @@ Apenas dados com data (Retirar tempo).</note>
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <commit>1000</commit>
     <connection>DW</connection>
-    <fields>
-      <field>
-        <column_name>employee_id</column_name>
-        <stream_name>employee_id</stream_name>
-      </field>
-      <field>
-        <column_name>name</column_name>
-        <stream_name>name</stream_name>
-      </field>
-      <field>
-        <column_name>title</column_name>
-        <stream_name>title</stream_name>
-      </field>
-      <field>
-        <column_name>title_of_courtesy</column_name>
-        <stream_name>title_of_courtesy</stream_name>
-      </field>
-      <field>
-        <column_name>birth_date</column_name>
-        <stream_name>birth_date</stream_name>
-      </field>
-      <field>
-        <column_name>hire_date</column_name>
-        <stream_name>hire_date</stream_name>
-      </field>
-      <field>
-        <column_name>address</column_name>
-        <stream_name>address</stream_name>
-      </field>
-      <field>
-        <column_name>city</column_name>
-        <stream_name>city</stream_name>
-      </field>
-      <field>
-        <column_name>region</column_name>
-        <stream_name>region</stream_name>
-      </field>
-      <field>
-        <column_name>postal_code</column_name>
-        <stream_name>postal_code</stream_name>
-      </field>
-      <field>
-        <column_name>country</column_name>
-        <stream_name>country</stream_name>
-      </field>
-      <field>
-        <column_name>home_phone</column_name>
-        <stream_name>home_phone</stream_name>
-      </field>
-      <field>
-        <column_name>extension</column_name>
-        <stream_name>extension</stream_name>
-      </field>
-      <field>
-        <column_name>photo</column_name>
-        <stream_name>photo</stream_name>
-      </field>
-      <field>
-        <column_name>reports_to</column_name>
-        <stream_name>reports_to</stream_name>
-      </field>
-      <field>
-        <column_name>photo_path</column_name>
-        <stream_name>photo_path</stream_name>
-      </field>
-    </fields>
-    <ignore_errors>N</ignore_errors>
-    <only_when_have_rows>N</only_when_have_rows>
-    <partitioning_daily>N</partitioning_daily>
-    <partitioning_enabled>N</partitioning_enabled>
-    <partitioning_monthly>Y</partitioning_monthly>
-    <return_keys>N</return_keys>
-    <schema>dev</schema>
-    <specify_fields>Y</specify_fields>
-    <table>dim_employee</table>
+    <commit>100</commit>
     <tablename_in_field>N</tablename_in_field>
-    <tablename_in_table>Y</tablename_in_table>
-    <truncate>Y</truncate>
-    <use_batch>Y</use_batch>
+    <tablename_field/>
+    <use_batch>N</use_batch>
+    <perform_lookup>N</perform_lookup>
+    <operation_order_field>flagfield</operation_order_field>
+    <order_insert>new</order_insert>
+    <order_update>changed</order_update>
+    <order_delete/>
+    <lookup>
+      <schema>dev</schema>
+      <table>dim_employee</table>
+      <key>
+        <name>employee_id</name>
+        <field>employee_id</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>employee_id</name>
+        <rename>employee_id</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>name</name>
+        <rename>name</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>title</name>
+        <rename>title</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>title_of_courtesy</name>
+        <rename>title_of_courtesy</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>birth_date</name>
+        <rename>birth_date</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>hire_date</name>
+        <rename>hire_date</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>address</name>
+        <rename>address</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>city</name>
+        <rename>city</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>region</name>
+        <rename>region</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>postal_code</name>
+        <rename>postal_code</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>country</name>
+        <rename>country</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>home_phone</name>
+        <rename>home_phone</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>extension</name>
+        <rename>extension</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>photo</name>
+        <rename>photo</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>reports_to</name>
+        <rename>reports_to</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>photo_path</name>
+        <rename>photo_path</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
     <attributes/>
     <GUI>
-      <xloc>1264</xloc>
-      <yloc>80</yloc>
+      <xloc>1504</xloc>
+      <yloc>240</yloc>
+    </GUI>
+  </transform>
+  <transform>
+    <name>Table input</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>DW</connection>
+    <execute_each_row>N</execute_each_row>
+    <limit>0</limit>
+    <sql>SELECT
+  employee_id
+, name
+, title
+, title_of_courtesy
+, birth_date
+, hire_date
+, address
+, city
+, region
+, postal_code
+, country
+, home_phone
+, extension
+, photo
+, reports_to
+, photo_path
+FROM dev.dim_employee
+</sql>
+    <variables_active>N</variables_active>
+    <attributes/>
+    <GUI>
+      <xloc>1040</xloc>
+      <yloc>368</yloc>
     </GUI>
   </transform>
   <transform>
@@ -700,6 +952,108 @@ FROM dev.st_employee
     <GUI>
       <xloc>96</xloc>
       <yloc>80</yloc>
+    </GUI>
+  </transform>
+  <transform>
+    <name>Select values 2</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>employee_id</name>
+      </field>
+      <field>
+        <name>name</name>
+      </field>
+      <field>
+        <name>title</name>
+      </field>
+      <field>
+        <name>title_of_courtesy</name>
+      </field>
+      <field>
+        <name>birth_date</name>
+      </field>
+      <field>
+        <name>hire_date</name>
+      </field>
+      <field>
+        <name>address</name>
+      </field>
+      <field>
+        <name>city</name>
+      </field>
+      <field>
+        <name>region</name>
+      </field>
+      <field>
+        <name>postal_code</name>
+      </field>
+      <field>
+        <name>country</name>
+      </field>
+      <field>
+        <name>home_phone</name>
+      </field>
+      <field>
+        <name>extension</name>
+      </field>
+      <field>
+        <name>photo</name>
+      </field>
+      <field>
+        <name>reports_to</name>
+      </field>
+      <field>
+        <name>photo_path</name>
+      </field>
+      <select_unspecified>N</select_unspecified>
+      <meta>
+        <name>birth_date</name>
+        <rename>birth_date</rename>
+        <type>Date</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask>dd/MM/yyyy</conversion_mask>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+      <meta>
+        <name>hire_date</name>
+        <rename>hire_date</rename>
+        <type>Date</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask>dd/MM/yyyy</conversion_mask>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+    </fields>
+    <attributes/>
+    <GUI>
+      <xloc>1168</xloc>
+      <yloc>368</yloc>
     </GUI>
   </transform>
   <transform_error_handling>
