@@ -95,6 +95,9 @@
 <h3>List of tables</h3>
 <ul>
 <li>
+<a href="#dim_calendario">dim_calendario</a>
+</li>
+<li>
 <a href="#dim_customers">dim_customers</a>
 </li>
 <li>
@@ -107,6 +110,143 @@
 <a href="#ft_orders">ft_orders</a>
 </li>
 </ul>
+<div class="tableNameHeading">
+<h1>dim_calendario<a name="dim_calendario"></a>
+</h1>
+<h2>
+      (Physical Name: dim_calendario)
+      </h2>
+</div>
+<div class="table">
+<table class="tableDefinition" width="100%">
+<tr>
+<td class="tdTableHeading tdLogicalColName">Logical Column Name</td><td class="tdTableHeading tdPhysicalColName">Physical Column Name</td><td class="tdTableHeading tdDataType">Type</td><td class="tdTableHeading tdPkFlag">PK</td><td class="tdTableHeading tdNullFlag">Nullable</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">sk_date (PK)</td><td class="tdTableDefinition">sk_date</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr>
+<td colspan="4">
+<div class="comment">PK da dimens&atilde;o dim_calendario.</div>
+</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">data</td><td class="tdTableDefinition">data</td><td class="tdTableDefinition">DATE</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr>
+<td colspan="4">
+<div class="comment">Informa&ccedil;&atilde;o de data.</div>
+</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">ano</td><td class="tdTableDefinition">ano</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr>
+<td colspan="4">
+<div class="comment">Ano da data.</div>
+</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">trimestre</td><td class="tdTableDefinition">trimestre</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr>
+<td colspan="4">
+<div class="comment">N&uacute;mero do trimestre da data.</div>
+</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">mes</td><td class="tdTableDefinition">mes</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr>
+<td colspan="4">
+<div class="comment">N&uacute;mero do m&ecirc;s da data.</div>
+</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">dia</td><td class="tdTableDefinition">dia</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr>
+<td colspan="4">
+<div class="comment">N&uacute;mero do dia da data.</div>
+</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">dia_semana</td><td class="tdTableDefinition">dia_semana</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr>
+<td colspan="4">
+<div class="comment">N&uacute;mero do dia da semana da data (De 1 &agrave; 7). </div>
+</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">semana_ano</td><td class="tdTableDefinition">semana_ano</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr>
+<td colspan="4">
+<div class="comment">N&uacute;mero da semana do ano da data.</div>
+</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">mes_ano_1</td><td class="tdTableDefinition">mes_ano_1</td><td class="tdTableDefinition">VARCHAR(10)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr>
+<td colspan="4">
+<div class="comment">Jun&ccedil;&atilde;o das informa&ccedil;&otilde;es de n&uacute;mero do m&ecirc;s e ano, ex.: 7/1996.</div>
+</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">mes_ano_2</td><td class="tdTableDefinition">mes_ano_2</td><td class="tdTableDefinition">VARCHAR(10)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr>
+<td colspan="4">
+<div class="comment">Jun&ccedil;&atilde;o das informa&ccedil;&otilde;es de nome abreviado do m&ecirc;s e ano, ex.: JUL/1996.</div>
+</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">nome_mes</td><td class="tdTableDefinition">nome_mes</td><td class="tdTableDefinition">VARCHAR(10)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr>
+<td colspan="4">
+<div class="comment">Nome completo do m&ecirc;s da data.</div>
+</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">nome_mes_abrev</td><td class="tdTableDefinition">nome_mes_abrev</td><td class="tdTableDefinition">VARCHAR(10)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr>
+<td colspan="4">
+<div class="comment">Nome abreviado do m&ecirc;s da data.</div>
+</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">nome_dia_semana</td><td class="tdTableDefinition">nome_dia_semana</td><td class="tdTableDefinition">VARCHAR(20)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr>
+<td colspan="4">
+<div class="comment">Nome completo do dia da semana, ex.: DOMINGO.</div>
+</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">nome_trimestre</td><td class="tdTableDefinition">nome_trimestre</td><td class="tdTableDefinition">VARCHAR(20)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr>
+<td colspan="4">
+<div class="comment">Nome completo do trimestre da data, ex.: 1&ordm; TRIMESTRE.</div>
+</td>
+</tr>
+</table>
+<div class="references">
+<p class="subTitle">Referenced By</p>
+<ul>
+<li>
+<a href="#ft_orders">ft_orders</a> referencing (sk_date)</li>
+<li>
+<a href="#ft_orders">ft_orders</a> referencing (sk_date)</li>
+<li>
+<a href="#ft_orders">ft_orders</a> referencing (sk_date)</li>
+</ul>
+</div>
+</div>
 <div class="tableNameHeading">
 <h1>dim_customers<a name="dim_customers"></a>
 </h1>
@@ -121,6 +261,30 @@
 </tr>
 <tr valign="top">
 <td class="tdTableDefinition">sk_customer (PK)</td><td class="tdTableDefinition">sk_customer</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">version</td><td class="tdTableDefinition">version</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr>
+<td colspan="4">
+<div class="comment">Vers&atilde;o do registro.</div>
+</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">date_from</td><td class="tdTableDefinition">date_from</td><td class="tdTableDefinition">TIMESTAMP</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr>
+<td colspan="4">
+<div class="comment">Data inicial do registro.</div>
+</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">date_to</td><td class="tdTableDefinition">date_to</td><td class="tdTableDefinition">TIMESTAMP</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr>
+<td colspan="4">
+<div class="comment">Data de validade do registro.</div>
+</td>
 </tr>
 <tr valign="top">
 <td class="tdTableDefinition">customer_id</td><td class="tdTableDefinition">customer_id</td><td class="tdTableDefinition">VARCHAR(5)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
@@ -201,7 +365,7 @@
 <td class="tdTableDefinition">address</td><td class="tdTableDefinition">address</td><td class="tdTableDefinition">VARCHAR(30)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
 </tr>
 <tr valign="top">
-<td class="tdTableDefinition">city</td><td class="tdTableDefinition">city</td><td class="tdTableDefinition">VARCHAR(8)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
+<td class="tdTableDefinition">city</td><td class="tdTableDefinition">city</td><td class="tdTableDefinition">VARCHAR(20)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
 </tr>
 <tr valign="top">
 <td class="tdTableDefinition">region</td><td class="tdTableDefinition">region</td><td class="tdTableDefinition">VARCHAR(2)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap></td>
@@ -335,35 +499,41 @@
 </td>
 </tr>
 <tr valign="top">
+<td class="tdTableDefinition">sk_date (PK)
+                &nbsp;(<a href="#dim_calendario">FK</a>)
+              </td><td class="tdTableDefinition">sk_date</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr>
+<td colspan="4">
+<div class="comment">PK da dimens&atilde;o dim_calendario.</div>
+</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">sk_required_date (PK)
+                &nbsp;(<a href="#dim_calendario">FK</a>)
+              </td><td class="tdTableDefinition">sk_required_date</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr>
+<td colspan="4">
+<div class="comment">sk da data requerida.</div>
+</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">sk_shipped_date (PK)
+                &nbsp;(<a href="#dim_calendario">FK</a>)
+              </td><td class="tdTableDefinition">sk_shipped_date</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr>
+<td colspan="4">
+<div class="comment">sk da data de envio.</div>
+</td>
+</tr>
+<tr valign="top">
 <td class="tdTableDefinition">order_id</td><td class="tdTableDefinition">order_id</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
 </tr>
 <tr>
 <td colspan="4">
 <div class="comment">C&oacute;digo do pedido.</div>
-</td>
-</tr>
-<tr valign="top">
-<td class="tdTableDefinition">order_date</td><td class="tdTableDefinition">order_date</td><td class="tdTableDefinition">DATE</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
-</tr>
-<tr>
-<td colspan="4">
-<div class="comment">Data do pedido.</div>
-</td>
-</tr>
-<tr valign="top">
-<td class="tdTableDefinition">required_date</td><td class="tdTableDefinition">required_date</td><td class="tdTableDefinition">DATE</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
-</tr>
-<tr>
-<td colspan="4">
-<div class="comment">Data requerida.</div>
-</td>
-</tr>
-<tr valign="top">
-<td class="tdTableDefinition">shipped_date</td><td class="tdTableDefinition">shipped_date</td><td class="tdTableDefinition">DATE</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
-</tr>
-<tr>
-<td colspan="4">
-<div class="comment">Data de envio.</div>
 </td>
 </tr>
 <tr valign="top">
@@ -380,6 +550,14 @@
 <tr>
 <td colspan="4">
 <div class="comment">Quantidade de produtos do pedido.</div>
+</td>
+</tr>
+<tr valign="top">
+<td class="tdTableDefinition">discount</td><td class="tdTableDefinition">discount</td><td class="tdTableDefinition">DECIMAL(10,2)</td><td class="tdTableDefinition" nowrap></td><td class="tdTableDefinition" nowrap>NOT NULL</td>
+</tr>
+<tr>
+<td colspan="4">
+<div class="comment">Valor de desconto por pedido.</div>
 </td>
 </tr>
 <tr valign="top">
@@ -416,6 +594,12 @@
 <a href="#dim_products">dim_products</a> through (sk_product)</li>
 <li>
 <a href="#dim_employee">dim_employee</a> through (sk_employee)</li>
+<li>
+<a href="#dim_calendario">dim_calendario</a> through (sk_date)</li>
+<li>
+<a href="#dim_calendario">dim_calendario</a> through (sk_required_date)</li>
+<li>
+<a href="#dim_calendario">dim_calendario</a> through (sk_shipped_date)</li>
 </ul>
 </div>
 </div>
