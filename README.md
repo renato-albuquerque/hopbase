@@ -150,4 +150,6 @@ Modelagem DW atualizada: <br>
 Outro método para carga incremental, utilizando apenas o step Synchronize after merge. <br>
 ![apache_hop_dim_employee_carga_inc](images/apache_hop_dim_employee_carga_inc.JPG)
 
-🌟 Dimensão dim_calendario <br>
+🌟 Dimensão dim_calendario_dinamica <br>
+Outra forma para desenvolvimento da dim_calendario. <br>
+![apache_hop_dim_calendario_dinamica](images/apache_hop_dim_calendario_dinamica.JPG)
