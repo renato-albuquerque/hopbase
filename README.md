@@ -154,3 +154,19 @@ Outro método para carga incremental, utilizando apenas o step Synchronize after
 Outra forma para desenvolvimento da dim_calendario. <br>
 ![apache_hop_dim_calendario_dinamica](images/apache_hop_dim_calendario_dinamica.JPG)
 
+🌟 Dimensão dim_customer_scd2 <br>
+Concluída na seção anterior.
+
+### AJUSTANDO DOCUMENTAÇÃO DO DATA WAREHOUSE (DW) 
+
+📝 Atualizando informações das tabelas DIMENSÃO na ferramenta SQL Power Architect.
+![sql_power_architect_dw_latest_version](images/sql_power_architect_dw_latest_version.JPG)
+
+📝 Criar WORKFLOW das tabelas dimensões. 
+![apache_hop_workflow_dimensoes_dw](images/apache_hop_workflow_dimensoes_dw.JPG)
+
+📝 Criar WORKFLOW da tabela fato.
+![apache_hop_workflow_fato_dw](images/apache_hop_workflow_fato_dw.JPG)
+
+📝 WORKFLOW geral para o DW.
+![apache_hop_workflow_geral_dw](images/apache_hop_workflow_geral_dw.JPG)
