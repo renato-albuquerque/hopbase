@@ -98,7 +98,7 @@
 <a href="#dim_calendario">dim_calendario</a>
 </li>
 <li>
-<a href="#dim_customers">dim_customers</a>
+<a href="#dim_customers_scd2">dim_customers_scd2</a>
 </li>
 <li>
 <a href="#dim_employee">dim_employee</a>
@@ -107,7 +107,7 @@
 <a href="#dim_products">dim_products</a>
 </li>
 <li>
-<a href="#ft_orders">ft_orders</a>
+<a href="#fato_orders">fato_orders</a>
 </li>
 </ul>
 <div class="tableNameHeading">
@@ -175,7 +175,7 @@
 </tr>
 <tr>
 <td colspan="4">
-<div class="comment">N&uacute;mero do dia da semana da data (De 1 &agrave; 7). </div>
+<div class="comment">N&uacute;mero do dia da semana da data (De 1 &agrave; 7).</div>
 </td>
 </tr>
 <tr valign="top">
@@ -239,19 +239,19 @@
 <p class="subTitle">Referenced By</p>
 <ul>
 <li>
-<a href="#ft_orders">ft_orders</a> referencing (sk_date)</li>
+<a href="#fato_orders">fato_orders</a> referencing (sk_date)</li>
 <li>
-<a href="#ft_orders">ft_orders</a> referencing (sk_date)</li>
+<a href="#fato_orders">fato_orders</a> referencing (sk_date)</li>
 <li>
-<a href="#ft_orders">ft_orders</a> referencing (sk_date)</li>
+<a href="#fato_orders">fato_orders</a> referencing (sk_date)</li>
 </ul>
 </div>
 </div>
 <div class="tableNameHeading">
-<h1>dim_customers<a name="dim_customers"></a>
+<h1>dim_customers_scd2<a name="dim_customers_scd2"></a>
 </h1>
 <h2>
-      (Physical Name: dim_customers)
+      (Physical Name: dim_customers_scd2)
       </h2>
 </div>
 <div class="table">
@@ -324,7 +324,7 @@
 <p class="subTitle">Referenced By</p>
 <ul>
 <li>
-<a href="#ft_orders">ft_orders</a> referencing (sk_customer)</li>
+<a href="#fato_orders">fato_orders</a> referencing (sk_customer)</li>
 </ul>
 </div>
 </div>
@@ -396,7 +396,7 @@
 <p class="subTitle">Referenced By</p>
 <ul>
 <li>
-<a href="#ft_orders">ft_orders</a> referencing (sk_employee)</li>
+<a href="#fato_orders">fato_orders</a> referencing (sk_employee)</li>
 </ul>
 </div>
 </div>
@@ -444,15 +444,15 @@
 <p class="subTitle">Referenced By</p>
 <ul>
 <li>
-<a href="#ft_orders">ft_orders</a> referencing (sk_product)</li>
+<a href="#fato_orders">fato_orders</a> referencing (sk_product)</li>
 </ul>
 </div>
 </div>
 <div class="tableNameHeading">
-<h1>ft_orders<a name="ft_orders"></a>
+<h1>fato_orders<a name="fato_orders"></a>
 </h1>
 <h2>
-      (Physical Name: ft_orders)
+      (Physical Name: fato_orders)
       </h2>
 </div>
 <div class="table">
@@ -470,7 +470,7 @@
 </tr>
 <tr valign="top">
 <td class="tdTableDefinition">sk_customer (PK)
-                &nbsp;(<a href="#dim_customers">FK</a>)
+                &nbsp;(<a href="#dim_customers_scd2">FK</a>)
               </td><td class="tdTableDefinition">sk_customer</td><td class="tdTableDefinition">INTEGER</td><td class="tdTableDefinition" nowrap>PK</td><td class="tdTableDefinition" nowrap>NOT NULL</td>
 </tr>
 <tr>
@@ -589,7 +589,7 @@
 <p class="subTitle">References</p>
 <ul>
 <li>
-<a href="#dim_customers">dim_customers</a> through (sk_customer)</li>
+<a href="#dim_customers_scd2">dim_customers_scd2</a> through (sk_customer)</li>
 <li>
 <a href="#dim_products">dim_products</a> through (sk_product)</li>
 <li>
