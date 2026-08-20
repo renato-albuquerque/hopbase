@@ -174,3 +174,5 @@ Concluída na seção anterior.
 📝 Documentação atualizada das tabelas da camada DW, gerado através do SQL Power Architect. Exemplo das tabelas dim_calendario e fato_orders:
 ![images/sql_power_architect_documentacao_dw_latest_version_dim_calendario](images/sql_power_architect_documentacao_dw_latest_version_dim_calendario.JPG) <br>
 ![images/sql_power_architect_documentacao_dw_latest_version_fato_orders](images/sql_power_architect_documentacao_dw_latest_version_fato_orders.JPG) <br>
+
+## 06. Data Vizualization (Metabase)
