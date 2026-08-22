@@ -176,3 +176,4 @@ Concluída na seção anterior.
 ![images/sql_power_architect_documentacao_dw_latest_version_fato_orders](images/sql_power_architect_documentacao_dw_latest_version_fato_orders.JPG) <br>
 
 ## 06. Data Vizualization (Metabase)
+(Em andamento)
