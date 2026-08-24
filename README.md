@@ -178,7 +178,7 @@ Concluída na seção anterior.
 ## 06. Data Vizualization (Metabase)
 (Em andamento) <br>
 
-📝 Métricas de vendas (Visão geral/executiva)
+📝 Métricas de vendas (Visão geral/executiva) <br>
 1ª Criação das "PERGUNTAS" no METABASE. <br>
 ![matabase_visao_executiva](images/metabase_visao_executiva.JPG) <br>
 
