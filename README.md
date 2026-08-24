@@ -180,10 +180,12 @@ Concluída na seção anterior.
 
 📝 Métricas de vendas (Visão geral/executiva) <br>
 1ª Criação das "PERGUNTAS" no METABASE. <br>
-![matabase_visao_executiva](images/metabase_visao_executiva.JPG) <br>
+![matabase_visao_executiva_perguntas](images/metabase_visao_executiva_perguntas.JPG) <br>
 
 2ª Desenvolvimento do dashboard. <br>
-![matabase_visao_executiva_dashboard](images/metabase_visao_executiva_dashboard.JPG) <br>
+![matabase_visao_executiva1_dashboard](images/metabase_visao_executiva1_dashboard.JPG) <br>
+
+![matabase_visao_executiva1_dashboard](images/metabase_visao_executiva2_dashboard.JPG) <br>
 
 Resumo das métricas em SQL:
 ```
