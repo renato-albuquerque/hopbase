@@ -332,19 +332,19 @@
   </database>
  </source-databases>
  <target-database id="ppdb" dbcs-ref="DS0">
-  <table id="TAB93" populated="true" UUID="e4840af1-ef2d-4f2a-a435-03d7fdde5109" name="dim_customers" objectType="TABLE" physicalName="dim_customers" >
+  <table id="TAB93" populated="true" UUID="e4840af1-ef2d-4f2a-a435-03d7fdde5109" name="dim_customers_scd2" objectType="TABLE" physicalName="dim_customers_scd2" >
    <remarks></remarks>
    <folder id="FOLTAB931" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL94" populated="true" UUID="093217ad-e2ab-4f8f-86d5-43622267dce4" autoIncrement="true" autoIncrementSequenceName="dim_customers_sk_customer_seq" defaultValue="" name="sk_customer" nullable="0" physicalName="sk_customer" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL94" populated="true" UUID="093217ad-e2ab-4f8f-86d5-43622267dce4" autoIncrement="true" autoIncrementSequenceName="dim_customers_scd2_sk_customer_seq" defaultValue="" name="sk_customer" nullable="0" physicalName="sk_customer" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
-    <column id="COL95" populated="true" UUID="b955e6ec-7ecc-4518-b4b8-fd9b78ea72af" autoIncrement="false" autoIncrementSequenceName="dim_customers_version_seq" defaultValue="" name="version" nullable="0" physicalName="version" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL95" populated="true" UUID="b955e6ec-7ecc-4518-b4b8-fd9b78ea72af" autoIncrement="false" autoIncrementSequenceName="dim_customers_scd2_version_seq" defaultValue="" name="version" nullable="0" physicalName="version" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks>Versão do registro.</remarks>
     </column>
-    <column id="COL96" populated="true" UUID="20767705-b2e4-40f6-87ef-bc2605c13ac0" autoIncrement="false" autoIncrementSequenceName="dim_customers_date_from_seq" defaultValue="" name="date_from" nullable="0" physicalName="date_from" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+    <column id="COL96" populated="true" UUID="20767705-b2e4-40f6-87ef-bc2605c13ac0" autoIncrement="false" autoIncrementSequenceName="dim_customers_scd2_date_from_seq" defaultValue="" name="date_from" nullable="0" physicalName="date_from" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
      <remarks>Data inicial do registro.</remarks>
     </column>
-    <column id="COL97" populated="true" UUID="f910b081-aefa-4cfd-82ed-16479b298353" autoIncrement="false" autoIncrementSequenceName="dim_customers_date_to_seq" defaultValue="" name="date_to" nullable="0" physicalName="date_to" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+    <column id="COL97" populated="true" UUID="f910b081-aefa-4cfd-82ed-16479b298353" autoIncrement="false" autoIncrementSequenceName="dim_customers_scd2_date_to_seq" defaultValue="" name="date_to" nullable="0" physicalName="date_to" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
      <remarks>Data de validade do registro.</remarks>
     </column>
     <column id="COL98" populated="true" UUID="dafd75f9-f28c-4f82-8058-41684df74658" autoIncrement="false" defaultValue="" name="customer_id" nullable="0" physicalName="customer_id" precision="5" referenceCount="1" scale="0" source-column-ref="COL7" sourceDataTypeName="VARCHAR" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
@@ -386,7 +386,7 @@
     <folder id="FOLTAB932" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
     <folder id="FOLTAB934" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX109" populated="true" UUID="de095981-2387-4667-8acc-47ca7925baf7" clustered="false" name="dim_customers_pk" physicalName="dim_customers_pk" primaryKeyIndex="true" unique="false" >
+    <index id="IDX109" populated="true" UUID="de095981-2387-4667-8acc-47ca7925baf7" clustered="false" name="dim_customers_scd2_pk" physicalName="dim_customers_pk" primaryKeyIndex="true" unique="false" >
      <index-column id="IDC110" populated="true" UUID="c278789b-f8d8-46b5-8bfa-9a26db340040" ascendingOrDescending="UNSPECIFIED" column-ref="COL94" name="sk_customer" physicalName="sk_customer" />
     </index>
    </folder>
@@ -531,7 +531,7 @@
      <remarks>Quantidade de produtos do pedido.</remarks>
     </column>
     <column id="COL154" populated="true" UUID="854ddcdf-1ba7-4665-822f-849c024ffb68" autoIncrement="false" autoIncrementSequenceName="ft_orders_discount_seq" defaultValue="" name="discount" nullable="0" physicalName="discount" precision="10" referenceCount="1" scale="2" sourceDataTypeName="UserDefinedSQLType" type="3" userDefinedTypeUUID="cc1304ea-628a-4fc5-a84a-06ba14759152" >
-     <remarks></remarks>
+     <remarks>Valor de desconto por pedido.</remarks>
     </column>
     <column id="COL155" populated="true" UUID="30fea833-cb0b-4bee-8cbc-8e67d2a77307" autoIncrement="false" autoIncrementSequenceName="ft_orders_total_gross_seq" defaultValue="" name="total_gross" nullable="0" physicalName="total_gross" precision="10" referenceCount="1" scale="2" sourceDataTypeName="UserDefinedSQLType" type="3" userDefinedTypeUUID="cc1304ea-628a-4fc5-a84a-06ba14759152" >
      <remarks>Valor bruto do pedido.</remarks>
@@ -581,7 +581,7 @@
      <remarks>Número do dia da data.</remarks>
     </column>
     <column id="COL173" populated="true" UUID="b151286c-cf6b-4993-a9fd-12c8c4107d3d" autoIncrement="false" autoIncrementSequenceName="dim_calendario_dia_semana_seq" defaultValue="" name="dia_semana" nullable="0" physicalName="dia_semana" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
-     <remarks>Número do dia da semana da data (De 1 à 7). </remarks>
+     <remarks>Número do dia da semana da data (De 1 à 7).</remarks>
     </column>
     <column id="COL174" populated="true" UUID="dc10b0de-223c-4534-aeab-f27367433e0c" autoIncrement="false" autoIncrementSequenceName="dim_calendario_semana_ano_seq" defaultValue="" name="semana_ano" nullable="0" physicalName="semana_ano" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks>Número da semana do ano da data.</remarks>

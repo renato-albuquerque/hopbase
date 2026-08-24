@@ -176,4 +176,60 @@ Concluída na seção anterior.
 ![images/sql_power_architect_documentacao_dw_latest_version_fato_orders](images/sql_power_architect_documentacao_dw_latest_version_fato_orders.JPG) <br>
 
 ## 06. Data Vizualization (Metabase)
-(Em andamento)
+(Em andamento) <br>
+
+📝 Métricas de vendas (Visão geral/executiva)
+1ª Criação das "PERGUNTAS" no METABASE. <br>
+![matabase_visao_executiva](images/metabase_visao_executiva.JPG) <br>
+
+2ª Desenvolvimento do dashboard. <br>
+![matabase_visao_executiva_dashboard](images/metabase_visao_executiva_dashboard.JPG) <br>
+
+Resumo das métricas em SQL:
+```
+-- Receita total líquida
+SELECT
+    SUM(total_net)   AS receita_liquida
+FROM fato_orders;
+
+-- Receita total bruta
+SELECT
+    SUM(total_gross) AS receita_bruta
+FROM fato_orders;
+
+-- Total de descontos concedidos
+SELECT
+    SUM(total_discount) AS desconto_total
+FROM fato_orders;
+
+-- % médio de desconto
+SELECT
+    SUM(total_discount) / NULLIF(SUM(total_gross), 0) AS percentual_desconto_medio
+FROM fato_orders;
+
+-- Ticket médio por pedido
+SELECT
+    SUM(total_net) / NULLIF(COUNT(DISTINCT order_id), 0) AS ticket_medio
+FROM fato_orders;
+
+-- Quantidade total de itens vendidos
+SELECT
+    SUM(quantity) AS qtd_itens_vendidos
+FROM fato_orders;
+
+-- Número de pedidos
+SELECT
+    COUNT(DISTINCT order_id) AS num_pedidos
+FROM fato_orders;
+
+-- Preço médio praticado vs preço cadastrado (por produto)
+SELECT
+    p.product_name,
+    AVG(f.unit_price)      AS preco_medio_praticado,
+    p.unit_price            AS preco_cadastrado,
+    AVG(f.unit_price) - p.unit_price AS diferenca_preco
+FROM fato_orders f
+LEFT JOIN dim_products p ON f.sk_product = p.sk_product
+GROUP BY p.product_name, p.unit_price
+ORDER BY diferenca_preco;
+```
