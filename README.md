@@ -235,3 +235,7 @@ LEFT JOIN dim_products p ON f.sk_product = p.sk_product
 GROUP BY p.product_name, p.unit_price
 ORDER BY diferenca_preco;
 ```
+
+prints outras analises
+queries
+
