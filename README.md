@@ -323,6 +323,13 @@ GROUP BY e.title
 ORDER BY receita desc;
 ```
 
-End. <br>
+[End] 🎆
+<br>
+
+### 👍 Meus contatos
+- LinkedIn - [renato-malbuquerque](https://www.linkedin.com/in/renato-malbuquerque/)
+- GitHub - [renato-albuquerque](https://github.com/renato-albuquerque)
+- Discord - [Renato Albuquerque#0025](https://discordapp.com/users/992621595547938837)
+
 
 
