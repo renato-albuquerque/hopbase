@@ -176,6 +176,9 @@ Concluída na seção anterior.
 ![images/sql_power_architect_documentacao_dw_latest_version_fato_orders](images/sql_power_architect_documentacao_dw_latest_version_fato_orders.JPG) <br>
 
 ## 06. Data Vizualization (Metabase)
+Vídeos de apoio na ferramenta: <br>
+[Formação Data Engineer 360, Curso Hopbase, Módulo 8](https://hotmart.com/pt-br/club/formacao-pentarruda/products/5599808)
+[DASHBOARD DE VENDAS NO METABASE - DO ZERO AO DASHBOARD FINALIZADO](https://www.youtube.com/watch?v=TAR-_u-rvb4&t=1378s)
 
 📝 Métricas de vendas (Visão geral/executiva) <br>
 
