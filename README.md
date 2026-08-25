@@ -187,7 +187,7 @@ Concluída na seção anterior.
 
 ![matabase_visao_executiva1_dashboard](images/metabase_visao_executiva2_dashboard.JPG) <br>
 
-Resumo das métricas construídas através de Consulta SQL:
+🔑 Resumo das métricas construídas através de Consulta SQL:
 ```
 -- Receita total líquida
 SELECT
@@ -245,7 +245,7 @@ ORDER BY diferenca_preco;
 ![metabase_outras_analises1_dashboard](images/metabase_outras_analises1_dashboard.JPG) <br>
 ![metabase_outras_analises2_dashboard](images/metabase_outras_analises2_dashboard.JPG) <br>
 
-Resumo das métricas construídas através de Consulta SQL:
+🔑 Resumo das métricas construídas através de Consulta SQL:
 
 ```
 -- Receita líquida por mes_ano
