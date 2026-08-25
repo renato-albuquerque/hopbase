@@ -176,10 +176,10 @@ Concluída na seção anterior.
 ![images/sql_power_architect_documentacao_dw_latest_version_fato_orders](images/sql_power_architect_documentacao_dw_latest_version_fato_orders.JPG) <br>
 
 ## 06. Data Vizualization (Metabase)
-(Em andamento) <br>
 
 📝 Métricas de vendas (Visão geral/executiva) <br>
-1ª Criação das "PERGUNTAS" no METABASE. <br>
+
+1ª Criação das "PERGUNTAS" (Consultas) no METABASE. <br>
 ![matabase_visao_executiva_perguntas](images/metabase_visao_executiva_perguntas.JPG) <br>
 
 2ª Desenvolvimento do dashboard. <br>
@@ -187,7 +187,7 @@ Concluída na seção anterior.
 
 ![matabase_visao_executiva1_dashboard](images/metabase_visao_executiva2_dashboard.JPG) <br>
 
-Resumo das métricas em SQL:
+Resumo das métricas construídas através de Consulta SQL:
 ```
 -- Receita total líquida
 SELECT
@@ -236,6 +236,93 @@ GROUP BY p.product_name, p.unit_price
 ORDER BY diferenca_preco;
 ```
 
-prints outras analises
-queries
+📝 Outras Métricas (Análise por período, país, clientes, produtos, vendedores) <br>
+
+1ª Criação das "PERGUNTAS" (Consultas) no METABASE. <br>
+![metabase_outras_analises_perguntas](images/metabase_outras_analises_perguntas.JPG) <br>
+
+2ª Desenvolvimento do dashboard. <br>
+![metabase_outras_analises1_dashboard](images/metabase_outras_analises1_dashboard.JPG) <br>
+![metabase_outras_analises2_dashboard](images/metabase_outras_analises2_dashboard.JPG) <br>
+
+Resumo das métricas construídas através de Consulta SQL:
+
+```
+-- Receita líquida por mes_ano
+
+SELECT
+    c.mes_ano_2 AS mes_ano,
+    SUM(f.total_net) AS receita_liquida
+FROM fato_orders f
+JOIN dim_calendario c ON f.sk_order_date = c.sk_date
+GROUP BY c.mes_ano_2
+ORDER BY c.ano, c.mes;
+
+-- TOP 5 produtos com maior receita
+
+SELECT
+    p.product_name,
+    SUM(f.total_net)  AS receita
+FROM fato_orders f
+JOIN dim_products p ON f.sk_product = p.sk_product
+GROUP BY p.product_name
+ORDER BY receita DESC
+LIMIT 5;
+
+-- TOP 5 produtos com menor receita
+
+SELECT
+    p.product_name,
+    SUM(f.total_net)  AS receita
+FROM fato_orders f
+JOIN dim_products p ON f.sk_product = p.sk_product
+GROUP BY p.product_name
+ORDER BY receita
+LIMIT 5;
+
+-- TOP 10 Receita por cliente 
+
+SELECT
+    c.company_name,
+    c.country,
+    SUM(f.total_net) AS receita
+FROM fato_orders f
+JOIN dim_customer_scd2 c ON f.sk_customer = c.sk_customer
+GROUP BY c.company_name
+ORDER BY receita DESC
+LIMIT 10;
+
+-- Receita por páis 
+
+SELECT
+    c.country,
+    SUM(f.total_net) AS receita
+FROM fato_orders f
+JOIN dim_customer_scd2 c ON f.sk_customer = c.sk_customer
+GROUP BY c.country
+ORDER BY receita DESC;
+
+-- Receita por Vendedor
+
+SELECT
+    e.name,
+    SUM(f.total_net) AS receita
+FROM fato_orders f
+JOIN dim_employee e ON f.sk_employee = e.sk_employee
+GROUP BY e.name
+ORDER BY receita DESC;
+
+-- Receita por Cargo
+
+SELECT
+    e.title,
+    SUM(f.total_net) AS receita
+FROM fato_orders f
+JOIN dim_employee e ON f.sk_employee = e.sk_employee
+GROUP BY e.title
+ORDER BY receita desc;
+```
+
+End. <br>
+
 
