@@ -26,8 +26,8 @@ Criar variável de ambiente (JAVA_HOME) >> Vincular com o diretório: C:\Program
 É uma plataforma de código aberto voltada para a engenharia, integração e orquestração de dados e metadados. <br>
 Instalar o software [Apache Hop](https://hop.apache.org/download/). <br>
 Obs.: Para abrir a interface gráfica, execute o arquivo `hop-gui.bat`, localizado na pasta de instalação. <br>
-Realizar conexão do Apache Hop com o Banco de Dados (Drive de conexão do MySQL). <br>
-Para permitir a conexão com bancos MySQL, copie o driver JDBC `mysql-connector-java-5.1.44-bin.jar` para a pasta `C:\Hop\hop\lib\beam` (diretório de instalação do Apache Hop).
+Para permitir a conexão com bancos MySQL, copie o driver JDBC `mysql-connector-java-5.1.44-bin.jar` para a pasta `C:\Hop\hop\lib\beam` (diretório de instalação do Apache Hop). <br>
+Para conectar o Apache Hop ao banco de dados, acesse **Metadata > Relational Database Connection** e preencha os campos com as informações de conexão (host, porta, banco, usuário e senha).
 
 ### 📌 Metabase
 Ferramenta de Business Intelligence (BI) e análise de dados de código aberto (open source). Permite conectar com bancos de dados e criar gráficos, métricas e painéis visuais (dashboards). <br>
