@@ -25,6 +25,7 @@ Criar variável de ambiente (JAVA_HOME) >> Vincular com o diretório: C:\Program
 ### 📌 Apache Hop (Hop Orchestration Platform)
 É uma plataforma de código aberto voltada para a engenharia, integração e orquestração de dados e metadados. <br>
 Instalar o software [Apache Hop](https://hop.apache.org/download/). <br>
+Obs.: Para abrir a interface gráfica, execute o arquivo `hop-gui.bat`, localizado na pasta de instalação. <br>
 Realizar conexão do Apache Hop com o Banco de Dados (Drive de conexão do MySQL).
 
 ### 📌 Metabase
