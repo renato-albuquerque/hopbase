@@ -20,7 +20,7 @@ HeidiSQL: IDE para desenvolvimento. <br>
 ### 📌 Java
 Tanto o Apache Hop quanto o Metabase são aplicações Java, portanto é necessário ter o JDK/JRE instalado no ambiente. <br>
 Pré-requisito: Java (JDK 11+), necessário para executar Apache Hop e Metabase. <br>
-Criar variável de ambiente (JAVA_HOME).
+Criar variável de ambiente (JAVA_HOME) >> Vincular com o diretório: C:\Program Files\Java\jdk-11
 
 ### 📌 Apache Hop (Hop Orchestration Platform)
 É uma plataforma de código aberto voltada para a engenharia, integração e orquestração de dados e metadados. <br>
