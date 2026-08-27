@@ -18,6 +18,8 @@ Unicontroller: Software para ativar o banco de dados. <br>
 HeidiSQL: IDE para desenvolvimento. <br>
 
 ### 📌 Java
+Tanto o Apache Hop quanto o Metabase são aplicações Java, portanto é necessário ter o JDK/JRE instalado no ambiente. <br>
+Pré-requisito: Java (JDK 11+), necessário para executar Apache Hop e Metabase. <br>
 Criar variável de ambiente (JAVA_HOME).
 
 ### 📌 Apache Hop (Hop Orchestration Platform)
