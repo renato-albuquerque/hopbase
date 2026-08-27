@@ -32,7 +32,9 @@ Realizar conexão do Apache Hop com o Banco de Dados (Drive de conexão do MySQL
 Ferramenta de Business Intelligence (BI) e análise de dados de código aberto (open source). Permite conectar com bancos de dados e criar gráficos, métricas e painéis visuais (dashboards). <br>
 Instalar o software [Metabase](https://www.metabase.com/docs/latest/installation-and-operation/running-the-metabase-jar-file
 ). <br>
+Este projeto executa o Metabase a partir do arquivo `metabase.jar` (versão Open Source). <br>
 Seguir orientações da documentação do Metabase.
+Obs.: Para acessar a ferramenta, acesse em: http://localhost:3000/setup
 
 ### 📌 SQL Power Architect
 Ferramenta gráfica e de código aberto voltada para a **modelagem de bancos de dados e design de Data Warehouses**. <br>
