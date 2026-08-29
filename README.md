@@ -39,7 +39,8 @@ Obs.: Para acessar a ferramenta, acesse em: http://localhost:3000/setup
 
 ### 📌 SQL Power Architect
 Ferramenta gráfica e de código aberto voltada para a **modelagem de bancos de dados e design de Data Warehouses**. <br>
-Instalar o software SQL Power Architect.
+Instalar o software SQL Power Architect. <br>
+Para permitir a conexão com bancos MySQL, copie o driver JDBC `mysql-connector-java-5.1.44-bin.jar` para o diretório de instalação do SQL Power Architect. Passo similar ao realizado no Apache Hop. <br>
 
 ### 📌 Resumo Tecnologias
 ![tecnologias_do_projeto](images/project_softwares.JPG)
