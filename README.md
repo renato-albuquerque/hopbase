@@ -105,6 +105,7 @@ Carga Full x Carga SCD2 (Slowly Changing Dimension Tipo 2) <br>
 ![apache_hop_dim_customers_carga_full](images/apache_hop_dim_customers_carga_full.JPG)
 
 ✅ **Carga SCD2:** Método de modelagem de dados usado para guardar o histórico de alterações em tabelas dimensionais. <br>
+Obs.: Utilização deste método (SCD2) em dimensões estratégicas. <br>
 
 1ª Etapa: Simulando atualização no bd produção (north), tabela customers. <br>
 ![heidi_sql_update_table_customers](images/heidi_sql_update_table_customers.JPG) <br>
