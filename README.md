@@ -88,7 +88,8 @@ INNER JOIN dev.st_order_details od
 ON o.order_id = od.order_id;
 ```
 
-📝 Através do SQL Power Architect, foram criadas as tabelas DIMENSÕES e FATO da camada DW, no banco de dados "dev". <br>
+📝 Através do SQL Power Architect, foram criadas as tabelas DIMENSÕES e FATO da camada DW, no banco de dados "dev" (Como base para criação, foram utilizadas as tabelas da STAGING Area, st_customers, st_employee, st_products, st_orders, st_order_details). <br>
+Ob.: A tabela ft_orders foi criada através da junção entre st_orders, st_order_details. <br>
 ![sql_power_architect_dw](images/sql_power_architect_dw.JPG)
 
 📝 Documentação das tabelas da camada DW, gerado através do SQL Power Architect:
