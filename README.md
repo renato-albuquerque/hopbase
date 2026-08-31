@@ -57,7 +57,7 @@ Conectar o SQL Power Architect ao Banco de Dados: Acesse **Connection > Add Sour
 Obs.: O SQL Power Architect foi utilizado como ferramenta gráfica de modelagem, permitindo criar as tabelas da Staging Area de forma visual, sem escrever as queries manualmente.
 📝 Documentação das tabelas da camada STAGING, gerado através do SQL Power Architect:
 ![sql_power_architect_documentacao_staging](images/sql_power_architect_documentacao_staging.JPG)
-📝 Apache Hop: Desenvolvimento dos PIPELINES para carga de dados de cada tabela na camada STAGING. <br>
+📝 Apache Hop: Desenvolvimento dos PIPELINES para carga de dados de cada tabela na camada STAGING (BD de produção: north, para BD de desenvolvimento: "dev"). <br>
 📝 Apache Hop: Desenvolvimento de WORKFLOW para carga completa e simultânea dos dados na camada STAGING. <br>
 PIPELINES
 ![apache_hop_pipelines_staging](images/apache_hop_staging.JPG) <br> 
