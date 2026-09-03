@@ -126,6 +126,7 @@ Obs.: Utilização deste método (SCD2) em dimensões estratégicas. <br>
 
 🌟 Dimensão dim_calendario <br>
 Tabela desenvolvida no Apache Hop. <br>
+No exemplo deste projeto, como boa prática, desenvolver a dim_calendario no Apache Hop ou no banco de dados DW (SQL) <br>
 **Pipeline para carga full (Apache Hop)** <br>
 ![apache_hop_dim_calendario_carga_full](images/apache_hop_dim_calendario_carga_full.JPG) <br>
 
