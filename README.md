@@ -131,8 +131,8 @@ No exemplo deste projeto, como boa prática, desenvolver a dim_calendario no Apa
 ![apache_hop_dim_calendario_carga_full](images/apache_hop_dim_calendario_carga_full.JPG) <br>
 
 📝 Obs. Staging Area: Implementar a Staging da Tabela FATO. <br>
-Através do SQL Power Architect, foi criada a tabela FATO na camada STAGING, st_fato_orders, no banco de dados "dev". <br>
-Para suportar a tabela na camada DW, ft_orders. <br>
+Através do SQL Power Architect, foi criada a tabela FATO na camada STAGING, st_fato_orders (A partir das tabelas: st_orders, st_order_details), no banco de dados "dev". <br>
+Para suportar a tabela na camada DW, fato_orders. <br>
 ![sql_power_architect_staging_fato_orders](images/sql_power_architect_staging_fato_orders.JPG)
 
 📝 Apache Hop: Desenvolvimento do PIPELINE para carga de dados da tabela st_fato_orders na camada STAGING. <br>
