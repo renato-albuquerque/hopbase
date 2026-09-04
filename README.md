@@ -189,6 +189,7 @@ Concluída na seção anterior.
 ![images/sql_power_architect_documentacao_dw_latest_version_fato_orders](images/sql_power_architect_documentacao_dw_latest_version_fato_orders.JPG) <br>
 
 ## 06. Data Vizualization (Metabase)
+Informações sobre instalação da ferramenta na etapa 02 - Preparação do Ambiente. <br>
 Vídeos de apoio na ferramenta: <br>
 [Formação Data Engineer 360, Curso Hopbase, Módulo 8 | by Rafael Arruda](https://hotmart.com/pt-br/club/formacao-pentarruda/products/5599808) <br>
 [DASHBOARD DE VENDAS NO METABASE - DO ZERO AO DASHBOARD FINALIZADO | by Gabriel Santos](https://www.youtube.com/watch?v=TAR-_u-rvb4&t=1378s)
