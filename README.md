@@ -164,7 +164,7 @@ Outro método para carga incremental, utilizando apenas o step Synchronize after
 ![apache_hop_dim_employee_carga_inc](images/apache_hop_dim_employee_carga_inc.JPG)
 
 🌟 Dimensão dim_calendario_dinamica <br>
-Outra forma para desenvolvimento da dim_calendario. <br>
+Outra forma para desenvolvimento da dim_calendario, de forma dinâmica, considerando a data mínima e data máxima, tabela st_orders. <br>
 ![apache_hop_dim_calendario_dinamica](images/apache_hop_dim_calendario_dinamica.JPG)
 
 🌟 Dimensão dim_customer_scd2 <br>
