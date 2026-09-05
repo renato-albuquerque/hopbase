@@ -35,7 +35,8 @@ Instalar o software [Metabase](https://www.metabase.com/docs/latest/installation
 ). <br>
 Este projeto executa o Metabase a partir do arquivo `metabase.jar` (versão Open Source). <br>
 Seguir orientações da documentação do Metabase.
-Obs.: Para acessar a ferramenta, acesse em: http://localhost:3000/setup
+Obs.: Para acessar a ferramenta, acesse em: http://localhost:3000/setup <br>
+Obs.: Para que o Metabase possa apresentar os dados nos dashboards, necessário que o banco de dados esteja ativado (Neste projeto, ativar o Unicontroller: Software para ativar o banco de dados).
 
 ### 📌 SQL Power Architect
 Ferramenta gráfica e de código aberto voltada para a **modelagem de bancos de dados e design de Data Warehouses**. <br>
